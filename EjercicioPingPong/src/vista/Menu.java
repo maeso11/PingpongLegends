@@ -16,6 +16,8 @@ import javax.swing.JTextField;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.ImageIcon;
+import java.awt.Toolkit;
 
 public class Menu extends JFrame {
 
@@ -41,8 +43,8 @@ public class Menu extends JFrame {
 	 * Create the frame.
 	 */
 	public Menu() {
+		setIconImage(Toolkit.getDefaultToolkit().getImage(Menu.class.getResource("/img/palas.png")));
 		setTitle("MENU");
-		setType(Type.UTILITY);
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 923, 654);
@@ -62,7 +64,17 @@ public class Menu extends JFrame {
 				cLogin.iniciar();
 			}
 		});
-		btnLogin.setBounds(375, 524, 112, 72);
+		
+		JLabel lblNewLabel_1 = new JLabel("");
+		lblNewLabel_1.setIcon(new ImageIcon(Menu.class.getResource("/img/LogoPingPong.png")));
+		lblNewLabel_1.setBounds(158, 54, 600, 399);
+		contentPane.add(lblNewLabel_1);
+		btnLogin.setBounds(389, 520, 136, 59);
 		contentPane.add(btnLogin);
+		
+		JLabel lblNewLabel = new JLabel("");
+		lblNewLabel.setIcon(new ImageIcon(Menu.class.getResource("/img/fondoVerde.jpg")));
+		lblNewLabel.setBounds(0, 0, 917, 625);
+		contentPane.add(lblNewLabel);
 	}
 }

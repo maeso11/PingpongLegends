@@ -6,8 +6,11 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+import javax.swing.JButton;
 
 public class Equipos extends JFrame {
+
+	public JButton btnVolver;
 
 	private JPanel contentPane;
 
@@ -32,12 +35,15 @@ public class Equipos extends JFrame {
 	 */
 	public Equipos() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 300);
+		setBounds(100, 100, 522, 405);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);
+		contentPane.setLayout(null);
+
+		btnVolver = new JButton("VOLVER");
+		btnVolver.setBounds(178, 204, 89, 23);
+		contentPane.add(btnVolver);
 		setLocationRelativeTo(null);
 	}
-
 }
