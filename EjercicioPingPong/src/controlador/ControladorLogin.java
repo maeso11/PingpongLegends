@@ -7,6 +7,7 @@ import javax.swing.JOptionPane;
 
 import modelo.ModeloLogin;
 import vista.Login;
+import vista.MenuUsuario;
 
 public class ControladorLogin implements ActionListener {
     private Login l;
@@ -21,18 +22,28 @@ public class ControladorLogin implements ActionListener {
 	public void iniciar () {
 		l.setTitle("Menú Inicio");
 		l.setLocationRelativeTo(null);
+		l.setVisible(true);
 	}
 
 
 
 	public void actionPerformed(ActionEvent arg0) {
 
-		if (l.txtUser.getText().equals(m.getUser()) && l.txtPassword.getText().equals(m.getPass())) {
-			JOptionPane.showMessageDialog(null, "Usuario y contraseña correctos");
+		ControladorAdmin cAdmin = new ControladorAdmin();
+		MenuUsuario menuUser = new MenuUsuario();
+		ControladorUser cUser = new ControladorUser(menuUser);
+
+		if(l.txtUser.getText().equals(m.getUser()) && l.txtPassword.getText().equals(m.getPass())) {
+			JOptionPane.showMessageDialog(null, "Has accedido como administrador");
+			cAdmin.iniciar();
+			l.setVisible(false);
+		}else if(l.txtUser.getText().equals("") || l.txtPassword.getText().equals("")){
+			JOptionPane.showMessageDialog(null, "Tienes que rellenar los campos");
 		}else {
-			JOptionPane.showMessageDialog(null, "Usuario o contraseña incorrectos.");
+			JOptionPane.showMessageDialog(null, "Has accedido como usuario");
+			cUser.iniciar();
+			l.setVisible(false);
 		}
-		
 	}
     
 }
