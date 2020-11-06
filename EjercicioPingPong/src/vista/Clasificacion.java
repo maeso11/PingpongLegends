@@ -9,7 +9,7 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import java.awt.Window.Type;
 
-public class Clasificación extends JFrame {
+public class Clasificacion extends JFrame {
 
 	private JPanel contentPane;
 	public JButton btnVolver;
@@ -21,7 +21,7 @@ public class Clasificación extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Clasificación frame = new Clasificación();
+					Clasificacion frame = new Clasificacion();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -33,7 +33,7 @@ public class Clasificación extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public Clasificación() {
+	public Clasificacion() {
 		setTitle("CLASIFICACI\u00D3N");
 		setType(Type.UTILITY);
 		setResizable(false);

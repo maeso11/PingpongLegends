@@ -8,7 +8,7 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JButton;
 
-public class Equipos extends JFrame {
+public class Jugadores extends JFrame {
 
 	public JButton btnVolver;
 
@@ -21,7 +21,7 @@ public class Equipos extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Equipos frame = new Equipos();
+					Jugadores frame = new Jugadores();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -33,7 +33,7 @@ public class Equipos extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public Equipos() {
+	public Jugadores() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 522, 405);
 		contentPane = new JPanel();

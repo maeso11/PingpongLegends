@@ -1,10 +1,10 @@
 package controlador;
 
-import vista.Equipos;
+import vista.Jugadores;
 
 public class ControladorJugadores {
 
-	Equipos equipos = new Equipos();
+	Jugadores equipos = new Jugadores();
 
 	public void iniciar() {
 		equipos.setTitle("Equipos");

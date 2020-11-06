@@ -6,8 +6,8 @@ import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
 
 import modelo.ModeloLogin;
-import vista.Clasificación;
-import vista.Equipos;
+import vista.Clasificacion;
+import vista.Jugadores;
 import vista.Login;
 import vista.MenuUsuario;
 import vista.Noticias;
@@ -55,7 +55,7 @@ public class ControladorUser implements ActionListener{
 			menuUser.setVisible(false);
 
 		}else if (e.getSource() == menuUser.btnClasificacin) {
-			Clasificación clasificacion = new Clasificación();
+			Clasificacion clasificacion = new Clasificacion();
 			ControladorClasificacion cClasificacion = new ControladorClasificacion(clasificacion);
 			cClasificacion.iniciar();
 			menuUser.setVisible(false);
@@ -73,7 +73,7 @@ public class ControladorUser implements ActionListener{
 			menuUser.setVisible(false);
 		
 		}else if (e.getSource() == menuUser.btnInformacin) {
-			Equipos equipos = new Equipos();
+			Jugadores equipos = new Jugadores();
 			ControladorJugadores cJugadores = new ControladorJugadores();
 			cJugadores.iniciar();
 			menuUser.setVisible(false);
