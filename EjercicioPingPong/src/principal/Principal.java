@@ -13,6 +13,5 @@ public class Principal {
 		//Ventana menú
 		Menu menu = new Menu();
 		menu.setVisible(true);
-		System.out.println("xuxa");
 	}
 }

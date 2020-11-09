@@ -3,16 +3,16 @@ package vista;
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
-import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-import java.awt.Window.Type;
+import javax.swing.JButton;
 
-public class Clasificación extends JFrame {
+public class Jugadores extends JFrame {
+
+	public JButton btnVolver;
 
 	private JPanel contentPane;
-	public JButton btnVolver;
 
 	/**
 	 * Launch the application.
@@ -21,7 +21,7 @@ public class Clasificación extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Clasificación frame = new Clasificación();
+					Jugadores frame = new Jugadores();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -33,20 +33,17 @@ public class Clasificación extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public Clasificación() {
-		setTitle("CLASIFICACI\u00D3N");
-		setType(Type.UTILITY);
-		setResizable(false);
+	public Jugadores() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 1014, 678);
+		setBounds(100, 100, 522, 405);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
-		setLocationRelativeTo(null);
-		
-		btnVolver = new JButton("Volver");
-		btnVolver.setBounds(760, 243, 142, 39);
-		contentPane.add(btnVolver);
-	}
+		contentPane.setLayout(null);
 
+		btnVolver = new JButton("VOLVER");
+		btnVolver.setBounds(178, 204, 89, 23);
+		contentPane.add(btnVolver);
+		setLocationRelativeTo(null);
+	}
 }

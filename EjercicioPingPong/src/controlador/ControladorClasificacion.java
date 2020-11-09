@@ -3,14 +3,14 @@ package controlador;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import vista.Clasificación;
+import vista.Clasificacion;
 import vista.MenuUsuario;
 
 public class ControladorClasificacion implements ActionListener{
 	
-	Clasificación clasificacion = new Clasificación();
+	Clasificacion clasificacion = new Clasificacion();
 	
-	public ControladorClasificacion(Clasificación clasificacion) {
+	public ControladorClasificacion(Clasificacion clasificacion) {
 		super();
 		this.clasificacion = clasificacion;
 		this.clasificacion.btnVolver.addActionListener(this);
