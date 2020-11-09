@@ -11,6 +11,10 @@ import java.awt.Window.Type;
 
 public class Clasificacion extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	public JButton btnVolver;
 
