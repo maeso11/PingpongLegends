@@ -89,52 +89,86 @@ public class Jugadores extends JFrame {
 		lblJesus.setBounds(801, 361, 46, 14);
 		contentPane.add(lblJesus);
 		
-		JButton btnGritoDeGuerra = new JButton("INFORMACI\u00D3N");
-		btnGritoDeGuerra.addActionListener(new ActionListener() {
+		JButton btnManuel = new JButton("INFORMACI\u00D3N");
+		btnManuel.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				try {
-					
-					Clip sonido = AudioSystem.getClip();
-					sonido.open(AudioSystem.getAudioInputStream(new File("src/sonido/AUDIO.wav")));
-					
-					sonido.start();
-					
-			        } catch (Exception e) {
-			            
-			        }
-			    }
-
+				InformacionManuel im = new InformacionManuel();
+				im.setVisible(true);
+			}
 		});
-		btnGritoDeGuerra.setBounds(20, 270, 144, 40);
-		contentPane.add(btnGritoDeGuerra);
 		
-		JButton btnInformacin = new JButton("INFORMACI\u00D3N");
-		btnInformacin.setBounds(250, 270, 156, 40);
-		contentPane.add(btnInformacin);
+		btnManuel.setBounds(20, 270, 144, 40);
+		contentPane.add(btnManuel);
 		
-		JButton btnInformacin_1 = new JButton("INFORMACI\u00D3N");
-		btnInformacin_1.setBounds(489, 270, 156, 40);
-		contentPane.add(btnInformacin_1);
+		JButton btnPaco = new JButton("INFORMACI\u00D3N");
+		btnPaco.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				InformacionPaco ip = new InformacionPaco();
+				ip.setVisible(true);
+			}
+		});
+		btnPaco.setBounds(250, 270, 156, 40);
+		contentPane.add(btnPaco);
 		
-		JButton btnInformacin_2 = new JButton("INFORMACI\u00D3N");
-		btnInformacin_2.setBounds(741, 270, 155, 40);
-		contentPane.add(btnInformacin_2);
+		JButton btnVictor = new JButton("INFORMACI\u00D3N");
+		btnVictor.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				InformacionVictor iv = new InformacionVictor();
+				iv.setVisible(true);
+			}
+		});
+		btnVictor.setBounds(489, 270, 156, 40);
+		contentPane.add(btnVictor);
 		
-		JButton btnInformacin_6 = new JButton("INFORMACI\u00D3N");
-		btnInformacin_6.setBounds(741, 589, 155, 40);
-		contentPane.add(btnInformacin_6);
+		JButton btnDavid = new JButton("INFORMACI\u00D3N");
+		btnDavid.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				InformacionDavid id = new InformacionDavid();
+				id.setVisible(true);
+			}
+		});
+		btnDavid.setBounds(741, 270, 155, 40);
+		contentPane.add(btnDavid);
 		
-		JButton btnInformacin_5 = new JButton("INFORMACI\u00D3N");
-		btnInformacin_5.setBounds(489, 589, 156, 40);
-		contentPane.add(btnInformacin_5);
+		JButton btnJesus = new JButton("INFORMACI\u00D3N");
+		btnJesus.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				InformacionJesus ij = new InformacionJesus();
+				ij.setVisible(true);
+			}
+		});
+		btnJesus.setBounds(741, 589, 155, 40);
+		contentPane.add(btnJesus);
 		
-		JButton btnInformacin_4 = new JButton("INFORMACI\u00D3N");
-		btnInformacin_4.setBounds(250, 589, 156, 40);
-		contentPane.add(btnInformacin_4);
+		JButton btnMaeso = new JButton("INFORMACI\u00D3N");
+		btnMaeso.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				InformacionMaeso im = new InformacionMaeso();
+				im.setVisible(true);
+			}
+		});
+		btnMaeso.setBounds(489, 589, 156, 40);
+		contentPane.add(btnMaeso);
 		
-		JButton btnInformacin_3 = new JButton("INFORMACI\u00D3N");
-		btnInformacin_3.setBounds(20, 589, 144, 40);
-		contentPane.add(btnInformacin_3);
+		JButton btnTony = new JButton("INFORMACI\u00D3N");
+		btnTony.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				InformacionTony it = new InformacionTony();
+				it.setVisible(true);
+			}
+		});
+		btnTony.setBounds(250, 589, 156, 40);
+		contentPane.add(btnTony);
+		
+		JButton btnCarlos = new JButton("INFORMACI\u00D3N");
+		btnCarlos.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				InformacionCarlos ic = new InformacionCarlos();
+				ic.setVisible(true);
+			}
+		});
+		btnCarlos.setBounds(20, 589, 144, 40);
+		contentPane.add(btnCarlos);
 		
 		JLabel lblNewLabel = new JLabel("New label");
 		lblNewLabel.setIcon(new ImageIcon(Jugadores.class.getResource("/img/manuelTop.jpeg")));
@@ -158,7 +192,7 @@ public class Jugadores extends JFrame {
 		
 		JLabel lblNewLabel_4 = new JLabel("");
 		lblNewLabel_4.setIcon(new ImageIcon(Jugadores.class.getResource("/img/carlosTop.jpeg")));
-		lblNewLabel_4.setBounds(20, 386, 146, 207);
+		lblNewLabel_4.setBounds(20, 386, 144, 207);
 		contentPane.add(lblNewLabel_4);
 		
 		JLabel lblNewLabel_5 = new JLabel("");
