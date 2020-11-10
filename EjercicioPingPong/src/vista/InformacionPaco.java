@@ -121,7 +121,7 @@ public class InformacionPaco extends JFrame {
 		
 		JLabel lblMisil = new JLabel("FILONGO");
 		lblMisil.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
-		lblMisil.setBounds(218, 80, 68, 14);
+		lblMisil.setBounds(218, 80, 89, 14);
 		contentPane.add(lblMisil);
 		
 		JLabel label_1 = new JLabel("28");
@@ -170,8 +170,8 @@ public class InformacionPaco extends JFrame {
 		contentPane.add(label_2);
 		
 		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon(InformacionJesus.class.getResource("/gifs/ElBicho.gif")));
-		lblNewLabel.setBounds(372, 35, 409, 341);
+		lblNewLabel.setIcon(new ImageIcon(InformacionPaco.class.getResource("/gifs/paco.gif")));
+		lblNewLabel.setBounds(427, 35, 334, 322);
 		contentPane.add(lblNewLabel);
 	}
 

@@ -116,7 +116,7 @@ public class InformacionTony extends JFrame {
 		
 		JLabel lblJess = new JLabel("ANTONIO EDUARDO");
 		lblJess.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
-		lblJess.setBounds(218, 35, 68, 14);
+		lblJess.setBounds(218, 35, 180, 14);
 		contentPane.add(lblJess);
 		
 		JLabel lblMisil = new JLabel("TONY");
@@ -170,8 +170,8 @@ public class InformacionTony extends JFrame {
 		contentPane.add(label_2);
 		
 		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon(InformacionJesus.class.getResource("/gifs/ElBicho.gif")));
-		lblNewLabel.setBounds(372, 35, 409, 341);
+		lblNewLabel.setIcon(new ImageIcon(InformacionTony.class.getResource("/gifs/tony.gif")));
+		lblNewLabel.setBounds(433, 37, 348, 319);
 		contentPane.add(lblNewLabel);
 	}
 }

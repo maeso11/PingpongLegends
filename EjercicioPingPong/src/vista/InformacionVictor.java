@@ -121,7 +121,7 @@ public class InformacionVictor extends JFrame {
 		
 		JLabel lblMisil = new JLabel("MACHINEGUN");
 		lblMisil.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
-		lblMisil.setBounds(218, 80, 68, 14);
+		lblMisil.setBounds(218, 80, 144, 14);
 		contentPane.add(lblMisil);
 		
 		JLabel label_1 = new JLabel("23");
@@ -170,8 +170,8 @@ public class InformacionVictor extends JFrame {
 		contentPane.add(label_2);
 		
 		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon(InformacionJesus.class.getResource("/gifs/ElBicho.gif")));
-		lblNewLabel.setBounds(372, 35, 409, 341);
+		lblNewLabel.setIcon(new ImageIcon(InformacionVictor.class.getResource("/gifs/victor.gif")));
+		lblNewLabel.setBounds(391, 35, 362, 341);
 		contentPane.add(lblNewLabel);
 	}
 }
