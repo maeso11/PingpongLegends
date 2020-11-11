@@ -42,7 +42,7 @@ public class InformacionMaeso extends JFrame {
 	 */
 	public InformacionMaeso() {
 		setTitle("MAESO");
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
 		setBounds(100, 100, 820, 566);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
