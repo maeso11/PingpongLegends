@@ -7,10 +7,12 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import java.awt.Window.Type;
+import javax.swing.JButton;
 
 public class Resultados extends JFrame {
 
 	private JPanel contentPane;
+	public JButton btnVolver;
 
 	/**
 	 * Launch the application.
@@ -39,9 +41,12 @@ public class Resultados extends JFrame {
 		setBounds(100, 100, 972, 682);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		btnVolver = new JButton("Volver");
+		btnVolver.setBounds(313, 201, 97, 25);
+		contentPane.add(btnVolver);
 		setLocationRelativeTo(null);
 	}
-
 }

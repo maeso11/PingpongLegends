@@ -10,7 +10,7 @@ import java.awt.Window.Type;
 import javax.swing.JTextField;
 import javax.swing.JButton;
 
-public class Simulación extends JFrame {
+public class Simulacion extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField textField;
@@ -21,6 +21,8 @@ public class Simulación extends JFrame {
 	private JTextField textField_5;
 	private JTextField textField_6;
 	private JTextField textField_7;
+	public JButton btnSimular;
+	public JButton btnVolver;
 
 	/**
 	 * Launch the application.
@@ -29,7 +31,7 @@ public class Simulación extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Simulación frame = new Simulación();
+					Simulacion frame = new Simulacion();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -41,7 +43,7 @@ public class Simulación extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public Simulación() {
+	public Simulacion() {
 		setResizable(false);
 		setTitle("SIMULACI\u00D3N");
 		setType(Type.UTILITY);
@@ -92,9 +94,13 @@ public class Simulación extends JFrame {
 		contentPane.add(textField_7);
 		textField_7.setColumns(10);
 		
-		JButton btnSimular = new JButton("SIMULAR");
+		btnSimular = new JButton("SIMULAR");
 		btnSimular.setBounds(361, 522, 227, 66);
 		contentPane.add(btnSimular);
+		
+		btnVolver = new JButton("Volver");
+		btnVolver.setBounds(717, 543, 97, 25);
+		contentPane.add(btnVolver);
 		setLocationRelativeTo(null);
 	}
 }

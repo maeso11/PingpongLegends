@@ -12,7 +12,7 @@ import vista.Login;
 import vista.MenuUsuario;
 import vista.Noticias;
 import vista.Resultados;
-import vista.Simulación;
+import vista.Simulacion;
 
 public class ControladorUser implements ActionListener{
 	MenuUsuario menuUser = new MenuUsuario();
@@ -62,19 +62,19 @@ public class ControladorUser implements ActionListener{
 		
 		}else if (e.getSource() == menuUser.btnResultados) {
 			Resultados resultados = new Resultados();
-			ControladorResultados cResultados = new ControladorResultados();
+			ControladorResultados cResultados = new ControladorResultados(resultados);
 			cResultados.iniciar();
 			menuUser.setVisible(false);
 		
 		}else if (e.getSource() == menuUser.btnSimulacin) {
-			Simulación simulacion = new Simulación();
-			ControladorSimulacion cSimulacion = new ControladorSimulacion();
+			Simulacion simulacion = new Simulacion();
+			ControladorSimulacion cSimulacion = new ControladorSimulacion(simulacion);
 			cSimulacion.iniciar();
 			menuUser.setVisible(false);
 		
 		}else if (e.getSource() == menuUser.btnInformacin) {
-			Jugadores equipos = new Jugadores();
-			ControladorJugadores cJugadores = new ControladorJugadores();
+			Jugadores jugadores = new Jugadores();
+			ControladorJugadores cJugadores = new ControladorJugadores(jugadores);
 			cJugadores.iniciar();
 			menuUser.setVisible(false);
 		}

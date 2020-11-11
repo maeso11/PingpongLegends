@@ -21,6 +21,14 @@ import javax.swing.ImageIcon;
 public class Jugadores extends JFrame {
 
 	public JButton btnVolver;
+	public JButton btnManuel;
+	public JButton btnPaco;
+	public JButton btnVictor;
+	public JButton btnDavid;
+	public JButton btnJesus;
+	public JButton btnMaeso;
+	public JButton btnTony;
+	public JButton btnCarlos;
 
 	private JPanel contentPane;
 
@@ -89,84 +97,35 @@ public class Jugadores extends JFrame {
 		lblJesus.setBounds(801, 361, 46, 14);
 		contentPane.add(lblJesus);
 		
-		JButton btnManuel = new JButton("INFORMACI\u00D3N");
-		btnManuel.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				InformacionManuel im = new InformacionManuel();
-				im.setVisible(true);
-			}
-		});
-		
+		btnManuel = new JButton("INFORMACI\u00D3N");	
 		btnManuel.setBounds(20, 270, 144, 40);
 		contentPane.add(btnManuel);
 		
-		JButton btnPaco = new JButton("INFORMACI\u00D3N");
-		btnPaco.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				InformacionPaco ip = new InformacionPaco();
-				ip.setVisible(true);
-			}
-		});
+		btnPaco = new JButton("INFORMACI\u00D3N");
 		btnPaco.setBounds(250, 270, 156, 40);
 		contentPane.add(btnPaco);
 		
-		JButton btnVictor = new JButton("INFORMACI\u00D3N");
-		btnVictor.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				InformacionVictor iv = new InformacionVictor();
-				iv.setVisible(true);
-			}
-		});
+		btnVictor = new JButton("INFORMACI\u00D3N");
 		btnVictor.setBounds(489, 270, 156, 40);
 		contentPane.add(btnVictor);
 		
-		JButton btnDavid = new JButton("INFORMACI\u00D3N");
-		btnDavid.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				InformacionDavid id = new InformacionDavid();
-				id.setVisible(true);
-			}
-		});
+		btnDavid = new JButton("INFORMACI\u00D3N");
 		btnDavid.setBounds(741, 270, 155, 40);
 		contentPane.add(btnDavid);
 		
-		JButton btnJesus = new JButton("INFORMACI\u00D3N");
-		btnJesus.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				InformacionJesus ij = new InformacionJesus();
-				ij.setVisible(true);
-			}
-		});
+		btnJesus = new JButton("INFORMACI\u00D3N");
 		btnJesus.setBounds(741, 589, 155, 40);
 		contentPane.add(btnJesus);
 		
-		JButton btnMaeso = new JButton("INFORMACI\u00D3N");
-		btnMaeso.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				InformacionMaeso im = new InformacionMaeso();
-				im.setVisible(true);
-			}
-		});
+		btnMaeso = new JButton("INFORMACI\u00D3N");
 		btnMaeso.setBounds(489, 589, 156, 40);
 		contentPane.add(btnMaeso);
 		
-		JButton btnTony = new JButton("INFORMACI\u00D3N");
-		btnTony.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				InformacionTony it = new InformacionTony();
-				it.setVisible(true);
-			}
-		});
+		btnTony = new JButton("INFORMACI\u00D3N");
 		btnTony.setBounds(250, 589, 156, 40);
 		contentPane.add(btnTony);
 		
-		JButton btnCarlos = new JButton("INFORMACI\u00D3N");
-		btnCarlos.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				InformacionCarlos ic = new InformacionCarlos();
-				ic.setVisible(true);
-			}
-		});
+		btnCarlos = new JButton("INFORMACI\u00D3N");
 		btnCarlos.setBounds(20, 589, 144, 40);
 		contentPane.add(btnCarlos);
 		

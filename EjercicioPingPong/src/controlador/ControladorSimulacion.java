@@ -1,10 +1,20 @@
 package controlador;
 
-import vista.Simulación;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class ControladorSimulacion {
+import vista.MenuUsuario;
+import vista.Simulacion;
+
+public class ControladorSimulacion implements ActionListener{
 	
-	Simulación simulacion = new Simulación();
+	Simulacion simulacion = new Simulacion();
+	
+	public ControladorSimulacion(Simulacion simulacion) {
+		super();
+		this.simulacion = simulacion;
+		this.simulacion.btnVolver.addActionListener(this);
+	}
 	
 	public void iniciar() {
 		simulacion.setTitle("Ver Partido");
@@ -12,4 +22,16 @@ public class ControladorSimulacion {
 		simulacion.setVisible(true);
 		
 	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		MenuUsuario mUsuario = new MenuUsuario();
+		ControladorUser cUser = new ControladorUser(mUsuario);
+		cUser.iniciar();
+		simulacion.setVisible(false);
+		
+		
+	}
+
+
 }

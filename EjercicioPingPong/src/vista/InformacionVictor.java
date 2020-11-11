@@ -20,6 +20,8 @@ import java.awt.event.ActionEvent;
 public class InformacionVictor extends JFrame {
 
 	private JPanel contentPane;
+	public JButton btnGrito;
+	public JButton btnVolver;
 
 	/**
 	 * Launch the application.
@@ -66,31 +68,11 @@ public class InformacionVictor extends JFrame {
 		lblLiga.setBounds(24, 213, 104, 14);
 		contentPane.add(lblLiga);
 		
-		JButton btnNewButton = new JButton("GRITO");
-		btnNewButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-					try {
-					
-					Clip sonido = AudioSystem.getClip();
-					sonido.open(AudioSystem.getAudioInputStream(new File("src/sonido/VICTOR.wav")));
-					
-					sonido.start();
-					
-			        } catch (Exception u) {
-			            u.printStackTrace();
-			        }
-			}
-		});
-		btnNewButton.setBounds(524, 387, 104, 39);
-		contentPane.add(btnNewButton);
+		btnGrito = new JButton("GRITO");
+		btnGrito.setBounds(524, 387, 104, 39);
+		contentPane.add(btnGrito);
 		
-		JButton btnVolver = new JButton("VOLVER");
-		btnVolver.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				Jugadores j = new Jugadores();
-				j.setVisible(true);
-			}
-		});
+		btnVolver = new JButton("VOLVER");
 		btnVolver.setBounds(692, 482, 89, 23);
 		contentPane.add(btnVolver);
 		

@@ -20,10 +20,10 @@ public class ControladorNoticias implements ActionListener{
 		noticias.setLocationRelativeTo(null);
 		noticias.setVisible(true);
 	}
-	
 
-
-
+	/**
+	 * Vuelve al menú usuario
+	 */
 	@Override
 	public void actionPerformed(ActionEvent arg0) {
 		
