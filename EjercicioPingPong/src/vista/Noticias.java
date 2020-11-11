@@ -7,11 +7,17 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import java.awt.Window.Type;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
 
 public class Noticias extends JFrame {
 
 	private JPanel contentPane;
-
+	public JButton Volver;
 	/**
 	 * Launch the application.
 	 */
@@ -41,7 +47,18 @@ public class Noticias extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("NOTICIA");
+		lblNewLabel.setBounds(217, 57, 97, 14);
+		contentPane.add(lblNewLabel);
+		
+		JLabel lblNewLabel_1 = new JLabel("ImagenNoticias");
+		lblNewLabel_1.setBounds(217, 149, 81, 14);
+		contentPane.add(lblNewLabel_1);
+		
+		Volver = new JButton("Volver");
+		Volver.setBounds(416, 267, 89, 23);
+		contentPane.add(Volver);
 		setLocationRelativeTo(null);
 	}
-
 }

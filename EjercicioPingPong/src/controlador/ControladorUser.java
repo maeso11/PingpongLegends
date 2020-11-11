@@ -50,7 +50,7 @@ public class ControladorUser implements ActionListener{
 
 		}else if (e.getSource() == menuUser.btnNoticias) {
 			Noticias noticias = new Noticias();
-			ControladorNoticias cNoticias = new ControladorNoticias();
+			ControladorNoticias cNoticias = new ControladorNoticias(noticias);
 			cNoticias.iniciar();
 			menuUser.setVisible(false);
 
