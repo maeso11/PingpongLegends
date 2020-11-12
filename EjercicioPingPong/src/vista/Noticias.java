@@ -13,6 +13,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
+import javax.swing.JSplitPane;
 
 public class Noticias extends JFrame {
 
@@ -48,17 +49,25 @@ public class Noticias extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblNewLabel = new JLabel("NOTICIA");
-		lblNewLabel.setBounds(217, 57, 97, 14);
+		Volver = new JButton("Volver");
+		Volver.setBounds(805, 549, 89, 23);
+		contentPane.add(Volver);
+		
+		JLabel lblNewLabel = new JLabel("noticiaClasificacion");
+		lblNewLabel.setBounds(26, 99, 89, 14);
 		contentPane.add(lblNewLabel);
 		
-		JLabel lblNewLabel_1 = new JLabel("ImagenNoticias");
-		lblNewLabel_1.setBounds(217, 149, 81, 14);
+		JLabel lblNewLabel_1 = new JLabel("noticiaJugadores");
+		lblNewLabel_1.setBounds(26, 305, 89, 14);
 		contentPane.add(lblNewLabel_1);
 		
-		Volver = new JButton("Volver");
-		Volver.setBounds(416, 267, 89, 23);
-		contentPane.add(Volver);
+		JLabel lblNewLabel_2 = new JLabel("noticiaResultados");
+		lblNewLabel_2.setBounds(459, 99, 89, 14);
+		contentPane.add(lblNewLabel_2);
+		
+		JLabel lblNewLabel_3 = new JLabel("NoticiaSimulacion");
+		lblNewLabel_3.setBounds(459, 305, 114, 14);
+		contentPane.add(lblNewLabel_3);
 		setLocationRelativeTo(null);
 	}
 }
