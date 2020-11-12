@@ -153,7 +153,7 @@ public class InformacionCarlos extends JFrame {
 		contentPane.add(label_2);
 		
 		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon(InformacionJesus.class.getResource("/gifs/ElBicho.gif")));
+		lblNewLabel.setIcon(new ImageIcon(InformacionJesus.class.getResource("/gifs/carlos.gif")));
 		lblNewLabel.setBounds(408, 35, 373, 341);
 		contentPane.add(lblNewLabel);
 	}

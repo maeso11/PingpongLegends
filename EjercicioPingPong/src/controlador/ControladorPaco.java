@@ -38,7 +38,7 @@ public class ControladorPaco implements ActionListener{
 			try {
 				
 				Clip sonido = AudioSystem.getClip();
-				sonido.open(AudioSystem.getAudioInputStream(new File("src/sonido/AUDIO.wav")));
+				sonido.open(AudioSystem.getAudioInputStream(new File("src/sonido/paco.wav")));
 				
 				sonido.start();
 				

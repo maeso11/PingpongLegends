@@ -38,7 +38,7 @@ public class ControladorManuel implements ActionListener{
 			try {
 				
 				Clip sonido = AudioSystem.getClip();
-				sonido.open(AudioSystem.getAudioInputStream(new File("src/sonido/AUDIO.wav")));
+				sonido.open(AudioSystem.getAudioInputStream(new File("src/sonido/manuel.wav")));
 				
 				sonido.start();
 				
