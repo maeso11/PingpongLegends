@@ -19,6 +19,7 @@ public class Login extends JFrame {
 	public JTextField txtUser;
 	public JPasswordField txtPassword;
 	public JButton btnEntrar;
+	public JButton btnVolver;
 	
 
 	/**
@@ -43,7 +44,6 @@ public class Login extends JFrame {
 	public Login() {
 		setResizable(false);
 		setTitle("LOGIN");
-		setType(Type.UTILITY);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 932, 702);
 		contentPane = new JPanel();
@@ -71,10 +71,11 @@ public class Login extends JFrame {
 		
 		btnEntrar = new JButton("ENTRAR");
 		
-		btnEntrar.setBounds(349, 406, 89, 23);
+		btnEntrar.setBounds(434, 607, 89, 23);
 		contentPane.add(btnEntrar);
+		
+		btnVolver = new JButton("VOLVER");
+		btnVolver.setBounds(223, 607, 89, 23);
+		contentPane.add(btnVolver);
 	}
-	
-	
-
 }

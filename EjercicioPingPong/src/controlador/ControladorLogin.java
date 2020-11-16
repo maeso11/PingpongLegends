@@ -6,7 +6,9 @@ import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
 
 import modelo.ModeloLogin;
+import vista.Jugadores;
 import vista.Login;
+import vista.Menu;
 import vista.MenuUsuario;
 
 public class ControladorLogin implements ActionListener {
@@ -18,6 +20,7 @@ public class ControladorLogin implements ActionListener {
 		this.l = l;
 		this.m = m;
 		this.l.btnEntrar.addActionListener(this);
+		this.l.btnVolver.addActionListener(this);
 	}
 	public void iniciar () {
 		l.setTitle("Menú Inicio");
@@ -27,12 +30,17 @@ public class ControladorLogin implements ActionListener {
 
 
 
-	public void actionPerformed(ActionEvent arg0) {
+	public void actionPerformed(ActionEvent e) {
 
 		ControladorAdmin cAdmin = new ControladorAdmin();
 		MenuUsuario menuUser = new MenuUsuario();
 		ControladorUser cUser = new ControladorUser(menuUser);
-
+		Menu menu = new Menu();
+		
+		if (e.getSource() == l.btnVolver) {
+			menu.setVisible(true);
+			l.setVisible(false);
+		}else {
 		if(l.txtUser.getText().equals(m.getUser()) && l.txtPassword.getText().equals(m.getPass())) {
 			JOptionPane.showMessageDialog(null, "Has accedido como administrador");
 			cAdmin.iniciar();
@@ -43,6 +51,7 @@ public class ControladorLogin implements ActionListener {
 			JOptionPane.showMessageDialog(null, "Has accedido como usuario");
 			cUser.iniciar();
 			l.setVisible(false);
+		}
 		}
 	}
     

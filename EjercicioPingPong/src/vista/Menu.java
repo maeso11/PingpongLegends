@@ -61,6 +61,7 @@ public class Menu extends JFrame {
 				ModeloLogin mLogin = new ModeloLogin();
 				Login login = new Login();
 				ControladorLogin cLogin = new ControladorLogin(login, mLogin);
+				dispose();
 				cLogin.iniciar();
 			}
 		});
