@@ -14,6 +14,7 @@ import java.awt.event.ActionEvent;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JSplitPane;
+import java.awt.Toolkit;
 
 public class Noticias extends JFrame {
 
@@ -39,18 +40,18 @@ public class Noticias extends JFrame {
 	 * Create the frame.
 	 */
 	public Noticias() {
-		setType(Type.UTILITY);
+		setIconImage(Toolkit.getDefaultToolkit().getImage(Noticias.class.getResource("/img/palas.png")));
 		setTitle("NOTICIAS");
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 1014, 701);
+		setBounds(100, 100, 915, 650);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
 		Volver = new JButton("Volver");
-		Volver.setBounds(805, 549, 89, 23);
+		Volver.setBounds(751, 484, 89, 23);
 		contentPane.add(Volver);
 		
 		JLabel lblNewLabel = new JLabel("noticiaClasificacion");

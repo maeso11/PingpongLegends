@@ -47,7 +47,7 @@ public class MenuUsuario extends JFrame {
 		setResizable(false);
 		setType(Type.UTILITY);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 909, 684);
+		setBounds(100, 100, 915, 650);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -75,12 +75,12 @@ public class MenuUsuario extends JFrame {
 		contentPane.add(btnClasificacin);
 		
 		btnCerrarSesin = new JButton("CERRAR SESI\u00D3N");
-		btnCerrarSesin.setBounds(760, 243, 142, 39);
+		btnCerrarSesin.setBounds(767, 243, 142, 39);
 		contentPane.add(btnCerrarSesin);
 		
 		JLabel lblNewLabel = new JLabel("");
 		lblNewLabel.setIcon(new ImageIcon(MenuUsuario.class.getResource("/img/BannerOficial2.JPG")));
-		lblNewLabel.setBounds(0, 0, 914, 245);
+		lblNewLabel.setBounds(0, 0, 919, 245);
 		contentPane.add(lblNewLabel);
 		setLocationRelativeTo(null);
 	}

@@ -8,6 +8,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import java.awt.Window.Type;
+import java.awt.Toolkit;
 
 public class Clasificacion extends JFrame {
 
@@ -38,11 +39,11 @@ public class Clasificacion extends JFrame {
 	 * Create the frame.
 	 */
 	public Clasificacion() {
+		setIconImage(Toolkit.getDefaultToolkit().getImage(Clasificacion.class.getResource("/img/palas.png")));
 		setTitle("CLASIFICACI\u00D3N");
-		setType(Type.UTILITY);
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 1014, 678);
+		setBounds(100, 100, 915, 650);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);

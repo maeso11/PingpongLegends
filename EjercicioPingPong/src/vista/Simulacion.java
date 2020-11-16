@@ -9,6 +9,7 @@ import javax.swing.border.EmptyBorder;
 import java.awt.Window.Type;
 import javax.swing.JTextField;
 import javax.swing.JButton;
+import java.awt.Toolkit;
 
 public class Simulacion extends JFrame {
 
@@ -44,11 +45,11 @@ public class Simulacion extends JFrame {
 	 * Create the frame.
 	 */
 	public Simulacion() {
+		setIconImage(Toolkit.getDefaultToolkit().getImage(Simulacion.class.getResource("/img/palas.png")));
 		setResizable(false);
 		setTitle("SIMULACI\u00D3N");
-		setType(Type.UTILITY);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 1010, 689);
+		setBounds(100, 100, 915, 650);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -95,7 +96,7 @@ public class Simulacion extends JFrame {
 		textField_7.setColumns(10);
 		
 		btnSimular = new JButton("SIMULAR");
-		btnSimular.setBounds(361, 522, 227, 66);
+		btnSimular.setBounds(337, 494, 227, 66);
 		contentPane.add(btnSimular);
 		
 		btnVolver = new JButton("Volver");

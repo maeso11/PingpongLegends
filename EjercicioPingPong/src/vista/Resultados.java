@@ -8,6 +8,7 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import java.awt.Window.Type;
 import javax.swing.JButton;
+import java.awt.Toolkit;
 
 public class Resultados extends JFrame {
 
@@ -34,11 +35,11 @@ public class Resultados extends JFrame {
 	 * Create the frame.
 	 */
 	public Resultados() {
-		setType(Type.UTILITY);
+		setIconImage(Toolkit.getDefaultToolkit().getImage(Resultados.class.getResource("/img/palas.png")));
 		setTitle("RESULTADOS");
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 972, 682);
+		setBounds(100, 100, 915, 650);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);

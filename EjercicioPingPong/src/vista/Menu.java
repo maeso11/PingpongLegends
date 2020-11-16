@@ -47,7 +47,7 @@ public class Menu extends JFrame {
 		setTitle("MENU");
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 923, 654);
+		setBounds(100, 100, 915, 650);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -68,14 +68,14 @@ public class Menu extends JFrame {
 		
 		JLabel lblNewLabel_1 = new JLabel("");
 		lblNewLabel_1.setIcon(new ImageIcon(Menu.class.getResource("/img/LogoPingPong.png")));
-		lblNewLabel_1.setBounds(158, 54, 600, 399);
+		lblNewLabel_1.setBounds(156, 54, 600, 399);
 		contentPane.add(lblNewLabel_1);
-		btnLogin.setBounds(389, 520, 136, 59);
+		btnLogin.setBounds(388, 484, 136, 59);
 		contentPane.add(btnLogin);
 		
 		JLabel lblNewLabel = new JLabel("");
 		lblNewLabel.setIcon(new ImageIcon(Menu.class.getResource("/img/fondoVerde.jpg")));
-		lblNewLabel.setBounds(0, 0, 917, 625);
+		lblNewLabel.setBounds(0, 0, 909, 625);
 		contentPane.add(lblNewLabel);
 	}
 }

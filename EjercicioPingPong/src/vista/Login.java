@@ -12,6 +12,7 @@ import javax.swing.JLabel;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.Toolkit;
 
 public class Login extends JFrame {
 
@@ -42,10 +43,11 @@ public class Login extends JFrame {
 	 * Create the frame.
 	 */
 	public Login() {
+		setIconImage(Toolkit.getDefaultToolkit().getImage(Login.class.getResource("/img/palas.png")));
 		setResizable(false);
 		setTitle("LOGIN");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 932, 702);
+		setBounds(100, 100, 915, 650);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -71,11 +73,11 @@ public class Login extends JFrame {
 		
 		btnEntrar = new JButton("ENTRAR");
 		
-		btnEntrar.setBounds(434, 607, 89, 23);
+		btnEntrar.setBounds(520, 521, 89, 23);
 		contentPane.add(btnEntrar);
 		
 		btnVolver = new JButton("VOLVER");
-		btnVolver.setBounds(223, 607, 89, 23);
+		btnVolver.setBounds(270, 521, 89, 23);
 		contentPane.add(btnVolver);
 	}
 }
