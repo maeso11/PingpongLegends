@@ -10,11 +10,9 @@ import modelo.Informacion;
 import vista.InformacionJugador;
 import vista.Jugadores;
 import vista.MenuUsuario;
-<<<<<<< HEAD
-=======
 import vista.Resultados;
 import vista.Simulacion;
->>>>>>> branch 'master' of https://github.com/maeso11/PingpongLegends.git
+
 
 public class ControladorJugadores implements ActionListener {
 
