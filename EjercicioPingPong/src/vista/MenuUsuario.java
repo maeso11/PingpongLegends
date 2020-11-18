@@ -12,6 +12,7 @@ import javax.swing.JMenuBar;
 import java.awt.Color;
 import javax.swing.JLabel;
 import javax.swing.ImageIcon;
+import java.awt.Toolkit;
 
 public class MenuUsuario extends JFrame {
 
@@ -43,9 +44,9 @@ public class MenuUsuario extends JFrame {
 	 * Create the frame.
 	 */
 	public MenuUsuario() {
+		setIconImage(Toolkit.getDefaultToolkit().getImage(MenuUsuario.class.getResource("/img/palas.png")));
 		setTitle("MENU");
 		setResizable(false);
-		setType(Type.UTILITY);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 915, 650);
 		contentPane = new JPanel();

@@ -64,7 +64,7 @@ public class Jugadores extends JFrame {
 		setResizable(false);
 
 		btnVolver = new JButton("VOLVER");
-		btnVolver.setBounds(926, 607, 89, 34);
+		btnVolver.setBounds(794, 565, 90, 34);
 		contentPane.add(btnVolver);
 		
 		JLabel lblManuel = new JLabel("MANUEL");
@@ -72,15 +72,15 @@ public class Jugadores extends JFrame {
 		contentPane.add(lblManuel);
 		
 		JLabel lblPaco = new JLabel("PACO");
-		lblPaco.setBounds(316, 25, 46, 14);
+		lblPaco.setBounds(261, 25, 46, 14);
 		contentPane.add(lblPaco);
 		
 		JLabel lblVictor = new JLabel("VICTOR");
-		lblVictor.setBounds(554, 25, 46, 14);
+		lblVictor.setBounds(460, 25, 46, 14);
 		contentPane.add(lblVictor);
 		
 		JLabel lblDavid = new JLabel("DAVID");
-		lblDavid.setBounds(801, 25, 46, 14);
+		lblDavid.setBounds(669, 25, 46, 14);
 		contentPane.add(lblDavid);
 		
 		JLabel lblCarlos = new JLabel("CARLOS");
@@ -88,15 +88,15 @@ public class Jugadores extends JFrame {
 		contentPane.add(lblCarlos);
 		
 		JLabel lblTony = new JLabel("TONY");
-		lblTony.setBounds(316, 334, 46, 14);
+		lblTony.setBounds(261, 334, 46, 14);
 		contentPane.add(lblTony);
 		
 		JLabel lblAlejandro = new JLabel("MAESO");
-		lblAlejandro.setBounds(554, 334, 144, 14);
+		lblAlejandro.setBounds(460, 334, 144, 14);
 		contentPane.add(lblAlejandro);
 		
 		JLabel lblJesus = new JLabel("JESUS");
-		lblJesus.setBounds(801, 334, 46, 14);
+		lblJesus.setBounds(669, 334, 46, 14);
 		contentPane.add(lblJesus);
 		
 		btnManuel = new JButton("INFORMACI\u00D3N");	
@@ -104,27 +104,27 @@ public class Jugadores extends JFrame {
 		contentPane.add(btnManuel);
 		
 		btnPaco = new JButton("INFORMACI\u00D3N");
-		btnPaco.setBounds(250, 249, 156, 40);
+		btnPaco.setBounds(203, 249, 156, 40);
 		contentPane.add(btnPaco);
 		
 		btnVictor = new JButton("INFORMACI\u00D3N");
-		btnVictor.setBounds(489, 249, 156, 40);
+		btnVictor.setBounds(400, 249, 156, 40);
 		contentPane.add(btnVictor);
 		
 		btnDavid = new JButton("INFORMACI\u00D3N");
-		btnDavid.setBounds(741, 249, 155, 40);
+		btnDavid.setBounds(602, 249, 155, 40);
 		contentPane.add(btnDavid);
 		
 		btnJesus = new JButton("INFORMACI\u00D3N");
-		btnJesus.setBounds(741, 562, 155, 40);
+		btnJesus.setBounds(602, 562, 155, 40);
 		contentPane.add(btnJesus);
 		
 		btnMaeso = new JButton("INFORMACI\u00D3N");
-		btnMaeso.setBounds(489, 562, 156, 40);
+		btnMaeso.setBounds(400, 562, 156, 40);
 		contentPane.add(btnMaeso);
 		
 		btnTony = new JButton("INFORMACI\u00D3N");
-		btnTony.setBounds(250, 562, 156, 40);
+		btnTony.setBounds(203, 562, 156, 40);
 		contentPane.add(btnTony);
 		
 		btnCarlos = new JButton("INFORMACI\u00D3N");
@@ -138,17 +138,17 @@ public class Jugadores extends JFrame {
 		
 		JLabel lblNewLabel_1 = new JLabel("");
 		lblNewLabel_1.setIcon(new ImageIcon(Jugadores.class.getResource("/img/pacoTop.jpeg")));
-		lblNewLabel_1.setBounds(251, 46, 155, 207);
+		lblNewLabel_1.setBounds(203, 46, 155, 207);
 		contentPane.add(lblNewLabel_1);
 		
 		JLabel lblNewLabel_2 = new JLabel("");
 		lblNewLabel_2.setIcon(new ImageIcon(Jugadores.class.getResource("/img/victorTop.jpeg")));
-		lblNewLabel_2.setBounds(489, 50, 155, 207);
+		lblNewLabel_2.setBounds(400, 46, 155, 207);
 		contentPane.add(lblNewLabel_2);
 		
 		JLabel lblNewLabel_3 = new JLabel("");
 		lblNewLabel_3.setIcon(new ImageIcon(Jugadores.class.getResource("/img/DAVIDITOP.jpg")));
-		lblNewLabel_3.setBounds(741, 50, 155, 207);
+		lblNewLabel_3.setBounds(602, 46, 155, 207);
 		contentPane.add(lblNewLabel_3);
 		
 		JLabel lblNewLabel_4 = new JLabel("");
@@ -158,17 +158,17 @@ public class Jugadores extends JFrame {
 		
 		JLabel lblNewLabel_5 = new JLabel("");
 		lblNewLabel_5.setIcon(new ImageIcon(Jugadores.class.getResource("/img/tonyTop.jpeg")));
-		lblNewLabel_5.setBounds(250, 359, 155, 207);
+		lblNewLabel_5.setBounds(203, 359, 155, 207);
 		contentPane.add(lblNewLabel_5);
 		
 		JLabel lblNewLabel_6 = new JLabel("");
 		lblNewLabel_6.setIcon(new ImageIcon(Jugadores.class.getResource("/img/maesoTOP.jpeg")));
-		lblNewLabel_6.setBounds(489, 359, 155, 207);
+		lblNewLabel_6.setBounds(400, 359, 155, 207);
 		contentPane.add(lblNewLabel_6);
 		
 		JLabel lblNewLabel_7 = new JLabel("");
 		lblNewLabel_7.setIcon(new ImageIcon(Jugadores.class.getResource("/img/jesusTop.jpeg")));
-		lblNewLabel_7.setBounds(741, 359, 155, 207);
+		lblNewLabel_7.setBounds(602, 359, 155, 207);
 		contentPane.add(lblNewLabel_7);
 		setLocationRelativeTo(null);
 	}
