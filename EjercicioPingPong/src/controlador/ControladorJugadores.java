@@ -18,7 +18,6 @@ import vista.InformacionVictor;
 import vista.Jugadores;
 import vista.Login;
 import vista.MenuUsuario;
-import vista.Noticias;
 import vista.Resultados;
 import vista.Simulacion;
 

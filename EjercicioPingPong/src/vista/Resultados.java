@@ -238,8 +238,8 @@ public class Resultados extends JFrame {
 		JButton btnNewButton = new JButton("NOTICIAS");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Noticias noticias= new Noticias();
-				noticias.setVisible(true);
+				MenuUsuario menuusuario= new MenuUsuario();
+				menuusuario.setVisible(true);
 			}
 		});
 		btnNewButton.setBounds(431, 94, 171, 50);
