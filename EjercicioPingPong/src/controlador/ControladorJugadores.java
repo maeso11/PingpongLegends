@@ -2,27 +2,16 @@ package controlador;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
-import javax.swing.JOptionPane;
-
-import modelo.ModeloLogin;
-import vista.Clasificacion;
-import vista.InformacionCarlos;
-import vista.InformacionDavid;
-import vista.InformacionJesus;
-import vista.InformacionMaeso;
-import vista.InformacionManuel;
-import vista.InformacionPaco;
-import vista.InformacionTony;
-import vista.InformacionVictor;
+import java.io.IOException;
+import java.sql.SQLException;
+import javax.swing.ImageIcon;
+import connection.EstableceConexion;
+import modelo.Informacion;
+import vista.InformacionJugador;
 import vista.Jugadores;
-import vista.Login;
 import vista.MenuUsuario;
-import vista.Noticias;
-import vista.Resultados;
-import vista.Simulacion;
 
-public class ControladorJugadores implements ActionListener{
+public class ControladorJugadores implements ActionListener {
 
 	Jugadores jugadores = new Jugadores();
 
@@ -49,54 +38,75 @@ public class ControladorJugadores implements ActionListener{
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-
-		if(e.getSource() == jugadores.btnVolver) {
+		Informacion datos = null;
+		InformacionJugador info = new InformacionJugador();
+		ControladorInformacion cInfo = new ControladorInformacion(info);
+		EstableceConexion conexion = new EstableceConexion();
+		if (e.getSource() == jugadores.btnVolver) {
 			MenuUsuario mUser = new MenuUsuario();
 			ControladorUser cUser = new ControladorUser(mUser);
 			cUser.iniciar();
 			jugadores.setVisible(false);
-		}else if (e.getSource() == jugadores.btnCarlos) {
-			InformacionCarlos carlos = new InformacionCarlos();
-			ControladorCarlos cCarlos = new ControladorCarlos(carlos);
-			cCarlos.iniciar();
-			jugadores.setVisible(false);
-		}else if (e.getSource() == jugadores.btnDavid) {
-			InformacionDavid david = new InformacionDavid();
-			ControladorDavid cDavid = new ControladorDavid(david);
-			cDavid.iniciar();
-			jugadores.setVisible(false);	
-		}else if (e.getSource() == jugadores.btnJesus) {
-			InformacionJesus jesus = new InformacionJesus();
-			ControladorJesus cJesus = new ControladorJesus(jesus);
-			cJesus.iniciar();
-			jugadores.setVisible(false);
-		}else if (e.getSource() == jugadores.btnMaeso) {
-			InformacionMaeso maeso = new InformacionMaeso();
-			ControladorMaeso cMaeso= new ControladorMaeso(maeso);
-			cMaeso.iniciar();
-			jugadores.setVisible(false);
-		}else if (e.getSource() == jugadores.btnManuel) {
-			InformacionManuel manuel = new InformacionManuel();
-			ControladorManuel cManuel = new ControladorManuel(manuel);
-			cManuel.iniciar();
-			jugadores.setVisible(false);
-		}else if (e.getSource() == jugadores.btnPaco) {
-			InformacionPaco paco = new InformacionPaco();
-			ControladorPaco cPaco = new ControladorPaco(paco);
-			cPaco.iniciar();
-			jugadores.setVisible(false);
-		}else if (e.getSource() == jugadores.btnTony) {
-			InformacionTony tony = new InformacionTony();
-			ControladorTony cTony = new ControladorTony(tony);
-			cTony.iniciar();
-			jugadores.setVisible(false);
-		}else if (e.getSource() == jugadores.btnVictor) {
-			InformacionVictor victor = new InformacionVictor();
-			ControladorVictor cVictor = new ControladorVictor(victor);
-			cVictor.iniciar();
-			jugadores.setVisible(false);
+
+			// Información Carlos
+		} else if (e.getSource() == jugadores.btnCarlos) {
+
+			datosAVista(datos, info, conexion, cInfo, "CARLOS");
+
+			// Información David
+		} else if (e.getSource() == jugadores.btnDavid) {
+
+			datosAVista(datos, info, conexion, cInfo, "DAVID");
+
+			// Informacion Jesus
+		} else if (e.getSource() == jugadores.btnJesus) {
+			datosAVista(datos, info, conexion, cInfo, "JESUS");
+
+			// Informacion Antonio
+		} else if (e.getSource() == jugadores.btnMaeso) {
+			datosAVista(datos, info, conexion, cInfo, "ANTONIO");
+
+			// Informacion Manuel
+		} else if (e.getSource() == jugadores.btnManuel) {
+			datosAVista(datos, info, conexion, cInfo, "MANUEL");
+
+			// Informacion Paco
+		} else if (e.getSource() == jugadores.btnPaco) {
+			datosAVista(datos, info, conexion, cInfo, "PACO");
+
+			// Informacion Antonio Eduardo
+		} else if (e.getSource() == jugadores.btnTony) {
+			datosAVista(datos, info, conexion, cInfo, "ANTONIO EDUARDO");
+
+			// Informacion Victor
+		} else if (e.getSource() == jugadores.btnVictor) {
+			datosAVista(datos, info, conexion, cInfo, "VICTOR");
 		}
-		
+
+	}
+
+	public void datosAVista(Informacion datos, InformacionJugador info, EstableceConexion conexion,
+			ControladorInformacion cCarlos, String nombre) {
+
+		try {
+			datos = conexion.devuelveDatos(nombre);
+			info.lblAlias.setText(datos.getAlias());
+			info.lblAtaque.setText(datos.getAtaque());
+			info.lblCiudad.setText(datos.getCiudad());
+			info.lblDefensa.setText(datos.getDefensa());
+			info.lblEdad.setText(String.valueOf(datos.getEdad()));
+			info.lblGolpeEstrella.setText(datos.getGolpeEstrella());
+			info.lblLateralidad.setText(datos.getLateralidad());
+			info.lblLiga.setText(datos.getLiga());
+			info.lblNombre.setText(datos.getNombre());
+			info.lblGif.setIcon(new ImageIcon(InformacionJugador.class.getResource(datos.getGif())));
+
+		} catch (ClassNotFoundException | SQLException | IOException e1) {
+			e1.printStackTrace();
+		}
+
+		cCarlos.iniciar();
+		jugadores.setVisible(false);
 	}
 
 }
