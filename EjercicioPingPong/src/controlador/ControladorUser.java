@@ -10,7 +10,6 @@ import vista.Clasificacion;
 import vista.Jugadores;
 import vista.Login;
 import vista.MenuUsuario;
-import vista.Noticias;
 import vista.Resultados;
 import vista.Simulacion;
 
@@ -22,7 +21,6 @@ public class ControladorUser implements ActionListener{
 		super();
 		this.menuUser = menuUser;
 		this.menuUser.btnCerrarSesin.addActionListener(this);
-		this.menuUser.btnNoticias.addActionListener(this);
 		this.menuUser.btnClasificacin.addActionListener(this);
 		this.menuUser.btnInformacin.addActionListener(this);
 		this.menuUser.btnResultados.addActionListener(this);
@@ -47,12 +45,6 @@ public class ControladorUser implements ActionListener{
 			cLogin.iniciar();
 			menuUser.setVisible(false);
 			JOptionPane.showMessageDialog(null, "Has cerrado sesión correctamente");
-
-		}else if (e.getSource() == menuUser.btnNoticias) {
-			Noticias noticias = new Noticias();
-			ControladorNoticias cNoticias = new ControladorNoticias(noticias);
-			cNoticias.iniciar();
-			menuUser.setVisible(false);
 
 		}else if (e.getSource() == menuUser.btnClasificacin) {
 			Clasificacion clasificacion = new Clasificacion();
