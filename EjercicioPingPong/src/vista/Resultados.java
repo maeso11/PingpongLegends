@@ -113,7 +113,7 @@ public class Resultados extends JFrame {
 		contentPane.add(lblNewLabel_3);
 		
 		JLabel lblNewLabel_4 = new JLabel("MANUEL");
-		lblNewLabel_4.setBounds(282, 444, 46, 14);
+		lblNewLabel_4.setBounds(282, 444, 57, 14);
 		contentPane.add(lblNewLabel_4);
 		
 		JLabel lblNewLabel_5 = new JLabel("CARLOS");
@@ -236,10 +236,22 @@ public class Resultados extends JFrame {
 		contentPane.add(lblNovedades);
 		
 		JButton btnNewButton = new JButton("NOTICIAS");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Noticias noticias= new Noticias();
+				noticias.setVisible(true);
+			}
+		});
 		btnNewButton.setBounds(431, 94, 171, 50);
 		contentPane.add(btnNewButton);
 		
 		JButton btnJugadores = new JButton("JUGADORES");
+		btnJugadores.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Jugadores jugadores = new Jugadores();
+				jugadores.setVisible(true);
+			}
+		});
 		btnJugadores.setBounds(220, 95, 157, 48);
 		contentPane.add(btnJugadores);
 		
