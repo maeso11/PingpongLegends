@@ -19,7 +19,7 @@ import java.io.File;
 import java.awt.event.ActionEvent;
 import java.awt.Toolkit;
 
-public class InformacionCarlos extends JFrame {
+public class InformacionJugador extends JFrame {
 
 	private JPanel contentPane;
 	public JButton btnVolver;
@@ -42,7 +42,7 @@ public class InformacionCarlos extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					InformacionCarlos frame = new InformacionCarlos();
+					InformacionJugador frame = new InformacionJugador();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -54,9 +54,9 @@ public class InformacionCarlos extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public InformacionCarlos() {
-		setIconImage(Toolkit.getDefaultToolkit().getImage(InformacionCarlos.class.getResource("/img/palas.png")));
-		setTitle("CARLOS");
+	public InformacionJugador() {
+		setIconImage(Toolkit.getDefaultToolkit().getImage(InformacionJugador.class.getResource("/img/palas.png")));
+		setTitle("INFORMACIÓN JUGADOR");
 		setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
 		setBounds(100, 100, 915, 650);
 		contentPane = new JPanel();
@@ -65,6 +65,11 @@ public class InformacionCarlos extends JFrame {
 		contentPane.setLayout(null);
 		setLocationRelativeTo(null);
 		setResizable(false);
+		// Edad
+		lblEdad = new JLabel("");
+		lblEdad.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
+		lblEdad.setBounds(218, 125, 98, 14);
+		contentPane.add(lblEdad);
 
 		JLabel lbl1 = new JLabel("NOMBRE:");
 		lbl1.setFont(new Font("Tahoma", Font.PLAIN, 15));
@@ -82,11 +87,11 @@ public class InformacionCarlos extends JFrame {
 		contentPane.add(lbl5);
 
 		btnGrito = new JButton("GRITO");
-		btnGrito.setBounds(524, 387, 104, 39);
+		btnGrito.setBounds(581, 434, 104, 39);
 		contentPane.add(btnGrito);
 
 		btnVolver = new JButton("VOLVER");
-		btnVolver.setBounds(692, 482, 89, 23);
+		btnVolver.setBounds(786, 568, 89, 23);
 		contentPane.add(btnVolver);
 
 		JLabel lbl6 = new JLabel("LATELARIDAD:");
@@ -124,27 +129,22 @@ public class InformacionCarlos extends JFrame {
 		// Nombre
 		lblNombre = new JLabel("");
 		lblNombre.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
-		lblNombre.setBounds(218, 35, 98, 14);
+		lblNombre.setBounds(218, 35, 149, 14);
 		contentPane.add(lblNombre);
 		// Alias
 		lblAlias = new JLabel("");
 		lblAlias.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
-		lblAlias.setBounds(218, 80, 98, 14);
+		lblAlias.setBounds(218, 80, 149, 14);
 		contentPane.add(lblAlias);
-		// Edad
-		lblEdad = new JLabel("");
-		lblEdad.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
-		lblEdad.setBounds(218, 125, 68, 14);
-		contentPane.add(lblEdad);
 		// Liga
 		lblLiga = new JLabel("");
 		lblLiga.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
-		lblLiga.setBounds(218, 213, 120, 14);
+		lblLiga.setBounds(218, 213, 149, 14);
 		contentPane.add(lblLiga);
 		// Lateralidad
 		lblLateralidad = new JLabel("");
 		lblLateralidad.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
-		lblLateralidad.setBounds(218, 260, 120, 14);
+		lblLateralidad.setBounds(218, 260, 149, 14);
 		contentPane.add(lblLateralidad);
 		// Golpe Estrella
 		lblGolpeEstrella = new JLabel("");
@@ -154,7 +154,7 @@ public class InformacionCarlos extends JFrame {
 		// Ciudad
 		lblCiudad = new JLabel("");
 		lblCiudad.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
-		lblCiudad.setBounds(218, 168, 120, 14);
+		lblCiudad.setBounds(218, 168, 149, 14);
 		contentPane.add(lblCiudad);
 		// Ataque
 		lblAtaque = new JLabel("");
@@ -168,8 +168,8 @@ public class InformacionCarlos extends JFrame {
 		contentPane.add(lblDefensa);
 		// Gif
 		lblGif = new JLabel("");
-		lblGif.setIcon(new ImageIcon(InformacionJesus.class.getResource("")));
-		lblGif.setBounds(408, 35, 373, 341);
+		lblGif.setIcon(new ImageIcon(InformacionJugador.class.getResource("")));
+		lblGif.setBounds(441, 35, 387, 376);
 		contentPane.add(lblGif);
 	}
 }

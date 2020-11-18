@@ -1,10 +1,15 @@
 package connection;
 
 import java.io.FileReader;
+import modelo.Informacion;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Properties;
 
 public class EstableceConexion {
@@ -55,5 +60,56 @@ public class EstableceConexion {
 			e.printStackTrace();
 			throw e;
 		}
+	}
+
+	public Informacion devuelveDatos(String nombre) throws ClassNotFoundException, SQLException, IOException {
+		Connection connection = null;
+		PreparedStatement preparedStatement = null;
+		ResultSet resultSet = null;
+		Informacion informacion = null;
+		String sentenciaSqle = "SELECT * FROM INFORMACION WHERE NOMBRE= ?";
+		try {
+			connection = connectionByProp();
+			preparedStatement = connection.prepareStatement(sentenciaSqle);
+			preparedStatement.setString(1, nombre);
+			resultSet = preparedStatement.executeQuery();
+			if (resultSet.next()) {
+				informacion = new Informacion();
+				informacion.setNombre(resultSet.getString("NOMBRE"));
+				informacion.setAlias(resultSet.getString("ALIAS"));
+				informacion.setAtaque(resultSet.getString("ATAQUE"));
+				informacion.setDefensa(resultSet.getString("DEFENSA"));
+				informacion.setCiudad(resultSet.getString("CIUDAD"));
+				informacion.setEdad(resultSet.getInt("EDAD"));
+				informacion.setGif(resultSet.getString("GIF"));
+				informacion.setGolpeEstrella(resultSet.getString("GOLPE_ESTRELLA"));
+				informacion.setGrito(resultSet.getString("GRITO"));
+				informacion.setLateralidad(resultSet.getString("LATERALIDAD"));
+				informacion.setLiga(resultSet.getString("LIGA"));
+			}
+		} catch (ClassNotFoundException | SQLException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if (resultSet != null) {
+					resultSet.close();
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			try {
+				if (preparedStatement != null) {
+					preparedStatement.close();
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			try {
+				disconect(connection);
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+		return informacion;
 	}
 }
