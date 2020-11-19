@@ -138,14 +138,14 @@ public class Jugadores extends JFrame {
 		btnVictor.setBackground(new Color(34, 139, 34));
 		btnVictor.setForeground(Color.WHITE);
 		btnVictor.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
-		btnVictor.setBounds(729, 234, 156, 40);
+		btnVictor.setBounds(498, 234, 156, 40);
 		contentPane.add(btnVictor);
 
 		btnDavid = new JButton("INFORMACI\u00D3N");
 		btnDavid.setBackground(new Color(34, 139, 34));
 		btnDavid.setForeground(Color.WHITE);
 		btnDavid.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
-		btnDavid.setBounds(498, 234, 156, 40);
+		btnDavid.setBounds(729, 234, 156, 40);
 		contentPane.add(btnDavid);
 
 		btnJesus = new JButton("INFORMACI\u00D3N");
