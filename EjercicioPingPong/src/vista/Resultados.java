@@ -21,6 +21,10 @@ public class Resultados extends JFrame {
 
 	private JPanel contentPane;
 	public JButton btnVolver;
+	public JButton btnNoticias;
+	public JButton btnActualizar;
+	public JButton btnJugadores;
+	
 	private JTextField textField;
 	private JTextField textField_1;
 	private JTextField textField_2;
@@ -61,12 +65,6 @@ public class Resultados extends JFrame {
 		contentPane.setLayout(null);
 		
 		btnVolver = new JButton("Volver");
-		btnVolver.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				MenuUsuario menuusuario = new MenuUsuario();
-				menuusuario.setVisible(true);
-			}
-		});
 		
 		JLabel label_3 = new JLabel("");
 		label_3.setBounds(446, 313, 0, 0);
@@ -84,14 +82,7 @@ public class Resultados extends JFrame {
 		lblNewLabel.setBounds(0, 11, 210, 133);
 		contentPane.add(lblNewLabel);
 		
-		JButton btnActualizar = new JButton("ACTUALIZAR");
-		btnActualizar.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				
-					
-				
-			}
-		});
+		btnActualizar = new JButton("ACTUALIZAR");
 		btnActualizar.setBounds(378, 542, 122, 56);
 		contentPane.add(btnActualizar);
 		
@@ -235,23 +226,11 @@ public class Resultados extends JFrame {
 		lblNovedades.setBounds(465, 75, 106, 14);
 		contentPane.add(lblNovedades);
 		
-		JButton btnNewButton = new JButton("NOTICIAS");
-		btnNewButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				MenuUsuario menuusuario= new MenuUsuario();
-				menuusuario.setVisible(true);
-			}
-		});
-		btnNewButton.setBounds(431, 94, 171, 50);
-		contentPane.add(btnNewButton);
+		btnNoticias = new JButton("NOTICIAS");
+		btnNoticias.setBounds(431, 94, 171, 50);
+		contentPane.add(btnNoticias);
 		
-		JButton btnJugadores = new JButton("JUGADORES");
-		btnJugadores.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				Jugadores jugadores = new Jugadores();
-				jugadores.setVisible(true);
-			}
-		});
+		btnJugadores = new JButton("JUGADORES");
 		btnJugadores.setBounds(220, 95, 157, 48);
 		contentPane.add(btnJugadores);
 		
