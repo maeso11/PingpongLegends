@@ -1,11 +1,14 @@
 package vista;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.Font;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTable;
 import javax.swing.border.EmptyBorder;
@@ -54,8 +57,11 @@ public class Clasificacion extends JFrame {
 		setLocationRelativeTo(null);
 		contentPane.setLayout(null);
 		
-		btnVolver = new JButton("Volver");
-		btnVolver.setBounds(361, 559, 90, 25);
+		btnVolver = new JButton("VOLVER");
+		btnVolver.setForeground(new Color(0, 0, 0));
+		btnVolver.setBackground(new Color(255, 165, 0));
+		btnVolver.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
+		btnVolver.setBounds(0, 586, 909, 35);
 		contentPane.add(btnVolver);
 		
 		JTable table = new JTable();
@@ -83,6 +89,11 @@ public class Clasificacion extends JFrame {
 		table.setBounds(49, 92, 497, 225);
 		contentPane.add(table);
 		
+		JLabel lblFondo = new JLabel("");
+		lblFondo.setIcon(new ImageIcon(Jugadores.class.getResource("/img/fondoSoloNegro.jpg")));
+		lblFondo.setBounds(0, 0, 909, 621);
+		contentPane.add(lblFondo);
+		setLocationRelativeTo(null);
 	}
 }
 

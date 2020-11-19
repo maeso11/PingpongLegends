@@ -1,6 +1,7 @@
 package vista;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -8,6 +9,7 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import java.awt.Window.Type;
 import javax.swing.JTextField;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import java.awt.Toolkit;
 import javax.swing.JLabel;
@@ -16,16 +18,38 @@ import java.awt.Font;
 public class Simulacion extends JFrame {
 
 	private JPanel contentPane;
-	private JTextField txtResultado1;
-	private JTextField txtResultado2;
-	private JTextField txtResultado3;
-	private JTextField txtResultado4;
-	private JTextField txtResultado5;
-	private JTextField txtResultado6;
-	private JTextField txtResultado7;
-	private JTextField txtResultado8;
+	private JTextField txtPuntuacion1;
+	private JTextField txtPuntuacion2;
+	private JTextField txtPuntuacion3;
+	private JTextField txtPuntuacion4;
+	private JTextField txtPuntuacion5;
+	private JTextField txtPuntuacion6;
+	private JTextField txtPuntuacion7;
+	private JTextField txtPuntuacion8;
+	private JTextField txtPuntuacion9;
+	private JTextField txtPuntuacion10;
+	private JTextField txtPuntuacion11;
+	private JTextField txtPuntuacion12;
+	private JTextField txtPuntuacion13;
+	private JTextField txtPuntuacion14;
+	JLabel lblJugador1;
+	JLabel lblJugador2;
+	JLabel lblJugador3;
+	JLabel lblJugador4;
+	JLabel lblJugador5;
+	JLabel lblJugador6;
+	JLabel lblJugador7;
+	JLabel lblJugador8;
+	JLabel lblSemifinalista1;
+	JLabel lblSemifinalista2;
+	JLabel lblSemifinalista3;
+	JLabel lblSemifinalista4;
+	JLabel lblFinalista1;
+	JLabel lblFinalista2;
 	public JButton btnSimular;
 	public JButton btnVolver;
+	public JButton btnGenerar;
+	
 
 	/**
 	 * Launch the application.
@@ -58,97 +82,186 @@ public class Simulacion extends JFrame {
 		contentPane.setLayout(null);
 		
 		
-		txtResultado1 = new JTextField();
-		txtResultado1.setBounds(71, 79, 86, 20);
-		contentPane.add(txtResultado1);
-		txtResultado1.setColumns(10);
+		txtPuntuacion1 = new JTextField();
+		txtPuntuacion1.setBounds(71, 79, 86, 20);
+		contentPane.add(txtPuntuacion1);
+		txtPuntuacion1.setColumns(10);
 		
-		txtResultado2 = new JTextField();
-		txtResultado2.setBounds(71, 146, 86, 20);
-		contentPane.add(txtResultado2);
-		txtResultado2.setColumns(10);
+		txtPuntuacion2 = new JTextField();
+		txtPuntuacion2.setBounds(71, 146, 86, 20);
+		contentPane.add(txtPuntuacion2);
+		txtPuntuacion2.setColumns(10);
 		
-		txtResultado3 = new JTextField();
-		txtResultado3.setBounds(71, 354, 86, 20);
-		contentPane.add(txtResultado3);
-		txtResultado3.setColumns(10);
+		txtPuntuacion3 = new JTextField();
+		txtPuntuacion3.setBounds(71, 352, 86, 20);
+		contentPane.add(txtPuntuacion3);
+		txtPuntuacion3.setColumns(10);
 		
-		txtResultado4 = new JTextField();
-		txtResultado4.setBounds(71, 424, 86, 20);
-		contentPane.add(txtResultado4);
-		txtResultado4.setColumns(10);
+		txtPuntuacion4 = new JTextField();
+		txtPuntuacion4.setBounds(71, 425, 86, 20);
+		contentPane.add(txtPuntuacion4);
+		txtPuntuacion4.setColumns(10);
 		
-		txtResultado5 = new JTextField();
-		txtResultado5.setBounds(779, 79, 86, 20);
-		contentPane.add(txtResultado5);
-		txtResultado5.setColumns(10);
+		txtPuntuacion5 = new JTextField();
+		txtPuntuacion5.setBounds(779, 79, 86, 20);
+		contentPane.add(txtPuntuacion5);
+		txtPuntuacion5.setColumns(10);
 		
-		txtResultado6 = new JTextField();
-		txtResultado6.setBounds(779, 146, 86, 20);
-		contentPane.add(txtResultado6);
-		txtResultado6.setColumns(10);
+		txtPuntuacion6 = new JTextField();
+		txtPuntuacion6.setBounds(779, 146, 86, 20);
+		contentPane.add(txtPuntuacion6);
+		txtPuntuacion6.setColumns(10);
 		
-		txtResultado7 = new JTextField();
-		txtResultado7.setBounds(779, 354, 86, 20);
-		contentPane.add(txtResultado7);
-		txtResultado7.setColumns(10);
+		txtPuntuacion7 = new JTextField();
+		txtPuntuacion7.setBounds(779, 352, 86, 20);
+		contentPane.add(txtPuntuacion7);
+		txtPuntuacion7.setColumns(10);
 		
-		txtResultado8 = new JTextField();
-		txtResultado8.setBounds(779, 424, 86, 20);
-		contentPane.add(txtResultado8);
-		txtResultado8.setColumns(10);
+		txtPuntuacion8 = new JTextField();
+		txtPuntuacion8.setBounds(779, 425, 86, 20);
+		contentPane.add(txtPuntuacion8);
+		txtPuntuacion8.setColumns(10);
+		
+		txtPuntuacion9 = new JTextField();
+		txtPuntuacion9.setColumns(10);
+		txtPuntuacion9.setBounds(200, 112, 86, 20);
+		contentPane.add(txtPuntuacion9);
+		
+		txtPuntuacion10 = new JTextField();
+		txtPuntuacion10.setColumns(10);
+		txtPuntuacion10.setBounds(200, 385, 86, 20);
+		contentPane.add(txtPuntuacion10);
+		
+		txtPuntuacion11 = new JTextField();
+		txtPuntuacion11.setColumns(10);
+		txtPuntuacion11.setBounds(650, 112, 86, 20);
+		contentPane.add(txtPuntuacion11);
+		
+		txtPuntuacion12 = new JTextField();
+		txtPuntuacion12.setColumns(10);
+		txtPuntuacion12.setBounds(650, 384, 86, 20);
+		contentPane.add(txtPuntuacion12);
+		
+		txtPuntuacion13 = new JTextField();
+		txtPuntuacion13.setBounds(329, 249, 86, 20);
+		contentPane.add(txtPuntuacion13);
+		txtPuntuacion13.setColumns(10);
+		
+		txtPuntuacion14 = new JTextField();
+		txtPuntuacion14.setBounds(521, 249, 86, 20);
+		contentPane.add(txtPuntuacion14);
+		txtPuntuacion14.setColumns(10);
 		
 		btnSimular = new JButton("SIMULAR");
+		btnSimular.setBackground(new Color(34, 139, 34));
+		btnSimular.setForeground(Color.WHITE);
+		btnSimular.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
 		btnSimular.setBounds(337, 494, 227, 66);
 		contentPane.add(btnSimular);
 		
-		btnVolver = new JButton("Volver");
-		btnVolver.setBounds(717, 543, 97, 25);
+		btnVolver = new JButton("VOLVER");
+		btnVolver.setForeground(new Color(0, 0, 0));
+		btnVolver.setBackground(new Color(255, 165, 0));
+		btnVolver.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
+		btnVolver.setBounds(0, 586, 909, 35);
 		contentPane.add(btnVolver);
 		
-		JButton btnGenerar = new JButton("GENERAR ENFRENTAMIENTOS");
+		btnGenerar = new JButton("GENERAR ENFRENTAMIENTOS");
+		btnGenerar.setBackground(new Color(34, 139, 34));
+		btnGenerar.setForeground(Color.WHITE);
+		btnGenerar.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
 		btnGenerar.setBounds(39, 494, 227, 66);
 		contentPane.add(btnGenerar);
 		
-		JLabel lblJugador1 = new JLabel("");
-		lblJugador1.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		lblJugador1.setBounds(71, 44, 86, 16);
+		lblJugador1 = new JLabel("Jugador 1");
+		lblJugador1.setForeground(Color.WHITE);
+		lblJugador1.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
+		lblJugador1.setBounds(71, 44, 86, 20);
 		contentPane.add(lblJugador1);
 		
-		JLabel lblJugador2 = new JLabel("");
-		lblJugador2.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		lblJugador2.setBounds(71, 181, 86, 16);
+		lblJugador2 = new JLabel("Jugador 2");
+		lblJugador2.setForeground(Color.WHITE);
+		lblJugador2.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
+		lblJugador2.setBounds(71, 181, 86, 20);
 		contentPane.add(lblJugador2);
 		
-		JLabel lblJugador3 = new JLabel("");
-		lblJugador3.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		lblJugador3.setBounds(71, 317, 86, 16);
+		lblJugador3 = new JLabel("Jugador 3");
+		lblJugador3.setForeground(Color.WHITE);
+		lblJugador3.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
+		lblJugador3.setBounds(71, 317, 86, 20);
 		contentPane.add(lblJugador3);
 		
-		JLabel lblJugador4 = new JLabel("");
-		lblJugador4.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		lblJugador4.setBounds(71, 457, 86, 16);
+		lblJugador4 = new JLabel("Jugador 4");
+		lblJugador4.setForeground(Color.WHITE);
+		lblJugador4.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
+		lblJugador4.setBounds(71, 460, 86, 20);
 		contentPane.add(lblJugador4);
 		
-		JLabel lblJugador5 = new JLabel("");
-		lblJugador5.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblJugador5 = new JLabel("Jugador 5");
+		lblJugador5.setForeground(Color.WHITE);
+		lblJugador5.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
 		lblJugador5.setBounds(779, 44, 86, 16);
 		contentPane.add(lblJugador5);
 		
-		JLabel lblJugador6 = new JLabel("");
-		lblJugador6.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblJugador6 = new JLabel("Jugador 6");
+		lblJugador6.setForeground(Color.WHITE);
+		lblJugador6.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
 		lblJugador6.setBounds(779, 181, 86, 16);
 		contentPane.add(lblJugador6);
 		
-		JLabel lblJugador7 = new JLabel("");
-		lblJugador7.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblJugador7 = new JLabel("Jugador 7");
+		lblJugador7.setForeground(Color.WHITE);
+		lblJugador7.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
 		lblJugador7.setBounds(779, 317, 86, 16);
 		contentPane.add(lblJugador7);
 		
-		JLabel lblJugador8 = new JLabel("");
-		lblJugador8.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		lblJugador8.setBounds(779, 457, 86, 16);
+		lblJugador8 = new JLabel("Jugador 8");
+		lblJugador8.setForeground(Color.WHITE);
+		lblJugador8.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
+		lblJugador8.setBounds(779, 460, 86, 16);
 		contentPane.add(lblJugador8);
+		setLocationRelativeTo(null);
+		
+		lblSemifinalista1 = new JLabel("Semifinalista 1");
+		lblSemifinalista1.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
+		lblSemifinalista1.setForeground(Color.WHITE);
+		lblSemifinalista1.setBounds(200, 77, 86, 20);
+		contentPane.add(lblSemifinalista1);
+		
+		lblSemifinalista2 = new JLabel("Semifinalista 2");
+		lblSemifinalista2.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
+		lblSemifinalista2.setForeground(Color.WHITE);
+		lblSemifinalista2.setBounds(200, 350, 86, 20);
+		contentPane.add(lblSemifinalista2);
+		
+		lblSemifinalista3 = new JLabel("Semifinalista 3");
+		lblSemifinalista3.setForeground(Color.WHITE);
+		lblSemifinalista3.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
+		lblSemifinalista3.setBounds(650, 77, 86, 20);
+		contentPane.add(lblSemifinalista3);
+		
+		lblSemifinalista4 = new JLabel("Semifinalista 4");
+		lblSemifinalista4.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
+		lblSemifinalista4.setForeground(Color.WHITE);
+		lblSemifinalista4.setBounds(650, 350, 86, 20);
+		contentPane.add(lblSemifinalista4);
+		
+		lblFinalista1 = new JLabel("Finalista 1");
+		lblFinalista1.setForeground(Color.WHITE);
+		lblFinalista1.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
+		lblFinalista1.setBounds(329, 214, 86, 20);
+		contentPane.add(lblFinalista1);
+		
+		lblFinalista2 = new JLabel("Finalista 2");
+		lblFinalista2.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
+		lblFinalista2.setForeground(Color.WHITE);
+		lblFinalista2.setBounds(521, 214, 86, 20);
+		contentPane.add(lblFinalista2);
+		
+		JLabel lblFondo = new JLabel("");
+		lblFondo.setIcon(new ImageIcon(Jugadores.class.getResource("/img/fondoSoloNegro.jpg")));
+		lblFondo.setBounds(0, 0, 909, 621);
+		contentPane.add(lblFondo);
 		setLocationRelativeTo(null);
 	}
 }
