@@ -28,9 +28,7 @@ public class ControladorSimulacion implements ActionListener{
 		MenuUsuario mUsuario = new MenuUsuario();
 		ControladorUser cUser = new ControladorUser(mUsuario);
 		cUser.iniciar();
-		simulacion.setVisible(false);
-		
-		
+		simulacion.setVisible(false);	
 	}
 
 

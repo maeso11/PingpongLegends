@@ -16,14 +16,14 @@ import java.awt.Font;
 public class Simulacion extends JFrame {
 
 	private JPanel contentPane;
-	private JTextField textField;
-	private JTextField textField_1;
-	private JTextField textField_2;
-	private JTextField textField_3;
-	private JTextField textField_4;
-	private JTextField textField_5;
-	private JTextField textField_6;
-	private JTextField textField_7;
+	private JTextField txtResultado1;
+	private JTextField txtResultado2;
+	private JTextField txtResultado3;
+	private JTextField txtResultado4;
+	private JTextField txtResultado5;
+	private JTextField txtResultado6;
+	private JTextField txtResultado7;
+	private JTextField txtResultado8;
 	public JButton btnSimular;
 	public JButton btnVolver;
 
@@ -57,45 +57,45 @@ public class Simulacion extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		textField = new JTextField();
-		textField.setBounds(71, 79, 86, 20);
-		contentPane.add(textField);
-		textField.setColumns(10);
+		txtResultado1 = new JTextField();
+		txtResultado1.setBounds(71, 79, 86, 20);
+		contentPane.add(txtResultado1);
+		txtResultado1.setColumns(10);
 		
-		textField_1 = new JTextField();
-		textField_1.setBounds(71, 146, 86, 20);
-		contentPane.add(textField_1);
-		textField_1.setColumns(10);
+		txtResultado2 = new JTextField();
+		txtResultado2.setBounds(71, 146, 86, 20);
+		contentPane.add(txtResultado2);
+		txtResultado2.setColumns(10);
 		
-		textField_2 = new JTextField();
-		textField_2.setBounds(71, 354, 86, 20);
-		contentPane.add(textField_2);
-		textField_2.setColumns(10);
+		txtResultado3 = new JTextField();
+		txtResultado3.setBounds(71, 354, 86, 20);
+		contentPane.add(txtResultado3);
+		txtResultado3.setColumns(10);
 		
-		textField_3 = new JTextField();
-		textField_3.setBounds(71, 424, 86, 20);
-		contentPane.add(textField_3);
-		textField_3.setColumns(10);
+		txtResultado4 = new JTextField();
+		txtResultado4.setBounds(71, 424, 86, 20);
+		contentPane.add(txtResultado4);
+		txtResultado4.setColumns(10);
 		
-		textField_4 = new JTextField();
-		textField_4.setBounds(779, 79, 86, 20);
-		contentPane.add(textField_4);
-		textField_4.setColumns(10);
+		txtResultado5 = new JTextField();
+		txtResultado5.setBounds(779, 79, 86, 20);
+		contentPane.add(txtResultado5);
+		txtResultado5.setColumns(10);
 		
-		textField_5 = new JTextField();
-		textField_5.setBounds(779, 146, 86, 20);
-		contentPane.add(textField_5);
-		textField_5.setColumns(10);
+		txtResultado6 = new JTextField();
+		txtResultado6.setBounds(779, 146, 86, 20);
+		contentPane.add(txtResultado6);
+		txtResultado6.setColumns(10);
 		
-		textField_6 = new JTextField();
-		textField_6.setBounds(779, 354, 86, 20);
-		contentPane.add(textField_6);
-		textField_6.setColumns(10);
+		txtResultado7 = new JTextField();
+		txtResultado7.setBounds(779, 354, 86, 20);
+		contentPane.add(txtResultado7);
+		txtResultado7.setColumns(10);
 		
-		textField_7 = new JTextField();
-		textField_7.setBounds(779, 424, 86, 20);
-		contentPane.add(textField_7);
-		textField_7.setColumns(10);
+		txtResultado8 = new JTextField();
+		txtResultado8.setBounds(779, 424, 86, 20);
+		contentPane.add(txtResultado8);
+		txtResultado8.setColumns(10);
 		
 		btnSimular = new JButton("SIMULAR");
 		btnSimular.setBounds(337, 494, 227, 66);
