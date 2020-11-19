@@ -57,6 +57,7 @@ public class Simulacion extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
+		
 		txtResultado1 = new JTextField();
 		txtResultado1.setBounds(71, 79, 86, 20);
 		contentPane.add(txtResultado1);
