@@ -10,6 +10,8 @@ import java.awt.Window.Type;
 import javax.swing.JTextField;
 import javax.swing.JButton;
 import java.awt.Toolkit;
+import javax.swing.JLabel;
+import java.awt.Font;
 
 public class Simulacion extends JFrame {
 
@@ -102,6 +104,50 @@ public class Simulacion extends JFrame {
 		btnVolver = new JButton("Volver");
 		btnVolver.setBounds(717, 543, 97, 25);
 		contentPane.add(btnVolver);
+		
+		JButton btnGenerar = new JButton("GENERAR ENFRENTAMIENTOS");
+		btnGenerar.setBounds(39, 494, 227, 66);
+		contentPane.add(btnGenerar);
+		
+		JLabel lblJugador1 = new JLabel("");
+		lblJugador1.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblJugador1.setBounds(71, 44, 86, 16);
+		contentPane.add(lblJugador1);
+		
+		JLabel lblJugador2 = new JLabel("");
+		lblJugador2.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblJugador2.setBounds(71, 181, 86, 16);
+		contentPane.add(lblJugador2);
+		
+		JLabel lblJugador3 = new JLabel("");
+		lblJugador3.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblJugador3.setBounds(71, 317, 86, 16);
+		contentPane.add(lblJugador3);
+		
+		JLabel lblJugador4 = new JLabel("");
+		lblJugador4.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblJugador4.setBounds(71, 457, 86, 16);
+		contentPane.add(lblJugador4);
+		
+		JLabel lblJugador5 = new JLabel("");
+		lblJugador5.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblJugador5.setBounds(779, 44, 86, 16);
+		contentPane.add(lblJugador5);
+		
+		JLabel lblJugador6 = new JLabel("");
+		lblJugador6.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblJugador6.setBounds(779, 181, 86, 16);
+		contentPane.add(lblJugador6);
+		
+		JLabel lblJugador7 = new JLabel("");
+		lblJugador7.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblJugador7.setBounds(779, 317, 86, 16);
+		contentPane.add(lblJugador7);
+		
+		JLabel lblJugador8 = new JLabel("");
+		lblJugador8.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblJugador8.setBounds(779, 457, 86, 16);
+		contentPane.add(lblJugador8);
 		setLocationRelativeTo(null);
 	}
 }
