@@ -50,7 +50,6 @@ public class MenuUsuario extends JFrame {
 	private JLabel lblNewLabel_2;
 	private JTextArea Noticia1;
 	private JTextArea Noticia2;
-	private JTextArea Noticia3;
 
 	/**
 	 * Launch the application.
@@ -167,24 +166,6 @@ public class MenuUsuario extends JFrame {
 				"Tercera concentraci\u00F3n juvenil en el Centro de Tecnificaci\u00F3n Infanta Cristina\r\n\r\nDel 16 al 21 de noviembre, los deportistas convocados realizar\u00E1n doble sesi\u00F3n de entrenamientos, que servir\u00E1n para continuar evaluando su progreso. Adem\u00E1s, todos los deportistas y t\u00E9cnicos de la RFETM han pasado una prueba serol\u00F3gica previa a su entrada en la concentraci\u00F3n.\r\n\r\nEl grupo juvenil convocado para esta concentraci\u00F3n est\u00E1 formado por los siguientes deportistas: Aimar Chamorro, Aitor Colina, Alberto Pomares, Ander Cepas, Daniel Berzosa, \u00C9ric Cintas, Diego Lillo, H\u00E9ctor Saavedra, Iker Gonz\u00E1lez, Jos\u00E9 Carlos Guillot, Marc Mir\u00F3, Marcos Garc\u00EDa, Mart\u00EDn Reche, Miguel N\u00FA\u00F1ez, Pablo Bobo y Rafael De Las Heras. Como t\u00E9cnicos responsables han acudido Rafa Taboada y Jes\u00FAs Cantero.");
 		Noticia2.setBackground(Color.LIGHT_GRAY);
 		js2.setViewportView(Noticia2);
-
-		
-		
-		
-		
-		Noticia3 = new JTextArea();
-		Noticia3.setWrapStyleWord(true);
-		Noticia3.setLineWrap(true);
-		Noticia3.setFont(new Font("Century Gothic", Font.PLAIN, 14));
-		Noticia3.setEditable(false);
-		Noticia3.setBackground(Color.LIGHT_GRAY);
-		
-		JScrollPane js3 = new JScrollPane(Noticia3,ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS,
-				ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED);
-		js3.setViewportBorder(new LineBorder(new Color(0, 0, 0), 2));
-		js3.setLocation(887, 0);
-		js3.setSize(22, 621);
-		contentPane.add(js3);
 		
 		
 
