@@ -37,11 +37,12 @@ import javax.swing.border.LineBorder;
 import java.awt.Component;
 import java.awt.ComponentOrientation;
 import java.awt.Cursor;
+import javax.swing.border.SoftBevelBorder;
+import javax.swing.border.BevelBorder;
 
 public class MenuUsuario extends JFrame {
 
 	private JPanel contentPane;
-	public JButton btnNoticias;
 	public JButton btnResultados;
 	public JButton btnInformacin;
 	public JButton btnSimulacin;
@@ -82,47 +83,64 @@ public class MenuUsuario extends JFrame {
 		contentPane.setLayout(null);
 		setLocationRelativeTo(null);
 
-		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon(MenuUsuario.class.getResource("/img/BannerOficial2.JPG")));
-		lblNewLabel.setBounds(0, 0, 919, 245);
-		contentPane.add(lblNewLabel);
-
-		btnNoticias = new JButton("NOTICIAS");
-		btnNoticias.setBounds(0, 243, 142, 39);
-		contentPane.add(btnNoticias);
+		btnCerrarSesin = new JButton("CERRAR SESI\u00D3N");
+		btnCerrarSesin.setForeground(new Color(255, 255, 255));
+		btnCerrarSesin.setBackground(new Color(34, 139, 34));
+		btnCerrarSesin.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
+		btnCerrarSesin.setBounds(736, 243, 178, 39);
+		contentPane.add(btnCerrarSesin);
 
 		btnResultados = new JButton("RESULTADOS");
-		btnResultados.setBounds(152, 243, 142, 39);
+		btnResultados.setForeground(new Color(255, 255, 255));
+		btnResultados.setBackground(new Color(34, 139, 34));
+		btnResultados.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
+		btnResultados.setBounds(0, 243, 174, 39);
 		contentPane.add(btnResultados);
 
-		btnInformacin = new JButton("EQUIPOS");
-		btnInformacin.setBounds(608, 243, 142, 39);
-		contentPane.add(btnInformacin);
-
 		btnSimulacin = new JButton("SIMULACI\u00D3N ");
-		btnSimulacin.setBounds(456, 243, 142, 39);
+		btnSimulacin.setForeground(new Color(255, 255, 255));
+		btnSimulacin.setBackground(new Color(34, 139, 34));
+		btnSimulacin.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
+		btnSimulacin.setBounds(368, 243, 174, 39);
 		contentPane.add(btnSimulacin);
 
 		btnClasificacin = new JButton("CLASIFICACI\u00D3N");
-		btnClasificacin.setBounds(304, 243, 142, 39);
+		btnClasificacin.setForeground(new Color(255, 255, 255));
+		btnClasificacin.setBackground(new Color(34, 139, 34));
+		btnClasificacin.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
+		btnClasificacin.setBounds(184, 243, 174, 39);
 		contentPane.add(btnClasificacin);
 
-		btnCerrarSesin = new JButton("CERRAR SESI\u00D3N");
-		btnCerrarSesin.setBounds(767, 243, 142, 39);
-		contentPane.add(btnCerrarSesin);
+		btnInformacin = new JButton("JUGADORES");
+		btnInformacin.setForeground(new Color(255, 255, 255));
+		btnInformacin.setBackground(new Color(34, 139, 34));
+		btnInformacin.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
+		btnInformacin.setBounds(552, 243, 174, 39);
+		contentPane.add(btnInformacin);
 
-		JButton btnNewButton = new JButton("Leer ");
-		btnNewButton.setBounds(466, 587, 89, 23);
-		contentPane.add(btnNewButton);
+		JLabel lblNewLabel = new JLabel("");
+		lblNewLabel.setIcon(new ImageIcon(MenuUsuario.class.getResource("/img/BannerOficial2.JPG")));
+		lblNewLabel.setBounds(0, 0, 914, 245);
+		contentPane.add(lblNewLabel);
+
+		JButton btnLeer2 = new JButton("Leer ");
+		btnLeer2.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 12));
+		btnLeer2.setForeground(new Color(255, 255, 255));
+		btnLeer2.setBackground(new Color(34, 139, 34));
+		btnLeer2.setBounds(466, 587, 89, 23);
+		contentPane.add(btnLeer2);
 
 		JLabel lblNewLabel_3 = new JLabel("");
 		lblNewLabel_3.setIcon(new ImageIcon(MenuUsuario.class.getResource("/img/noticia2.jpg")));
 		lblNewLabel_3.setBounds(466, 297, 184, 313);
 		contentPane.add(lblNewLabel_3);
 
-		JButton btnNewButton_1 = new JButton("Leer");
-		btnNewButton_1.setBounds(0, 587, 89, 23);
-		contentPane.add(btnNewButton_1);
+		JButton btnLeer1 = new JButton("Leer");
+		btnLeer1.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 12));
+		btnLeer1.setForeground(new Color(255, 255, 255));
+		btnLeer1.setBackground(new Color(34, 139, 34));
+		btnLeer1.setBounds(0, 587, 89, 23);
+		contentPane.add(btnLeer1);
 
 		lblNewLabel_2 = new JLabel("");
 		lblNewLabel_2.setIcon(new ImageIcon(MenuUsuario.class.getResource("/img/noticias1.jpg")));
@@ -134,7 +152,7 @@ public class MenuUsuario extends JFrame {
 		js.setToolTipText("left");
 		js.setViewportBorder(new LineBorder(new Color(0, 0, 0), 2));
 		js.setLocation(223, 297);
-		js.setSize(211, 313);
+		js.setSize(233, 313);
 		js.setVisible(true);
 		contentPane.add(js);
 
@@ -154,7 +172,7 @@ public class MenuUsuario extends JFrame {
 				ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED);
 		js2.setViewportBorder(new LineBorder(new Color(0, 0, 0), 2));
 		js2.setLocation(656, 297);
-		js2.setSize(209, 313);
+		js2.setSize(248, 313);
 		contentPane.add(js2);
 
 		Noticia2 = new JTextArea();
@@ -166,8 +184,11 @@ public class MenuUsuario extends JFrame {
 				"Tercera concentraci\u00F3n juvenil en el Centro de Tecnificaci\u00F3n Infanta Cristina\r\n\r\nDel 16 al 21 de noviembre, los deportistas convocados realizar\u00E1n doble sesi\u00F3n de entrenamientos, que servir\u00E1n para continuar evaluando su progreso. Adem\u00E1s, todos los deportistas y t\u00E9cnicos de la RFETM han pasado una prueba serol\u00F3gica previa a su entrada en la concentraci\u00F3n.\r\n\r\nEl grupo juvenil convocado para esta concentraci\u00F3n est\u00E1 formado por los siguientes deportistas: Aimar Chamorro, Aitor Colina, Alberto Pomares, Ander Cepas, Daniel Berzosa, \u00C9ric Cintas, Diego Lillo, H\u00E9ctor Saavedra, Iker Gonz\u00E1lez, Jos\u00E9 Carlos Guillot, Marc Mir\u00F3, Marcos Garc\u00EDa, Mart\u00EDn Reche, Miguel N\u00FA\u00F1ez, Pablo Bobo y Rafael De Las Heras. Como t\u00E9cnicos responsables han acudido Rafa Taboada y Jes\u00FAs Cantero.");
 		Noticia2.setBackground(Color.LIGHT_GRAY);
 		js2.setViewportView(Noticia2);
-		
-		
+
+		JLabel lblNewLabel_1 = new JLabel("");
+		lblNewLabel_1.setIcon(new ImageIcon(MenuUsuario.class.getResource("/img/fondoSoloNegro.jpg")));
+		lblNewLabel_1.setBounds(0, 243, 914, 378);
+		contentPane.add(lblNewLabel_1);
 
 	}
 }

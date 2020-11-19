@@ -33,7 +33,7 @@ public class ControladorJugadores implements ActionListener {
 	}
 
 	public void iniciar() {
-		jugadores.setTitle("Equipos");
+		jugadores.setTitle("Jugadores");
 		jugadores.setLocationRelativeTo(null);
 		jugadores.setVisible(true);
 

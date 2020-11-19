@@ -9,10 +9,10 @@ import vista.MenuUsuario;
 
 public class Principal {
 	public static void main(String[] args) {
-		
-		//Ventana menú
+
+		// Ventana menú
 		Menu menu = new Menu();
 		menu.setVisible(true);
-		
+
 	}
 }

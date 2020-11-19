@@ -28,7 +28,7 @@ public class ControladorUser implements ActionListener{
 	}
 
 	public void iniciar() {
-		menuUser.setTitle("Menú Administrador");
+		menuUser.setTitle("Menú Usuario");
 		menuUser.setLocationRelativeTo(null);
 		menuUser.setVisible(true);
 	}

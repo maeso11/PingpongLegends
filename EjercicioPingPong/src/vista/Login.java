@@ -1,4 +1,5 @@
 package vista;
+
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
@@ -13,6 +14,9 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Toolkit;
+import javax.swing.ImageIcon;
+import java.awt.Color;
+import java.awt.Font;
 
 public class Login extends JFrame {
 
@@ -21,7 +25,6 @@ public class Login extends JFrame {
 	public JPasswordField txtPassword;
 	public JButton btnEntrar;
 	public JButton btnVolver;
-	
 
 	/**
 	 * Launch the application.
@@ -53,31 +56,46 @@ public class Login extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		setLocationRelativeTo(null);
-		
+
 		txtUser = new JTextField();
-		txtUser.setBounds(206, 135, 173, 20);
+		txtUser.setBounds(442, 221, 173, 20);
 		contentPane.add(txtUser);
 		txtUser.setColumns(10);
-		
+
 		txtPassword = new JPasswordField();
-		txtPassword.setBounds(206, 222, 173, 20);
+		txtPassword.setBounds(442, 281, 173, 20);
 		contentPane.add(txtPassword);
-		
+
 		JLabel lblUsuario = new JLabel("USUARIO");
-		lblUsuario.setBounds(44, 138, 76, 14);
+		lblUsuario.setFont(new Font("Rockwell Extra Bold", Font.BOLD, 15));
+		lblUsuario.setForeground(Color.WHITE);
+		lblUsuario.setBounds(296, 219, 96, 20);
 		contentPane.add(lblUsuario);
-		
+
 		JLabel lblContrasea = new JLabel("CONTRASE\u00D1A");
-		lblContrasea.setBounds(44, 225, 96, 14);
+		lblContrasea.setFont(new Font("Rockwell Extra Bold", Font.BOLD, 15));
+		lblContrasea.setForeground(Color.WHITE);
+		lblContrasea.setBounds(257, 279, 135, 20);
 		contentPane.add(lblContrasea);
-		
+
 		btnEntrar = new JButton("ENTRAR");
-		
-		btnEntrar.setBounds(520, 521, 89, 23);
+		btnEntrar.setBackground(new Color(34, 139, 34));
+		btnEntrar.setForeground(new Color(255, 255, 255));
+		btnEntrar.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
+
+		btnEntrar.setBounds(442, 337, 173, 23);
 		contentPane.add(btnEntrar);
-		
+
 		btnVolver = new JButton("VOLVER");
-		btnVolver.setBounds(270, 521, 89, 23);
+		btnVolver.setBackground(new Color(255, 165, 0));
+		btnVolver.setForeground(new Color(0, 0, 0));
+		btnVolver.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
+		btnVolver.setBounds(0, 582, 909, 39);
 		contentPane.add(btnVolver);
+
+		JLabel lblNewLabel = new JLabel("");
+		lblNewLabel.setIcon(new ImageIcon(Login.class.getResource("/img/fondoPalas.jpg")));
+		lblNewLabel.setBounds(-37, -27, 946, 648);
+		contentPane.add(lblNewLabel);
 	}
 }
