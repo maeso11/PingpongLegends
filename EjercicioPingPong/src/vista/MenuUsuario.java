@@ -111,7 +111,7 @@ public class MenuUsuario extends JFrame {
 		btnCerrarSesin.setBounds(767, 243, 142, 39);
 		contentPane.add(btnCerrarSesin);
 
-		JButton btnNewButton = new JButton("Leer");
+		JButton btnNewButton = new JButton("Leer ");
 		btnNewButton.setBounds(466, 587, 89, 23);
 		contentPane.add(btnNewButton);
 
