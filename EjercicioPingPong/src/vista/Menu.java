@@ -73,10 +73,10 @@ public class Menu extends JFrame {
 		});
 
 		JLabel lblNewLabel_1 = new JLabel("");
-		lblNewLabel_1.setIcon(new ImageIcon(Menu.class.getResource("/img/LogoPingPong.png")));
-		lblNewLabel_1.setBounds(156, 54, 600, 399);
+		lblNewLabel_1.setIcon(new ImageIcon(Menu.class.getResource("/img/logoGrande.png")));
+		lblNewLabel_1.setBounds(156, 83, 600, 399);
 		contentPane.add(lblNewLabel_1);
-		btnLogin.setBounds(388, 484, 136, 59);
+		btnLogin.setBounds(156, 449, 600, 59);
 		contentPane.add(btnLogin);
 
 		JLabel lblNewLabel = new JLabel("");
