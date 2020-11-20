@@ -66,8 +66,8 @@ public class Resultados extends JFrame {
 		contentPane.setLayout(null);
 		
 		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon(Resultados.class.getResource("/img/LogoPEQUE\u00D1O.png")));
-		lblNewLabel.setBounds(0, 11, 210, 133);
+		lblNewLabel.setIcon(new ImageIcon(Resultados.class.getResource("/img/logoPeque\u00F1o2.png")));
+		lblNewLabel.setBounds(31, 35, 210, 133);
 		contentPane.add(lblNewLabel);
 		
 		JLabel lblResultados = new JLabel("RESULTADOS");
@@ -77,17 +77,17 @@ public class Resultados extends JFrame {
 		
 		JLabel lblInformacin = new JLabel("INFORMACI\u00D3N");
 		lblInformacin.setFont(new Font("Sitka Text", Font.BOLD, 15));
-		lblInformacin.setBounds(236, 71, 122, 23);
+		lblInformacin.setBounds(273, 73, 122, 23);
 		contentPane.add(lblInformacin);
 		
 		JLabel lblNovedades = new JLabel("NOVEDADES");
 		lblNovedades.setFont(new Font("Sitka Text", Font.BOLD, 15));
-		lblNovedades.setBounds(465, 75, 106, 14);
+		lblNovedades.setBounds(502, 77, 94, 20);
 		contentPane.add(lblNovedades);
 		
 		JLabel lblMsTorneos = new JLabel("M\u00C1S TORNEOS");
 		lblMsTorneos.setFont(new Font("Sitka Text", Font.BOLD, 15));
-		lblMsTorneos.setBounds(697, 66, 151, 32);
+		lblMsTorneos.setBounds(734, 68, 151, 32);
 		contentPane.add(lblMsTorneos);
 		
 		JLabel lblBandera1 = new JLabel("");
@@ -233,15 +233,15 @@ public class Resultados extends JFrame {
 		contentPane.add(textPuntos8);
 		
 		btnJugadores = new JButton("JUGADORES");
-		btnJugadores.setBounds(220, 95, 157, 48);
+		btnJugadores.setBounds(257, 97, 157, 48);
 		contentPane.add(btnJugadores);
 		
 		btnClasificacion = new JButton("CLASIFICACI\u00D3N");
-		btnClasificacion.setBounds(431, 94, 171, 50);
+		btnClasificacion.setBounds(468, 96, 171, 50);
 		contentPane.add(btnClasificacion);
 		
 		btnSimulacion = new JButton("SIMULACI\u00D3N");
-		btnSimulacion.setBounds(663, 94, 185, 50);
+		btnSimulacion.setBounds(700, 96, 185, 50);
 		contentPane.add(btnSimulacion);
 		
 		btnActualizar = new JButton("ACTUALIZAR");

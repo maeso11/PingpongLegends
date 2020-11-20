@@ -56,26 +56,31 @@ public class Login extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		setLocationRelativeTo(null);
+		
+		JLabel lblNewLabel_1 = new JLabel("");
+		lblNewLabel_1.setIcon(new ImageIcon(Login.class.getResource("/img/logoPeque\u00F1o2.png")));
+		lblNewLabel_1.setBounds(41, 38, 200, 133);
+		contentPane.add(lblNewLabel_1);
 
 		txtUser = new JTextField();
-		txtUser.setBounds(442, 221, 173, 20);
+		txtUser.setBounds(443, 282, 173, 20);
 		contentPane.add(txtUser);
 		txtUser.setColumns(10);
 
 		txtPassword = new JPasswordField();
-		txtPassword.setBounds(442, 281, 173, 20);
+		txtPassword.setBounds(443, 342, 173, 20);
 		contentPane.add(txtPassword);
 
 		JLabel lblUsuario = new JLabel("USUARIO");
 		lblUsuario.setFont(new Font("Rockwell Extra Bold", Font.BOLD, 15));
 		lblUsuario.setForeground(Color.WHITE);
-		lblUsuario.setBounds(296, 219, 96, 20);
+		lblUsuario.setBounds(297, 280, 96, 20);
 		contentPane.add(lblUsuario);
 
 		JLabel lblContrasea = new JLabel("CONTRASE\u00D1A");
 		lblContrasea.setFont(new Font("Rockwell Extra Bold", Font.BOLD, 15));
 		lblContrasea.setForeground(Color.WHITE);
-		lblContrasea.setBounds(257, 279, 135, 20);
+		lblContrasea.setBounds(258, 340, 135, 20);
 		contentPane.add(lblContrasea);
 
 		btnEntrar = new JButton("ENTRAR");
@@ -83,7 +88,7 @@ public class Login extends JFrame {
 		btnEntrar.setForeground(new Color(255, 255, 255));
 		btnEntrar.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
 
-		btnEntrar.setBounds(442, 337, 173, 23);
+		btnEntrar.setBounds(443, 398, 173, 23);
 		contentPane.add(btnEntrar);
 
 		btnVolver = new JButton("VOLVER");
