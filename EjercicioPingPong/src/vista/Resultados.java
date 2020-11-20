@@ -91,8 +91,8 @@ public class Resultados extends JFrame {
 		contentPane.add(lblMsTorneos);
 		
 		JLabel lblBandera1 = new JLabel("");
-		lblBandera1.setIcon(new ImageIcon(Resultados.class.getResource("/img/ESPA\u00D1A.png")));
-		lblBandera1.setBounds(21, 319, 50, 33);
+		lblBandera1.setIcon(new ImageIcon(Resultados.class.getResource("/img/Lilcorea.jpg")));
+		lblBandera1.setBounds(31, 318, 58, 33);
 		contentPane.add(lblBandera1);
 		
 		JLabel lblNewLabel_1 = new JLabel("DAVID");
@@ -109,13 +109,13 @@ public class Resultados extends JFrame {
 		contentPane.add(lblNewLabel_2);
 		
 		JLabel lblBandera2 = new JLabel("");
-		lblBandera2.setIcon(new ImageIcon(Resultados.class.getResource("/img/INIDA.png")));
+		lblBandera2.setIcon(new ImageIcon(Resultados.class.getResource("/img/lilINDIA.png")));
 		lblBandera2.setBounds(349, 319, 50, 33);
 		contentPane.add(lblBandera2);
 		
 		JLabel lblBandera3 = new JLabel("");
 		lblBandera3.setIcon(new ImageIcon(Resultados.class.getResource("/img/ESPA\u00D1A.png")));
-		lblBandera3.setBounds(21, 433, 50, 33);
+		lblBandera3.setBounds(31, 433, 50, 33);
 		contentPane.add(lblBandera3);
 		
 		JLabel lblJugador3 = new JLabel("JES\u00DAS");
@@ -132,7 +132,7 @@ public class Resultados extends JFrame {
 		contentPane.add(lblJugador4);
 		
 		JLabel lblBandera4 = new JLabel("");
-		lblBandera4.setIcon(new ImageIcon(Resultados.class.getResource("/img/ESPA\u00D1A.png")));
+		lblBandera4.setIcon(new ImageIcon(Resultados.class.getResource("/img/LILwilly2.png")));
 		lblBandera4.setBounds(349, 433, 50, 33);
 		contentPane.add(lblBandera4);
 		
@@ -155,12 +155,12 @@ public class Resultados extends JFrame {
 		contentPane.add(lblJugador6);
 		
 		JLabel lblBandera6 = new JLabel("");
-		lblBandera6.setIcon(new ImageIcon(Resultados.class.getResource("/img/descarga.png")));
+		lblBandera6.setIcon(new ImageIcon(Resultados.class.getResource("/img/LILBRASIL.png")));
 		lblBandera6.setBounds(798, 317, 50, 35);
 		contentPane.add(lblBandera6);
 		
 		JLabel lblBandera7 = new JLabel("");
-		lblBandera7.setIcon(new ImageIcon(Resultados.class.getResource("/img/PORTUGAL.png")));
+		lblBandera7.setIcon(new ImageIcon(Resultados.class.getResource("/img/LILPORTUGAL.png")));
 		lblBandera7.setBounds(450, 433, 50, 33);
 		contentPane.add(lblBandera7);
 		
@@ -178,7 +178,7 @@ public class Resultados extends JFrame {
 		contentPane.add(lblJugador8);
 		
 		JLabel lblBandera8 = new JLabel("");
-		lblBandera8.setIcon(new ImageIcon(Resultados.class.getResource("/img/ESPA\u00D1A.png")));
+		lblBandera8.setIcon(new ImageIcon(Resultados.class.getResource("/img/LILjamaica.jpg")));
 		lblBandera8.setBounds(798, 433, 50, 33);
 		contentPane.add(lblBandera8);
 		
