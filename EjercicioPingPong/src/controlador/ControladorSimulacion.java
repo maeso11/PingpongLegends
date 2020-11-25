@@ -54,25 +54,31 @@ public class ControladorSimulacion implements ActionListener{
 			//Utilizamos la clase random para generar números aleatorios
 			Random random = new Random();
 
+			//Recorremos el arraylist
 			while(jugadores.size() >= 1) {
+				
+				//Genera el número aleatorio entre el 0 y el nº que queramos indicándolo en el paréntesis
 				int index = random.nextInt(jugadores.size());
-				if(simulacion.lblJugador1.getText().equals("Jugador 1") || simulacion.lblJugador1.getText().equals(jugadores.get(0))) {
+				
+				//Modificación de los distintos label por los nombres de los jugadores
+				if(simulacion.lblJugador1.getText().equals("Jugador 1") || simulacion.lblJugador1.getText().equals(jugadores.get(index))) {
 					simulacion.lblJugador1.setText(jugadores.get(index));
-				}else if (simulacion.lblJugador2.getText().equals("Jugador 2") || simulacion.lblJugador2.getText().equals(jugadores.get(1))) {
+				}else if (simulacion.lblJugador2.getText().equals("Jugador 2") || simulacion.lblJugador2.getText().equals(jugadores.get(index))) {
 					simulacion.lblJugador2.setText(jugadores.get(index));
-				}else if (simulacion.lblJugador3.getText().equals("Jugador 3") || simulacion.lblJugador3.getText().equals(jugadores.get(2))) {
+				}else if (simulacion.lblJugador3.getText().equals("Jugador 3") || simulacion.lblJugador3.getText().equals(jugadores.get(index))) {
 					simulacion.lblJugador3.setText(jugadores.get(index));
-				}else if (simulacion.lblJugador4.getText().equals("Jugador 4") || simulacion.lblJugador4.getText().equals(jugadores.get(3))) {
+				}else if (simulacion.lblJugador4.getText().equals("Jugador 4") || simulacion.lblJugador4.getText().equals(jugadores.get(index))) {
 					simulacion.lblJugador4.setText(jugadores.get(index));
-				}else if (simulacion.lblJugador5.getText().equals("Jugador 5") || simulacion.lblJugador5.getText().equals(jugadores.get(4))) {
+				}else if (simulacion.lblJugador5.getText().equals("Jugador 5") || simulacion.lblJugador5.getText().equals(jugadores.get(index))) {
 					simulacion.lblJugador5.setText(jugadores.get(index));
-				}else if (simulacion.lblJugador6.getText().equals("Jugador 6") || simulacion.lblJugador6.getText().equals(jugadores.get(5))) {
+				}else if (simulacion.lblJugador6.getText().equals("Jugador 6") || simulacion.lblJugador6.getText().equals(jugadores.get(index))) {
 					simulacion.lblJugador6.setText(jugadores.get(index));
-				}else if (simulacion.lblJugador7.getText().equals("Jugador 7") || simulacion.lblJugador7.getText().equals(jugadores.get(6))) {
+				}else if (simulacion.lblJugador7.getText().equals("Jugador 7") || simulacion.lblJugador7.getText().equals(jugadores.get(index))) {
 					simulacion.lblJugador7.setText(jugadores.get(index));
-				}else if (simulacion.lblJugador8.getText().equals("Jugador 8") || simulacion.lblJugador8.getText().equals(jugadores.get(7))) {
+				}else if (simulacion.lblJugador8.getText().equals("Jugador 8") || simulacion.lblJugador8.getText().equals(jugadores.get(index))) {
 					simulacion.lblJugador8.setText(jugadores.get(index));
 				}
+				//Elimina el nombre del jugador que se haya modificado
 				jugadores.remove(index);
 			}
 		}
