@@ -36,6 +36,8 @@ public class InformacionJugador extends JFrame {
 	public JLabel lblDefensa;
 	public JLabel lblGif;
 	private JLabel lblNewLabel;
+	public JLabel lblTier;
+	public JLabel lblMarco;
 
 	/**
 	 * Launch the application.
@@ -67,6 +69,24 @@ public class InformacionJugador extends JFrame {
 		contentPane.setLayout(null);
 		setLocationRelativeTo(null);
 		setResizable(false);
+				
+						btnGrito = new JButton("GRITO");
+						btnGrito.setForeground(new Color(255, 255, 255));
+						btnGrito.setBackground(new Color(34, 139, 34));
+						btnGrito.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
+						btnGrito.setBounds(480, 462, 352, 39);
+						contentPane.add(btnGrito);
+		
+				// Icono Tier
+				lblTier = new JLabel("");
+				lblTier.setBounds(618, 11, 80, 92);
+				lblTier.setIcon(new ImageIcon(InformacionJugador.class.getResource("/img/tierALIL.png")));
+				contentPane.add(lblTier);
+		
+		lblMarco = new JLabel((String) null);
+		lblMarco.setIcon(new ImageIcon(InformacionJugador.class.getResource("/img/marcoTierA.png")));
+		lblMarco.setBounds(468, 68, 383, 402);
+		contentPane.add(lblMarco);
 		// Defensa
 		lblDefensa = new JLabel("");
 		lblDefensa.setForeground(new Color(34, 139, 34));
@@ -100,13 +120,6 @@ public class InformacionJugador extends JFrame {
 		lbl5.setFont(new Font("Rockwell Extra Bold", Font.BOLD, 15));
 		lbl5.setBounds(70, 312, 183, 14);
 		contentPane.add(lbl5);
-
-		btnGrito = new JButton("GRITO");
-		btnGrito.setForeground(new Color(255, 255, 255));
-		btnGrito.setBackground(new Color(34, 139, 34));
-		btnGrito.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
-		btnGrito.setBounds(480, 462, 352, 39);
-		contentPane.add(btnGrito);
 
 		btnVolver = new JButton("VOLVER");
 		btnVolver.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
@@ -206,7 +219,7 @@ public class InformacionJugador extends JFrame {
 		// Gif
 		lblGif = new JLabel("");
 		lblGif.setIcon(new ImageIcon(InformacionJugador.class.getResource("")));
-		lblGif.setBounds(480, 88, 352, 376);
+		lblGif.setBounds(485, 88, 342, 375);
 		contentPane.add(lblGif);
 
 		lblNewLabel = new JLabel("");
@@ -214,5 +227,4 @@ public class InformacionJugador extends JFrame {
 		lblNewLabel.setBounds(0, 0, 909, 621);
 		contentPane.add(lblNewLabel);
 	}
-
 }

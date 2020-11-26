@@ -57,6 +57,23 @@ public class Clasificacion extends JFrame {
 		setLocationRelativeTo(null);
 		contentPane.setLayout(null);
 		
+		JLabel lblNewLabel_5 = new JLabel("");
+		lblNewLabel_5.setIcon(new ImageIcon(Clasificacion.class.getResource("/img/palas.png")));
+		lblNewLabel_5.setBounds(353, 92, 170, 122);
+		contentPane.add(lblNewLabel_5);
+		
+		JLabel lblNewLabel_4_1 = new JLabel("TIER B");
+		lblNewLabel_4_1.setForeground(Color.WHITE);
+		lblNewLabel_4_1.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
+		lblNewLabel_4_1.setBounds(653, 40, 59, 19);
+		contentPane.add(lblNewLabel_4_1);
+		
+		JLabel lblNewLabel_4 = new JLabel("TIER A");
+		lblNewLabel_4.setForeground(Color.WHITE);
+		lblNewLabel_4.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
+		lblNewLabel_4.setBounds(164, 40, 57, 19);
+		contentPane.add(lblNewLabel_4);
+		
 		JLabel lblNewLabel_3 = new JLabel("");
 		lblNewLabel_3.setIcon(new ImageIcon(Clasificacion.class.getResource("/img/Lilcorea.jpg")));
 		lblNewLabel_3.setBounds(198, 409, 45, 30);
