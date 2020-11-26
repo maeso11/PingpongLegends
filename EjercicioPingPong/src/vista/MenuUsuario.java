@@ -49,8 +49,8 @@ public class MenuUsuario extends JFrame {
 	public JButton btnClasificacin;
 	public JButton btnCerrarSesin;
 	private JLabel lblNewLabel_2;
-	private JTextArea Noticia1;
-	private JTextArea Noticia2;
+	private JTextArea noticia1;
+	private JTextArea noticia2;
 
 	/**
 	 * Launch the application.
@@ -156,17 +156,17 @@ public class MenuUsuario extends JFrame {
 		js.setVisible(true);
 		contentPane.add(js);
 
-		Noticia1 = new JTextArea();
-		Noticia1.setWrapStyleWord(true);
-		Noticia1.setLineWrap(true);
-		Noticia1.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-		Noticia1.setComponentOrientation(ComponentOrientation.LEFT_TO_RIGHT);
-		Noticia1.setFont(new Font("Century Gothic", Font.PLAIN, 14));
-		Noticia1.setBackground(Color.LIGHT_GRAY);
-		Noticia1.setEditable(false);
-		Noticia1.setText(
+		noticia1 = new JTextArea();
+		noticia1.setWrapStyleWord(true);
+		noticia1.setLineWrap(true);
+		noticia1.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+		noticia1.setComponentOrientation(ComponentOrientation.LEFT_TO_RIGHT);
+		noticia1.setFont(new Font("Century Gothic", Font.PLAIN, 14));
+		noticia1.setBackground(Color.LIGHT_GRAY);
+		noticia1.setEditable(false);
+		noticia1.setText(
 				"F\u00E1brica de medallistas chinos:\r\n\r\nGuo entrena al ping-pong desde hace dos a\u00F1os y acaba de convertirse en un jugador semiprofesional. Bajo esta nueva condici\u00F3n, a partir de ahora le tocar\u00E1 vivir en la residencia de la escuela de deportes de Shichahai, situada en el centro de Pek\u00EDn, donde entrenar\u00E1 casi a diario con otros chicos de su mismo nivel para cumplir su sue\u00F1o: ser campe\u00F3n del mundo. Shichahai es una de las ocho escuelas estatales de formaci\u00F3n de deportistas de \u00E9lite de la capital china. Fundada en 1958, est\u00E1 especializado en ping-pong, boxeo, taekwondo, golf, b\u00E1dminton, esgrima, gimnasia y artes marciales. De sus instalaciones han salido 46 campeones del mundo, siete de ellos oros ol\u00EDmpicos. Sus retratos y logros presiden las salas de entrenamiento, donde decenas de ni\u00F1os y adolescentes se esfuerzan a diario para un d\u00EDa ser como ellos bajo la atenta mirada de los entrenadores.");
-		js.setViewportView(Noticia1);
+		js.setViewportView(noticia1);
 
 		JScrollPane js2 = new JScrollPane(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS,
 				ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED);
@@ -175,20 +175,19 @@ public class MenuUsuario extends JFrame {
 		js2.setSize(248, 313);
 		contentPane.add(js2);
 
-		Noticia2 = new JTextArea();
-		Noticia2.setWrapStyleWord(true);
-		Noticia2.setLineWrap(true);
-		Noticia2.setFont(new Font("Century Gothic", Font.PLAIN, 14));
-		Noticia2.setEditable(false);
-		Noticia2.setText(
+		noticia2 = new JTextArea();
+		noticia2.setWrapStyleWord(true);
+		noticia2.setLineWrap(true);
+		noticia2.setFont(new Font("Century Gothic", Font.PLAIN, 14));
+		noticia2.setEditable(false);
+		noticia2.setText(
 				"Tercera concentraci\u00F3n juvenil en el Centro de Tecnificaci\u00F3n Infanta Cristina\r\n\r\nDel 16 al 21 de noviembre, los deportistas convocados realizar\u00E1n doble sesi\u00F3n de entrenamientos, que servir\u00E1n para continuar evaluando su progreso. Adem\u00E1s, todos los deportistas y t\u00E9cnicos de la RFETM han pasado una prueba serol\u00F3gica previa a su entrada en la concentraci\u00F3n.\r\n\r\nEl grupo juvenil convocado para esta concentraci\u00F3n est\u00E1 formado por los siguientes deportistas: Aimar Chamorro, Aitor Colina, Alberto Pomares, Ander Cepas, Daniel Berzosa, \u00C9ric Cintas, Diego Lillo, H\u00E9ctor Saavedra, Iker Gonz\u00E1lez, Jos\u00E9 Carlos Guillot, Marc Mir\u00F3, Marcos Garc\u00EDa, Mart\u00EDn Reche, Miguel N\u00FA\u00F1ez, Pablo Bobo y Rafael De Las Heras. Como t\u00E9cnicos responsables han acudido Rafa Taboada y Jes\u00FAs Cantero.");
-		Noticia2.setBackground(Color.LIGHT_GRAY);
-		js2.setViewportView(Noticia2);
+		noticia2.setBackground(Color.LIGHT_GRAY);
+		js2.setViewportView(noticia2);
 
 		JLabel lblNewLabel_1 = new JLabel("");
 		lblNewLabel_1.setIcon(new ImageIcon(MenuUsuario.class.getResource("/img/fondoSoloNegro.jpg")));
 		lblNewLabel_1.setBounds(0, 243, 914, 378);
 		contentPane.add(lblNewLabel_1);
-
 	}
 }
