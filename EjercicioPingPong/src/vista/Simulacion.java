@@ -18,8 +18,8 @@ import java.awt.Font;
 public class Simulacion extends JFrame {
 
 	private JPanel contentPane;
-	private JTextField txtPuntuacion1;
-	private JTextField txtPuntuacion2;
+	public JTextField txtPuntuacion1;
+	public JTextField txtPuntuacion2;
 	private JTextField txtPuntuacion3;
 	private JTextField txtPuntuacion4;
 	private JTextField txtPuntuacion5;
