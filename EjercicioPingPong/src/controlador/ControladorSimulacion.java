@@ -38,7 +38,18 @@ public class ControladorSimulacion implements ActionListener{
 			ControladorUser cUser = new ControladorUser(mUsuario);
 			cUser.iniciar();
 			simulacion.setVisible(false);	
+		
 		}else if(e.getSource() == simulacion.btnGenerar) {
+			simulacion.lblJugador1.setText("Jugador 1");
+			simulacion.lblJugador2.setText("Jugador 2");
+			simulacion.lblJugador3.setText("Jugador 3");
+			simulacion.lblJugador4.setText("Jugador 4");
+			simulacion.lblJugador5.setText("Jugador 5");
+			simulacion.lblJugador6.setText("Jugador 6");
+			simulacion.lblJugador7.setText("Jugador 7");
+			simulacion.lblJugador8.setText("Jugador 8");
+			
+			
 			//Creamos un arraylist con los jugadores
 			List<String> jugadores = new ArrayList<>(8);
 			jugadores.add("Jesús");
@@ -49,7 +60,6 @@ public class ControladorSimulacion implements ActionListener{
 			jugadores.add("Tony");
 			jugadores.add("Carlos");
 			jugadores.add("David");
-			
 			
 			//Utilizamos la clase random para generar números aleatorios
 			Random random = new Random();
