@@ -166,14 +166,14 @@ public class Jugadores extends JFrame {
 		btnTony.setBackground(new Color(34, 139, 34));
 		btnTony.setForeground(Color.WHITE);
 		btnTony.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
-		btnTony.setBounds(261, 523, 156, 40);
+		btnTony.setBounds(30, 523, 156, 40);
 		contentPane.add(btnTony);
 
 		btnCarlos = new JButton("INFORMACI\u00D3N");
 		btnCarlos.setBackground(new Color(34, 139, 34));
 		btnCarlos.setForeground(Color.WHITE);
 		btnCarlos.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
-		btnCarlos.setBounds(30, 523, 155, 40);
+		btnCarlos.setBounds(261, 523, 155, 40);
 		contentPane.add(btnCarlos);
 
 		JLabel lblNewLabel = new JLabel("");

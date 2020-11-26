@@ -22,6 +22,7 @@ public class ControladorSimulacion implements ActionListener{
 		this.simulacion = simulacion;
 		this.simulacion.btnVolver.addActionListener(this);
 		this.simulacion.btnGenerar.addActionListener(this);
+		this.simulacion.btnSimular.addActionListener(this);
 	}
 	
 	public void iniciar() {
@@ -91,9 +92,46 @@ public class ControladorSimulacion implements ActionListener{
 				//Elimina el nombre del jugador que se haya modificado
 				jugadores.remove(index);
 			}
+		}if(e.getSource()==simulacion.btnSimular) {
+			enfrentamiento1(simulacion);
 		}
 
 	}
 
+	/**
+	 * Devuelve ganador 1º enfrentamiento
+	 * 
+	 * @param simulacion
+	 * @return
+	 */
+	public String enfrentamiento1(Simulacion simulacion) {
+		String ganador = "";
+		int puntos1 = 0;
+		int puntos2 = 0;
+		int puntua;
+		boolean fin = false;
+
+		while (fin != true) {
+			puntua = (1 + (int) (Math.random() * 2));
+			if (puntua == 1) {
+					puntos1 = puntos1 + 1;
+					simulacion.txtPuntuacion1.setText(String.valueOf(puntos1));
+			} else {
+					puntos2 = puntos2 + 1;
+					simulacion.txtPuntuacion2.setText(String.valueOf(puntos2));
+			}
+
+			if (puntos1 == 7 | puntos2 == 7) {
+				fin = true;
+				if (puntos1 == 7) {
+					ganador = simulacion.lblJugador1.getText();
+				} else {
+					ganador = simulacion.lblJugador2.getText();
+				}
+			}
+		}
+
+		return ganador;
+	}
 
 }

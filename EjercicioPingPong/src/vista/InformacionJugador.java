@@ -214,4 +214,5 @@ public class InformacionJugador extends JFrame {
 		lblNewLabel.setBounds(0, 0, 909, 621);
 		contentPane.add(lblNewLabel);
 	}
+
 }

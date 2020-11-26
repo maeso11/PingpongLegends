@@ -13,7 +13,6 @@ import vista.MenuUsuario;
 import vista.Resultados;
 import vista.Simulacion;
 
-
 public class ControladorJugadores implements ActionListener {
 
 	Jugadores jugadores = new Jugadores();
@@ -53,12 +52,10 @@ public class ControladorJugadores implements ActionListener {
 
 			// Información Carlos
 		} else if (e.getSource() == jugadores.btnCarlos) {
-
 			datosAVista(datos, info, conexion, cInfo, "CARLOS");
 
 			// Información David
 		} else if (e.getSource() == jugadores.btnDavid) {
-
 			datosAVista(datos, info, conexion, cInfo, "DAVID");
 
 			// Informacion Jesus
