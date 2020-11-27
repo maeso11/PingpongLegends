@@ -263,6 +263,7 @@ public class Clasificacion extends JFrame {
 		contentPane.add(lblNewLabel_1);
 		
 		btnVolver = new JButton("VOLVER");
+		btnVolver.setBorderPainted(false);
 		btnVolver.setForeground(new Color(0, 0, 0));
 		btnVolver.setBackground(new Color(255, 165, 0));
 		btnVolver.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));

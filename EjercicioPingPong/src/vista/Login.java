@@ -84,6 +84,7 @@ public class Login extends JFrame {
 		contentPane.add(lblContrasea);
 
 		btnEntrar = new JButton("ENTRAR");
+		btnEntrar.setBorderPainted(false);
 		btnEntrar.setBackground(new Color(34, 139, 34));
 		btnEntrar.setForeground(new Color(255, 255, 255));
 		btnEntrar.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
@@ -92,6 +93,7 @@ public class Login extends JFrame {
 		contentPane.add(btnEntrar);
 
 		btnVolver = new JButton("VOLVER");
+		btnVolver.setBorderPainted(false);
 		btnVolver.setBackground(new Color(255, 165, 0));
 		btnVolver.setForeground(new Color(0, 0, 0));
 		btnVolver.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));

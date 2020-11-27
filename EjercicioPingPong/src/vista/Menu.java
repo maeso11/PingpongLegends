@@ -58,6 +58,7 @@ public class Menu extends JFrame {
 		setLocationRelativeTo(null);
 
 		JButton btnLogin = new JButton("LOGIN");
+		btnLogin.setBorderPainted(false);
 		btnLogin.setBackground(new Color(34, 139, 34));
 		btnLogin.setForeground(new Color(255, 255, 255));
 		btnLogin.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));

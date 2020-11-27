@@ -66,6 +66,7 @@ public class Jugadores extends JFrame {
 		setResizable(false);
 
 		btnVolver = new JButton("VOLVER");
+		btnVolver.setBorderPainted(false);
 		btnVolver.setForeground(new Color(0, 0, 0));
 		btnVolver.setBackground(new Color(255, 165, 0));
 		btnVolver.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
@@ -121,6 +122,7 @@ public class Jugadores extends JFrame {
 		contentPane.add(lblJesus);
 
 		btnManuel = new JButton("INFORMACI\u00D3N");
+		btnManuel.setBorderPainted(false);
 		btnManuel.setBackground(new Color(34, 139, 34));
 		btnManuel.setForeground(Color.WHITE);
 		btnManuel.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
@@ -128,6 +130,7 @@ public class Jugadores extends JFrame {
 		contentPane.add(btnManuel);
 
 		btnPaco = new JButton("INFORMACI\u00D3N");
+		btnPaco.setBorderPainted(false);
 		btnPaco.setBackground(new Color(34, 139, 34));
 		btnPaco.setForeground(Color.WHITE);
 		btnPaco.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
@@ -135,6 +138,7 @@ public class Jugadores extends JFrame {
 		contentPane.add(btnPaco);
 
 		btnVictor = new JButton("INFORMACI\u00D3N");
+		btnVictor.setBorderPainted(false);
 		btnVictor.setBackground(new Color(34, 139, 34));
 		btnVictor.setForeground(Color.WHITE);
 		btnVictor.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
@@ -142,6 +146,7 @@ public class Jugadores extends JFrame {
 		contentPane.add(btnVictor);
 
 		btnDavid = new JButton("INFORMACI\u00D3N");
+		btnDavid.setBorderPainted(false);
 		btnDavid.setBackground(new Color(34, 139, 34));
 		btnDavid.setForeground(Color.WHITE);
 		btnDavid.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
@@ -149,6 +154,7 @@ public class Jugadores extends JFrame {
 		contentPane.add(btnDavid);
 
 		btnJesus = new JButton("INFORMACI\u00D3N");
+		btnJesus.setBorderPainted(false);
 		btnJesus.setBackground(new Color(34, 139, 34));
 		btnJesus.setForeground(Color.WHITE);
 		btnJesus.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
@@ -156,6 +162,7 @@ public class Jugadores extends JFrame {
 		contentPane.add(btnJesus);
 
 		btnMaeso = new JButton("INFORMACI\u00D3N");
+		btnMaeso.setBorderPainted(false);
 		btnMaeso.setBackground(new Color(34, 139, 34));
 		btnMaeso.setForeground(Color.WHITE);
 		btnMaeso.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
@@ -163,6 +170,7 @@ public class Jugadores extends JFrame {
 		contentPane.add(btnMaeso);
 
 		btnTony = new JButton("INFORMACI\u00D3N");
+		btnTony.setBorderPainted(false);
 		btnTony.setBackground(new Color(34, 139, 34));
 		btnTony.setForeground(Color.WHITE);
 		btnTony.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
@@ -170,6 +178,7 @@ public class Jugadores extends JFrame {
 		contentPane.add(btnTony);
 
 		btnCarlos = new JButton("INFORMACI\u00D3N");
+		btnCarlos.setBorderPainted(false);
 		btnCarlos.setBackground(new Color(34, 139, 34));
 		btnCarlos.setForeground(Color.WHITE);
 		btnCarlos.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));

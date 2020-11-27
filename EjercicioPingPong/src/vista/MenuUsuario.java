@@ -84,6 +84,7 @@ public class MenuUsuario extends JFrame {
 		setLocationRelativeTo(null);
 
 		btnCerrarSesin = new JButton("CERRAR SESI\u00D3N");
+		btnCerrarSesin.setBorderPainted(false);
 		btnCerrarSesin.setForeground(new Color(255, 255, 255));
 		btnCerrarSesin.setBackground(new Color(34, 139, 34));
 		btnCerrarSesin.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
@@ -91,6 +92,7 @@ public class MenuUsuario extends JFrame {
 		contentPane.add(btnCerrarSesin);
 
 		btnResultados = new JButton("RESULTADOS");
+		btnResultados.setBorderPainted(false);
 		btnResultados.setForeground(new Color(255, 255, 255));
 		btnResultados.setBackground(new Color(34, 139, 34));
 		btnResultados.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
@@ -98,6 +100,7 @@ public class MenuUsuario extends JFrame {
 		contentPane.add(btnResultados);
 
 		btnSimulacin = new JButton("SIMULACI\u00D3N ");
+		btnSimulacin.setBorderPainted(false);
 		btnSimulacin.setForeground(new Color(255, 255, 255));
 		btnSimulacin.setBackground(new Color(34, 139, 34));
 		btnSimulacin.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
@@ -105,6 +108,7 @@ public class MenuUsuario extends JFrame {
 		contentPane.add(btnSimulacin);
 
 		btnClasificacin = new JButton("CLASIFICACI\u00D3N");
+		btnClasificacin.setBorderPainted(false);
 		btnClasificacin.setForeground(new Color(255, 255, 255));
 		btnClasificacin.setBackground(new Color(34, 139, 34));
 		btnClasificacin.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
@@ -112,6 +116,7 @@ public class MenuUsuario extends JFrame {
 		contentPane.add(btnClasificacin);
 
 		btnInformacin = new JButton("JUGADORES");
+		btnInformacin.setBorderPainted(false);
 		btnInformacin.setForeground(new Color(255, 255, 255));
 		btnInformacin.setBackground(new Color(34, 139, 34));
 		btnInformacin.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
@@ -124,6 +129,7 @@ public class MenuUsuario extends JFrame {
 		contentPane.add(lblNewLabel);
 
 		JButton btnLeer2 = new JButton("Leer ");
+		btnLeer2.setBorderPainted(false);
 		btnLeer2.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 12));
 		btnLeer2.setForeground(new Color(255, 255, 255));
 		btnLeer2.setBackground(new Color(34, 139, 34));
@@ -136,6 +142,7 @@ public class MenuUsuario extends JFrame {
 		contentPane.add(lblNewLabel_3);
 
 		JButton btnLeer1 = new JButton("Leer");
+		btnLeer1.setBorderPainted(false);
 		btnLeer1.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 12));
 		btnLeer1.setForeground(new Color(255, 255, 255));
 		btnLeer1.setBackground(new Color(34, 139, 34));

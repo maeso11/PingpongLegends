@@ -71,6 +71,7 @@ public class InformacionJugador extends JFrame {
 		setResizable(false);
 				
 						btnGrito = new JButton("GRITO");
+						btnGrito.setBorderPainted(false);
 						btnGrito.setForeground(new Color(255, 255, 255));
 						btnGrito.setBackground(new Color(34, 139, 34));
 						btnGrito.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
@@ -122,6 +123,7 @@ public class InformacionJugador extends JFrame {
 		contentPane.add(lbl5);
 
 		btnVolver = new JButton("VOLVER");
+		btnVolver.setBorderPainted(false);
 		btnVolver.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
 		btnVolver.setBackground(new Color(255, 165, 0));
 		btnVolver.setForeground(new Color(0, 0, 0));
