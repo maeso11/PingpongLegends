@@ -16,24 +16,33 @@ import java.awt.Font;
 import javax.swing.ImageIcon;
 import javax.swing.JComboBox;
 import javax.swing.JTextField;
+import java.awt.Color;
 
 public class Resultados extends JFrame {
 
 	private JPanel contentPane;
 	public JButton btnVolver;
-	public JButton btnClasificacion;
-	public JButton btnActualizar;
-	public JButton btnJugadores;
-	public JButton btnSimulacion;
-	
-	private JTextField textPuntos1;
-	private JTextField textPuntos2;
-	private JTextField textPuntos3;
-	private JTextField textPuntos4;
-	private JTextField textPuntos5;
-	private JTextField textPuntos6;
-	private JTextField textPuntos7;
-	private JTextField textPuntos8;
+	public JComboBox comboBox;
+	public JLabel lblNewLabel_1;
+	public JLabel lblJugador4;
+	public JLabel lblJugador6;
+	public JLabel lblPorcentaje;
+	public JLabel label;
+	public JLabel label_1;
+	public JLabel label_2;
+	public JLabel lblNewLabel_2;
+	public JLabel lblNewLabel_3;
+	public JLabel lblNewLabel_4;
+	public JLabel lblBandera1;
+	public JLabel lblBandera4;
+	public JLabel lblBandera6;
+	public JLabel fotoMaeso;
+	public JLabel banderaMaeso;
+	public JLabel porro;
+	public JLabel lblNewLabel_5;
+	public JLabel lblNewLabel_8;
+	public JLabel label_3;
+	public JLabel label_4;
 
 	/**
 	 * Launch the application.
@@ -65,192 +74,134 @@ public class Resultados extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
+		label_4 = new JLabel("");
+		label_4.setIcon(new ImageIcon(Resultados.class.getResource("/img/oro.png")));
+		label_4.setBounds(53, 146, 77, 76);
+		contentPane.add(label_4);
+		
+		label_3 = new JLabel("");
+		label_3.setIcon(new ImageIcon(Resultados.class.getResource("/img/plata.png")));
+		label_3.setBounds(53, 284, 77, 76);
+		contentPane.add(label_3);
+		
+		lblNewLabel_8 = new JLabel("");
+		lblNewLabel_8.setIcon(new ImageIcon(Resultados.class.getResource("/img/bronce.png")));
+		lblNewLabel_8.setBounds(53, 438, 77, 76);
+		contentPane.add(lblNewLabel_8);
+		
 		JLabel lblNewLabel = new JLabel("");
 		lblNewLabel.setIcon(new ImageIcon(Resultados.class.getResource("/img/logoPeque\u00F1o2.png")));
 		lblNewLabel.setBounds(31, 35, 210, 133);
 		contentPane.add(lblNewLabel);
 		
-		JLabel lblResultados = new JLabel("RESULTADOS");
-		lblResultados.setFont(new Font("Modern No. 20", Font.PLAIN, 25));
-		lblResultados.setBounds(349, 11, 194, 24);
+		JLabel lblResultados = new JLabel("ESTAD\u00CDSTICAS");
+		lblResultados.setForeground(Color.WHITE);
+		lblResultados.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 25));
+		lblResultados.setBounds(349, 11, 207, 30);
 		contentPane.add(lblResultados);
 		
-		JLabel lblInformacin = new JLabel("INFORMACI\u00D3N");
-		lblInformacin.setFont(new Font("Sitka Text", Font.BOLD, 15));
-		lblInformacin.setBounds(273, 73, 122, 23);
-		contentPane.add(lblInformacin);
-		
-		JLabel lblNovedades = new JLabel("NOVEDADES");
-		lblNovedades.setFont(new Font("Sitka Text", Font.BOLD, 15));
-		lblNovedades.setBounds(502, 77, 94, 20);
-		contentPane.add(lblNovedades);
-		
-		JLabel lblMsTorneos = new JLabel("M\u00C1S TORNEOS");
-		lblMsTorneos.setFont(new Font("Sitka Text", Font.BOLD, 15));
-		lblMsTorneos.setBounds(734, 68, 151, 32);
-		contentPane.add(lblMsTorneos);
-		
-		JLabel lblBandera1 = new JLabel("");
+		lblBandera1 = new JLabel("");
 		lblBandera1.setIcon(new ImageIcon(Resultados.class.getResource("/img/Lilcorea.jpg")));
-		lblBandera1.setBounds(31, 318, 58, 33);
+		lblBandera1.setBounds(446, 425, 58, 33);
 		contentPane.add(lblBandera1);
 		
-		JLabel lblNewLabel_1 = new JLabel("DAVID");
-		lblNewLabel_1.setBounds(89, 320, 46, 31);
+		lblNewLabel_1 = new JLabel("DAVID");
+		lblNewLabel_1.setForeground(Color.WHITE);
+		lblNewLabel_1.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
+		lblNewLabel_1.setBounds(224, 463, 77, 18);
 		contentPane.add(lblNewLabel_1);
 		
-		JLabel lblVs = new JLabel("VS");
-		lblVs.setFont(new Font("Stencil", Font.PLAIN, 15));
-		lblVs.setBounds(186, 329, 46, 14);
-		contentPane.add(lblVs);
-		
-		JLabel lblNewLabel_2 = new JLabel("TONY");
-		lblNewLabel_2.setBounds(282, 328, 46, 14);
-		contentPane.add(lblNewLabel_2);
-		
-		JLabel lblBandera2 = new JLabel("");
-		lblBandera2.setIcon(new ImageIcon(Resultados.class.getResource("/img/lilINDIA.png")));
-		lblBandera2.setBounds(349, 319, 50, 33);
-		contentPane.add(lblBandera2);
-		
-		JLabel lblBandera3 = new JLabel("");
-		lblBandera3.setIcon(new ImageIcon(Resultados.class.getResource("/img/ESPA\u00D1A.png")));
-		lblBandera3.setBounds(31, 433, 50, 33);
-		contentPane.add(lblBandera3);
-		
-		JLabel lblJugador3 = new JLabel("JES\u00DAS");
-		lblJugador3.setBounds(89, 444, 46, 14);
-		contentPane.add(lblJugador3);
-		
-		JLabel label = new JLabel("VS");
-		label.setFont(new Font("Stencil", Font.PLAIN, 15));
-		label.setBounds(186, 445, 46, 14);
-		contentPane.add(label);
-		
-		JLabel lblJugador4 = new JLabel("MANUEL");
-		lblJugador4.setBounds(282, 444, 57, 14);
+		lblJugador4 = new JLabel("MANUEL");
+		lblJugador4.setForeground(Color.WHITE);
+		lblJugador4.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
+		lblJugador4.setBounds(224, 179, 95, 18);
 		contentPane.add(lblJugador4);
 		
-		JLabel lblBandera4 = new JLabel("");
+		lblBandera4 = new JLabel("");
 		lblBandera4.setIcon(new ImageIcon(Resultados.class.getResource("/img/LILwilly2.png")));
-		lblBandera4.setBounds(349, 433, 50, 33);
+		lblBandera4.setBounds(450, 129, 50, 33);
 		contentPane.add(lblBandera4);
 		
-		JLabel lblBandera5 = new JLabel("");
-		lblBandera5.setIcon(new ImageIcon(Resultados.class.getResource("/img/ESPA\u00D1A.png")));
-		lblBandera5.setBounds(446, 319, 50, 33);
-		contentPane.add(lblBandera5);
-		
-		JLabel lblJugador5 = new JLabel("CARLOS");
-		lblJugador5.setBounds(533, 328, 63, 14);
-		contentPane.add(lblJugador5);
-		
-		JLabel label_1 = new JLabel("VS");
-		label_1.setFont(new Font("Stencil", Font.PLAIN, 15));
-		label_1.setBounds(644, 329, 46, 14);
-		contentPane.add(label_1);
-		
-		JLabel lblJugador6 = new JLabel("PACO");
-		lblJugador6.setBounds(743, 328, 46, 14);
+		lblJugador6 = new JLabel("PACO");
+		lblJugador6.setForeground(Color.WHITE);
+		lblJugador6.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
+		lblJugador6.setBounds(224, 303, 77, 18);
 		contentPane.add(lblJugador6);
 		
-		JLabel lblBandera6 = new JLabel("");
+		lblBandera6 = new JLabel("");
 		lblBandera6.setIcon(new ImageIcon(Resultados.class.getResource("/img/LILBRASIL.png")));
-		lblBandera6.setBounds(798, 317, 50, 35);
+		lblBandera6.setBounds(454, 263, 50, 35);
 		contentPane.add(lblBandera6);
 		
-		JLabel lblBandera7 = new JLabel("");
-		lblBandera7.setIcon(new ImageIcon(Resultados.class.getResource("/img/LILPORTUGAL.png")));
-		lblBandera7.setBounds(450, 433, 50, 33);
-		contentPane.add(lblBandera7);
+		btnVolver = new JButton("Volver");
+		btnVolver.setBounds(0, 580, 909, 41);
+		contentPane.add(btnVolver);
 		
-		JLabel lblJugador7 = new JLabel("V\u00CDCTOR");
-		lblJugador7.setBounds(533, 444, 46, 14);
-		contentPane.add(lblJugador7);
+		comboBox = new JComboBox();
+		comboBox.setBounds(349, 68, 173, 20);
+		contentPane.add(comboBox);
+		comboBox.addItem("MEJORES SACADORES");
+		comboBox.addItem("MEJORES RESTADORES");
+		comboBox.addItem("MEJORES REMATADORES");
+		comboBox.addItem("MEJORES FUMADORES");
 		
-		JLabel label_2 = new JLabel("VS");
-		label_2.setFont(new Font("Stencil", Font.PLAIN, 15));
-		label_2.setBounds(644, 445, 46, 14);
+		lblNewLabel_2 = new JLabel("");
+		lblNewLabel_2.setIcon(new ImageIcon(Resultados.class.getResource("/img/manuelMINI.jpeg")));
+		lblNewLabel_2.setBounds(375, 129, 65, 87);
+		contentPane.add(lblNewLabel_2);
+		
+		lblPorcentaje = new JLabel("PORCENTAJE SAQUES GANADORES");
+		lblPorcentaje.setForeground(Color.WHITE);
+		lblPorcentaje.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
+		lblPorcentaje.setBounds(596, 104, 281, 18);
+		contentPane.add(lblPorcentaje);
+		
+		label = new JLabel("83%");
+		label.setForeground(Color.WHITE);
+		label.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
+		label.setBounds(596, 171, 50, 18);
+		contentPane.add(label);
+		
+		lblNewLabel_3 = new JLabel("");
+		lblNewLabel_3.setIcon(new ImageIcon(Resultados.class.getResource("/img/pacoMINI.jpeg")));
+		lblNewLabel_3.setBounds(379, 263, 65, 87);
+		contentPane.add(lblNewLabel_3);
+		
+		label_1 = new JLabel("77%");
+		label_1.setForeground(Color.WHITE);
+		label_1.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
+		label_1.setBounds(596, 303, 34, 18);
+		contentPane.add(label_1);
+		
+		lblNewLabel_4 = new JLabel("");
+		lblNewLabel_4.setIcon(new ImageIcon(Resultados.class.getResource("/img/DAVIDMINI.jpg")));
+		lblNewLabel_4.setBounds(375, 427, 65, 87);
+		contentPane.add(lblNewLabel_4);
+		
+		label_2 = new JLabel("71%");
+		label_2.setForeground(Color.WHITE);
+		label_2.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
+		label_2.setBounds(596, 463, 34, 18);
 		contentPane.add(label_2);
 		
-		JLabel lblJugador8 = new JLabel("MAESO");
-		lblJugador8.setBounds(743, 444, 46, 14);
-		contentPane.add(lblJugador8);
+		fotoMaeso = new JLabel("");
+		fotoMaeso.setBounds(368, 102, 210, 356);
+		contentPane.add(fotoMaeso);
 		
-		JLabel lblBandera8 = new JLabel("");
-		lblBandera8.setIcon(new ImageIcon(Resultados.class.getResource("/img/LILjamaica.jpg")));
-		lblBandera8.setBounds(798, 433, 50, 33);
-		contentPane.add(lblBandera8);
+		banderaMaeso = new JLabel("");
+		banderaMaeso.setBounds(302, 175, 48, 28);
+		contentPane.add(banderaMaeso);
 		
+		porro = new JLabel("");
+		porro.setBounds(569, 232, 574, 118);
+		contentPane.add(porro);
 		
-		
-		textPuntos1 = new JTextField();
-		textPuntos1.setEditable(false);
-		textPuntos1.setBounds(145, 325, 15, 20);
-		contentPane.add(textPuntos1);
-		textPuntos1.setColumns(10);
-		
-		textPuntos2 = new JTextField();
-		textPuntos2.setEditable(false);
-		textPuntos2.setBounds(228, 325, 15, 20);
-		contentPane.add(textPuntos2);
-		textPuntos2.setColumns(10);
-		
-		textPuntos3 = new JTextField();
-		textPuntos3.setEditable(false);
-		textPuntos3.setColumns(10);
-		textPuntos3.setBounds(149, 441, 15, 20);
-		contentPane.add(textPuntos3);
-		
-		textPuntos4 = new JTextField();
-		textPuntos4.setEditable(false);
-		textPuntos4.setColumns(10);
-		textPuntos4.setBounds(228, 441, 15, 20);
-		contentPane.add(textPuntos4);
-		
-		textPuntos5 = new JTextField();
-		textPuntos5.setEditable(false);
-		textPuntos5.setColumns(10);
-		textPuntos5.setBounds(608, 325, 15, 20);
-		contentPane.add(textPuntos5);
-		
-		textPuntos6 = new JTextField();
-		textPuntos6.setEditable(false);
-		textPuntos6.setColumns(10);
-		textPuntos6.setBounds(689, 325, 15, 20);
-		contentPane.add(textPuntos6);
-		
-		textPuntos7 = new JTextField();
-		textPuntos7.setEditable(false);
-		textPuntos7.setColumns(10);
-		textPuntos7.setBounds(608, 441, 15, 20);
-		contentPane.add(textPuntos7);
-		
-		textPuntos8 = new JTextField();
-		textPuntos8.setEditable(false);
-		textPuntos8.setColumns(10);
-		textPuntos8.setBounds(689, 441, 15, 20);
-		contentPane.add(textPuntos8);
-		
-		btnJugadores = new JButton("JUGADORES");
-		btnJugadores.setBounds(257, 97, 157, 48);
-		contentPane.add(btnJugadores);
-		
-		btnClasificacion = new JButton("CLASIFICACI\u00D3N");
-		btnClasificacion.setBounds(468, 96, 171, 50);
-		contentPane.add(btnClasificacion);
-		
-		btnSimulacion = new JButton("SIMULACI\u00D3N");
-		btnSimulacion.setBounds(700, 96, 185, 50);
-		contentPane.add(btnSimulacion);
-		
-		btnActualizar = new JButton("ACTUALIZAR");
-		btnActualizar.setBounds(378, 542, 122, 56);
-		contentPane.add(btnActualizar);
-		
-		btnVolver = new JButton("Volver");
-		btnVolver.setBounds(793, 569, 106, 41);
-		contentPane.add(btnVolver);
+		lblNewLabel_5 = new JLabel("");
+		lblNewLabel_5.setIcon(new ImageIcon(Resultados.class.getResource("/img/fondoSoloNegro.jpg")));
+		lblNewLabel_5.setBounds(0, 0, 909, 621);
+		contentPane.add(lblNewLabel_5);
 		setLocationRelativeTo(null);
+		
 	}
 }
+

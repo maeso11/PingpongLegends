@@ -93,7 +93,7 @@ public class MenuUsuario extends JFrame {
 		btnCerrarSesin.setBounds(736, 243, 178, 39);
 		contentPane.add(btnCerrarSesin);
 
-		btnResultados = new JButton("RESULTADOS");
+		btnResultados = new JButton("ESTAD\u00CDSTICAS");
 		btnResultados.setBorderPainted(false);
 		btnResultados.setForeground(new Color(255, 255, 255));
 		btnResultados.setBackground(new Color(34, 139, 34));
