@@ -48,6 +48,8 @@ public class MenuUsuario extends JFrame {
 	public JButton btnSimulacin;
 	public JButton btnClasificacin;
 	public JButton btnCerrarSesin;
+	public JButton btnLeer1;
+	public JButton btnLeer2;
 	private JLabel lblNewLabel_2;
 	private JTextArea noticia1;
 	private JTextArea noticia2;
@@ -128,7 +130,7 @@ public class MenuUsuario extends JFrame {
 		lblNewLabel.setBounds(0, 0, 914, 245);
 		contentPane.add(lblNewLabel);
 
-		JButton btnLeer2 = new JButton("Leer ");
+		btnLeer2 = new JButton("Leer ");
 		btnLeer2.setBorderPainted(false);
 		btnLeer2.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 12));
 		btnLeer2.setForeground(new Color(255, 255, 255));
@@ -141,7 +143,7 @@ public class MenuUsuario extends JFrame {
 		lblNewLabel_3.setBounds(466, 297, 190, 313);
 		contentPane.add(lblNewLabel_3);
 
-		JButton btnLeer1 = new JButton("Leer");
+		btnLeer1 = new JButton("Leer");
 		btnLeer1.setBorderPainted(false);
 		btnLeer1.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 12));
 		btnLeer1.setForeground(new Color(255, 255, 255));
