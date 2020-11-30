@@ -16,23 +16,25 @@ import javax.swing.table.DefaultTableModel;
 
 import java.awt.Window.Type;
 import java.awt.Toolkit;
+import javax.swing.JTextField;
 
-public class Clasificacion extends JFrame {
+public class AdminClasificacion extends JFrame {
 
-	public JLabel lblPuntos_2;
-	public JLabel lblPuntos;
-	public JLabel lblPuntos_1;
-	public JLabel lblPuntos_3;
-	public JLabel lblPuntos_4;
-	public JLabel lblPuntos_5;
-	public JLabel lblPuntos_6;
-	public JLabel lblPuntos_7;
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	public JButton btnVolver;
+	public JTextField puntos1;
+	public JTextField puntos2;
+	public JTextField puntos3;
+	public JTextField puntos4;
+	public JTextField puntos5;
+	public JTextField puntos6;
+	public JTextField puntos7;
+	public JTextField puntos8;
+	public JButton btnActualizar;
 
 	/**
 	 * Launch the application.
@@ -53,7 +55,7 @@ public class Clasificacion extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public Clasificacion() {
+	public AdminClasificacion() {
 		setIconImage(Toolkit.getDefaultToolkit().getImage(Clasificacion.class.getResource("/img/palas.png")));
 		setTitle("CLASIFICACI\u00D3N");
 		setResizable(false);
@@ -64,6 +66,98 @@ public class Clasificacion extends JFrame {
 		setContentPane(contentPane);
 		setLocationRelativeTo(null);
 		contentPane.setLayout(null);
+		
+		JLabel label_19 = new JLabel("PUNTOS");
+		label_19.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 11));
+		label_19.setForeground(Color.WHITE);
+		label_19.setBounds(794, 487, 56, 14);
+		contentPane.add(label_19);
+		
+		JLabel label_16 = new JLabel("PUNTOS");
+		label_16.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 11));
+		label_16.setForeground(Color.WHITE);
+		label_16.setBounds(794, 290, 56, 14);
+		contentPane.add(label_16);
+		
+		JLabel label_18 = new JLabel("PUNTOS");
+		label_18.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 11));
+		label_18.setForeground(Color.WHITE);
+		label_18.setBounds(794, 417, 56, 14);
+		contentPane.add(label_18);
+		
+		JLabel label_15 = new JLabel("PUNTOS");
+		label_15.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 11));
+		label_15.setForeground(Color.WHITE);
+		label_15.setBounds(314, 487, 536, 14);
+		contentPane.add(label_15);
+		
+		JLabel label_8 = new JLabel("PUNTOS");
+		label_8.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 11));
+		label_8.setForeground(Color.WHITE);
+		label_8.setBounds(314, 347, 536, 14);
+		contentPane.add(label_8);
+		
+		JLabel label_17 = new JLabel("PUNTOS");
+		label_17.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 11));
+		label_17.setForeground(Color.WHITE);
+		label_17.setBounds(794, 347, 56, 14);
+		contentPane.add(label_17);
+		
+		JLabel label_14 = new JLabel("PUNTOS");
+		label_14.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 11));
+		label_14.setForeground(Color.WHITE);
+		label_14.setBounds(314, 417, 536, 14);
+		contentPane.add(label_14);
+		
+		JLabel lblPuntos = new JLabel("PUNTOS");
+		lblPuntos.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 11));
+		lblPuntos.setForeground(Color.WHITE);
+		lblPuntos.setBounds(314, 290, 536, 14);
+		contentPane.add(lblPuntos);
+		
+		puntos7 = new JTextField();
+		puntos7.setColumns(10);
+		puntos7.setBounds(745, 410, 33, 29);
+		contentPane.add(puntos7);
+		
+		puntos2 = new JTextField();
+		puntos2.setColumns(10);
+		puntos2.setBounds(258, 340, 33, 29);
+		contentPane.add(puntos2);
+		
+		puntos8 = new JTextField();
+		puntos8.setColumns(10);
+		puntos8.setBounds(745, 480, 33, 29);
+		contentPane.add(puntos8);
+		
+		puntos6 = new JTextField();
+		puntos6.setColumns(10);
+		puntos6.setBounds(745, 340, 33, 29);
+		contentPane.add(puntos6);
+		
+		puntos4 = new JTextField();
+		puntos4.setColumns(10);
+		puntos4.setBounds(258, 480, 33, 29);
+		contentPane.add(puntos4);
+		
+		puntos3 = new JTextField();
+		puntos3.setColumns(10);
+		puntos3.setBounds(258, 410, 33, 29);
+		contentPane.add(puntos3);
+		
+		puntos5 = new JTextField();
+		puntos5.setColumns(10);
+		puntos5.setBounds(745, 283, 33, 29);
+		contentPane.add(puntos5);
+		
+		puntos1 = new JTextField();
+		puntos1.setBounds(258, 283, 33, 29);
+		contentPane.add(puntos1);
+		puntos1.setColumns(10);
+		
+		btnActualizar = new JButton("ACTUALIZAR");
+		btnActualizar.setBounds(391, 537, 107, 23);
+		contentPane.add(btnActualizar);
 		
 		JLabel lblNewLabel_5 = new JLabel("");
 		lblNewLabel_5.setIcon(new ImageIcon(Clasificacion.class.getResource("/img/palas.png")));
@@ -127,54 +221,6 @@ public class Clasificacion extends JFrame {
 		label_13.setIcon(new ImageIcon(Clasificacion.class.getResource("/img/lilINDIA.png")));
 		label_13.setBounds(689, 480, 46, 29);
 		contentPane.add(label_13);
-		
-		lblPuntos_2 = new JLabel("10 PUNTOS");
-		lblPuntos_2.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
-		lblPuntos_2.setForeground(Color.WHITE);
-		lblPuntos_2.setBounds(254, 424, 107, 14);
-		contentPane.add(lblPuntos_2);
-		
-		lblPuntos_6 = new JLabel("7 PUNTOS");
-		lblPuntos_6.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
-		lblPuntos_6.setForeground(Color.WHITE);
-		lblPuntos_6.setBounds(748, 423, 107, 14);
-		contentPane.add(lblPuntos_6);
-		
-		lblPuntos_1 = new JLabel("11 PUNTOS");
-		lblPuntos_1.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
-		lblPuntos_1.setForeground(Color.WHITE);
-		lblPuntos_1.setBounds(254, 351, 107, 14);
-		contentPane.add(lblPuntos_1);
-		
-		lblPuntos_4 = new JLabel("12 PUNTOS");
-		lblPuntos_4.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
-		lblPuntos_4.setForeground(Color.WHITE);
-		lblPuntos_4.setBounds(748, 288, 107, 14);
-		contentPane.add(lblPuntos_4);
-		
-		lblPuntos = new JLabel("16 PUNTOS");
-		lblPuntos.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
-		lblPuntos.setForeground(Color.WHITE);
-		lblPuntos.setBounds(254, 288, 107, 14);
-		contentPane.add(lblPuntos);
-		
-		lblPuntos_3 = new JLabel("7 PUNTOS");
-		lblPuntos_3.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
-		lblPuntos_3.setForeground(Color.WHITE);
-		lblPuntos_3.setBounds(254, 492, 107, 14);
-		contentPane.add(lblPuntos_3);
-		
-		lblPuntos_5 = new JLabel("11 PUNTOS");
-		lblPuntos_5.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
-		lblPuntos_5.setForeground(Color.WHITE);
-		lblPuntos_5.setBounds(748, 351, 107, 14);
-		contentPane.add(lblPuntos_5);
-		
-		lblPuntos_7 = new JLabel("5 PUNTOS");
-		lblPuntos_7.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
-		lblPuntos_7.setForeground(Color.WHITE);
-		lblPuntos_7.setBounds(745, 495, 97, 14);
-		contentPane.add(lblPuntos_7);
 		
 		JLabel lblJesus_6 = new JLabel("CARLOS");
 		lblJesus_6.setForeground(Color.WHITE);
@@ -285,6 +331,7 @@ public class Clasificacion extends JFrame {
 		contentPane.add(label);
 		
 		JLabel lblFondo = new JLabel("");
+		lblFondo.setForeground(Color.WHITE);
 		lblFondo.setIcon(new ImageIcon(Jugadores.class.getResource("/img/fondoSoloNegro.jpg")));
 		lblFondo.setBounds(0, 0, 909, 621);
 		contentPane.add(lblFondo);
