@@ -34,14 +34,14 @@ public class ControladorClasificacionAdmin implements ActionListener{
 			cUser.iniciar();
 			clasificacion.setVisible(false);
 		}else if(e.getSource()==adminclasificacion) {
-			clasificacion.lblPuntos.setText(adminclasificacion.puntos1.getText()+ " PUNTOS");
-			clasificacion.lblPuntos.setText(adminclasificacion.puntos2.getText()+ " PUNTOS");
-			clasificacion.lblPuntos.setText(adminclasificacion.puntos3.getText()+ " PUNTOS");
-			clasificacion.lblPuntos.setText(adminclasificacion.puntos4.getText()+ " PUNTOS");
-			clasificacion.lblPuntos.setText(adminclasificacion.puntos5.getText()+ " PUNTOS");
-			clasificacion.lblPuntos.setText(adminclasificacion.puntos6.getText()+ " PUNTOS");
-			clasificacion.lblPuntos.setText(adminclasificacion.puntos7.getText()+ " PUNTOS");
-			clasificacion.lblPuntos.setText(adminclasificacion.puntos8.getText()+ " PUNTOS");
+			clasificacion.lblPuntos1.setText(adminclasificacion.puntos1.getText()+ " PUNTOS");
+			clasificacion.lblPuntos2.setText(adminclasificacion.puntos2.getText()+ " PUNTOS");
+			clasificacion.lblPuntos3.setText(adminclasificacion.puntos3.getText()+ " PUNTOS");
+			clasificacion.lblPuntos4.setText(adminclasificacion.puntos4.getText()+ " PUNTOS");
+			clasificacion.lblPuntos5.setText(adminclasificacion.puntos5.getText()+ " PUNTOS");
+			clasificacion.lblPuntos6.setText(adminclasificacion.puntos6.getText()+ " PUNTOS");
+			clasificacion.lblPuntos7.setText(adminclasificacion.puntos7.getText()+ " PUNTOS");
+			clasificacion.lblPuntos8.setText(adminclasificacion.puntos8.getText()+ " PUNTOS");
 			
 		}
 		

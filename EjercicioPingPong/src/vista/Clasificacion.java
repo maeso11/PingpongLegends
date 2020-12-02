@@ -19,14 +19,14 @@ import java.awt.Toolkit;
 
 public class Clasificacion extends JFrame {
 
-	public JLabel lblPuntos_2;
-	public JLabel lblPuntos;
-	public JLabel lblPuntos_1;
-	public JLabel lblPuntos_3;
-	public JLabel lblPuntos_4;
-	public JLabel lblPuntos_5;
-	public JLabel lblPuntos_6;
-	public JLabel lblPuntos_7;
+	public JLabel lblPuntos3;
+	public JLabel lblPuntos1;
+	public JLabel lblPuntos2;
+	public JLabel lblPuntos4;
+	public JLabel lblPuntos5;
+	public JLabel lblPuntos6;
+	public JLabel lblPuntos7;
+	public JLabel lblPuntos8;
 	/**
 	 * 
 	 */
@@ -65,134 +65,156 @@ public class Clasificacion extends JFrame {
 		setLocationRelativeTo(null);
 		contentPane.setLayout(null);
 		
-		JLabel lblNewLabel_5 = new JLabel("");
-		lblNewLabel_5.setIcon(new ImageIcon(Clasificacion.class.getResource("/img/palas.png")));
-		lblNewLabel_5.setBounds(353, 92, 170, 122);
-		contentPane.add(lblNewLabel_5);
+		JLabel lblTierA = new JLabel("TIER A");
+		lblTierA.setForeground(Color.WHITE);
+		lblTierA.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
+		lblTierA.setBounds(164, 40, 57, 19);
+		contentPane.add(lblTierA);
 		
-		JLabel lblNewLabel_4_1 = new JLabel("TIER B");
-		lblNewLabel_4_1.setForeground(Color.WHITE);
-		lblNewLabel_4_1.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
-		lblNewLabel_4_1.setBounds(653, 40, 59, 19);
-		contentPane.add(lblNewLabel_4_1);
+		JLabel lblDiamante = new JLabel("");
+		lblDiamante.setIcon(new ImageIcon(Clasificacion.class.getResource("/img/tierA.png")));
+		lblDiamante.setBounds(128, 76, 130, 149);
+		contentPane.add(lblDiamante);
 		
-		JLabel lblNewLabel_4 = new JLabel("TIER A");
-		lblNewLabel_4.setForeground(Color.WHITE);
-		lblNewLabel_4.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
-		lblNewLabel_4.setBounds(164, 40, 57, 19);
-		contentPane.add(lblNewLabel_4);
+		JLabel lblTierB = new JLabel("TIER B");
+		lblTierB.setForeground(Color.WHITE);
+		lblTierB.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
+		lblTierB.setBounds(653, 40, 59, 19);
+		contentPane.add(lblTierB);
 		
-		JLabel lblNewLabel_3 = new JLabel("");
-		lblNewLabel_3.setIcon(new ImageIcon(Clasificacion.class.getResource("/img/Lilcorea.jpg")));
-		lblNewLabel_3.setBounds(198, 409, 45, 30);
-		contentPane.add(lblNewLabel_3);
+		JLabel lblMadera = new JLabel("");
+		lblMadera.setIcon(new ImageIcon(Clasificacion.class.getResource("/img/tierB.png")));
+		lblMadera.setBounds(617, 76, 130, 157);
+		contentPane.add(lblMadera);
 		
-		JLabel lblJesus_2 = new JLabel("DAVID");
-		lblJesus_2.setForeground(Color.WHITE);
-		lblJesus_2.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
-		lblJesus_2.setBounds(106, 421, 119, 14);
-		contentPane.add(lblJesus_2);
+		JLabel lblLogoLiga = new JLabel("");
+		lblLogoLiga.setIcon(new ImageIcon(Clasificacion.class.getResource("/img/palas.png")));
+		lblLogoLiga.setBounds(353, 92, 170, 122);
+		contentPane.add(lblLogoLiga);
 		
-		JLabel label_9 = new JLabel("");
-		label_9.setIcon(new ImageIcon(Clasificacion.class.getResource("/img/LILBRASIL.png")));
-		label_9.setBounds(198, 480, 60, 29);
-		contentPane.add(label_9);
+		JLabel lblPrimeroA = new JLabel("1\u00BA");
+		lblPrimeroA.setForeground(Color.WHITE);
+		lblPrimeroA.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
+		lblPrimeroA.setBounds(51, 288, 60, 14);
+		contentPane.add(lblPrimeroA);
 		
-		JLabel label_12 = new JLabel("");
-		label_12.setIcon(new ImageIcon(Clasificacion.class.getResource("/img/LILESPA\u00D1A.png")));
-		label_12.setBounds(689, 409, 46, 29);
-		contentPane.add(label_12);
+		JLabel lblSegundoA = new JLabel("2\u00BA");
+		lblSegundoA.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
+		lblSegundoA.setForeground(Color.WHITE);
+		lblSegundoA.setBounds(51, 351, 60, 14);
+		contentPane.add(lblSegundoA);
 		
-		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setIcon(new ImageIcon(Clasificacion.class.getResource("/img/LILESPA\u00D1A.png")));
-		lblNewLabel.setBounds(198, 283, 46, 29);
-		contentPane.add(lblNewLabel);
+		JLabel lblBandera3 = new JLabel("");
+		lblBandera3.setIcon(new ImageIcon(Clasificacion.class.getResource("/img/Lilcorea.jpg")));
+		lblBandera3.setBounds(198, 409, 45, 30);
+		contentPane.add(lblBandera3);
 		
-		JLabel label_11 = new JLabel("");
-		label_11.setIcon(new ImageIcon(Clasificacion.class.getResource("/img/LILjamaica.jpg")));
-		label_11.setBounds(689, 283, 46, 29);
-		contentPane.add(label_11);
+		JLabel lblDavid = new JLabel("DAVID");
+		lblDavid.setForeground(Color.WHITE);
+		lblDavid.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
+		lblDavid.setBounds(106, 421, 119, 14);
+		contentPane.add(lblDavid);
 		
-		JLabel label_7 = new JLabel("");
-		label_7.setIcon(new ImageIcon(Clasificacion.class.getResource("/img/LILwilly2.png")));
-		label_7.setBounds(198, 340, 60, 29);
-		contentPane.add(label_7);
+		JLabel lblBandera4 = new JLabel("");
+		lblBandera4.setIcon(new ImageIcon(Clasificacion.class.getResource("/img/LILBRASIL.png")));
+		lblBandera4.setBounds(198, 480, 60, 29);
+		contentPane.add(lblBandera4);
 		
-		JLabel label_10 = new JLabel("");
-		label_10.setIcon(new ImageIcon(Clasificacion.class.getResource("/img/LILPORTUGAL.png")));
-		label_10.setBounds(689, 340, 46, 29);
-		contentPane.add(label_10);
+		JLabel lblBandera7 = new JLabel("");
+		lblBandera7.setIcon(new ImageIcon(Clasificacion.class.getResource("/img/LILESPA\u00D1A.png")));
+		lblBandera7.setBounds(689, 409, 46, 29);
+		contentPane.add(lblBandera7);
 		
-		JLabel label_13 = new JLabel("");
-		label_13.setIcon(new ImageIcon(Clasificacion.class.getResource("/img/lilINDIA.png")));
-		label_13.setBounds(689, 480, 46, 29);
-		contentPane.add(label_13);
+		JLabel lblBandera1 = new JLabel("New label");
+		lblBandera1.setIcon(new ImageIcon(Clasificacion.class.getResource("/img/LILESPA\u00D1A.png")));
+		lblBandera1.setBounds(198, 283, 46, 29);
+		contentPane.add(lblBandera1);
 		
-		lblPuntos_2 = new JLabel("10 PUNTOS");
-		lblPuntos_2.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
-		lblPuntos_2.setForeground(Color.WHITE);
-		lblPuntos_2.setBounds(254, 424, 107, 14);
-		contentPane.add(lblPuntos_2);
+		JLabel lblBandera5 = new JLabel("");
+		lblBandera5.setIcon(new ImageIcon(Clasificacion.class.getResource("/img/LILjamaica.jpg")));
+		lblBandera5.setBounds(689, 283, 46, 29);
+		contentPane.add(lblBandera5);
 		
-		lblPuntos_6 = new JLabel("7 PUNTOS");
-		lblPuntos_6.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
-		lblPuntos_6.setForeground(Color.WHITE);
-		lblPuntos_6.setBounds(748, 423, 107, 14);
-		contentPane.add(lblPuntos_6);
+		JLabel lblBandera2 = new JLabel("");
+		lblBandera2.setIcon(new ImageIcon(Clasificacion.class.getResource("/img/LILwilly2.png")));
+		lblBandera2.setBounds(198, 340, 60, 29);
+		contentPane.add(lblBandera2);
 		
-		lblPuntos_1 = new JLabel("11 PUNTOS");
-		lblPuntos_1.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
-		lblPuntos_1.setForeground(Color.WHITE);
-		lblPuntos_1.setBounds(254, 351, 107, 14);
-		contentPane.add(lblPuntos_1);
+		JLabel lblBandera6 = new JLabel("");
+		lblBandera6.setIcon(new ImageIcon(Clasificacion.class.getResource("/img/LILPORTUGAL.png")));
+		lblBandera6.setBounds(689, 340, 46, 29);
+		contentPane.add(lblBandera6);
 		
-		lblPuntos_4 = new JLabel("12 PUNTOS");
-		lblPuntos_4.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
-		lblPuntos_4.setForeground(Color.WHITE);
-		lblPuntos_4.setBounds(748, 288, 107, 14);
-		contentPane.add(lblPuntos_4);
+		JLabel lblBandera8 = new JLabel("");
+		lblBandera8.setIcon(new ImageIcon(Clasificacion.class.getResource("/img/lilINDIA.png")));
+		lblBandera8.setBounds(689, 480, 46, 29);
+		contentPane.add(lblBandera8);
 		
-		lblPuntos = new JLabel("16 PUNTOS");
-		lblPuntos.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
-		lblPuntos.setForeground(Color.WHITE);
-		lblPuntos.setBounds(254, 288, 107, 14);
-		contentPane.add(lblPuntos);
+		lblPuntos3 = new JLabel("10 PUNTOS");
+		lblPuntos3.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
+		lblPuntos3.setForeground(Color.WHITE);
+		lblPuntos3.setBounds(254, 424, 107, 14);
+		contentPane.add(lblPuntos3);
 		
-		lblPuntos_3 = new JLabel("7 PUNTOS");
-		lblPuntos_3.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
-		lblPuntos_3.setForeground(Color.WHITE);
-		lblPuntos_3.setBounds(254, 492, 107, 14);
-		contentPane.add(lblPuntos_3);
+		lblPuntos7 = new JLabel("7 PUNTOS");
+		lblPuntos7.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
+		lblPuntos7.setForeground(Color.WHITE);
+		lblPuntos7.setBounds(748, 423, 107, 14);
+		contentPane.add(lblPuntos7);
 		
-		lblPuntos_5 = new JLabel("11 PUNTOS");
-		lblPuntos_5.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
-		lblPuntos_5.setForeground(Color.WHITE);
-		lblPuntos_5.setBounds(748, 351, 107, 14);
-		contentPane.add(lblPuntos_5);
+		lblPuntos2 = new JLabel("11 PUNTOS");
+		lblPuntos2.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
+		lblPuntos2.setForeground(Color.WHITE);
+		lblPuntos2.setBounds(254, 351, 107, 14);
+		contentPane.add(lblPuntos2);
 		
-		lblPuntos_7 = new JLabel("5 PUNTOS");
-		lblPuntos_7.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
-		lblPuntos_7.setForeground(Color.WHITE);
-		lblPuntos_7.setBounds(745, 495, 97, 14);
-		contentPane.add(lblPuntos_7);
+		lblPuntos5 = new JLabel("12 PUNTOS");
+		lblPuntos5.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
+		lblPuntos5.setForeground(Color.WHITE);
+		lblPuntos5.setBounds(748, 288, 107, 14);
+		contentPane.add(lblPuntos5);
 		
-		JLabel lblJesus_6 = new JLabel("CARLOS");
-		lblJesus_6.setForeground(Color.WHITE);
-		lblJesus_6.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
-		lblJesus_6.setBounds(592, 421, 77, 14);
-		contentPane.add(lblJesus_6);
+		lblPuntos1 = new JLabel("16 PUNTOS");
+		lblPuntos1.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
+		lblPuntos1.setForeground(Color.WHITE);
+		lblPuntos1.setBounds(254, 288, 107, 14);
+		contentPane.add(lblPuntos1);
 		
-		JLabel lblJesus_4 = new JLabel("MAESO");
-		lblJesus_4.setForeground(Color.WHITE);
-		lblJesus_4.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
-		lblJesus_4.setBounds(592, 288, 77, 14);
-		contentPane.add(lblJesus_4);
+		lblPuntos4 = new JLabel("7 PUNTOS");
+		lblPuntos4.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
+		lblPuntos4.setForeground(Color.WHITE);
+		lblPuntos4.setBounds(254, 492, 107, 14);
+		contentPane.add(lblPuntos4);
 		
-		JLabel lblJesus_3 = new JLabel("PACO");
-		lblJesus_3.setForeground(Color.WHITE);
-		lblJesus_3.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
-		lblJesus_3.setBounds(106, 492, 119, 14);
-		contentPane.add(lblJesus_3);
+		lblPuntos6 = new JLabel("11 PUNTOS");
+		lblPuntos6.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
+		lblPuntos6.setForeground(Color.WHITE);
+		lblPuntos6.setBounds(748, 351, 107, 14);
+		contentPane.add(lblPuntos6);
+		
+		lblPuntos8 = new JLabel("5 PUNTOS");
+		lblPuntos8.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
+		lblPuntos8.setForeground(Color.WHITE);
+		lblPuntos8.setBounds(745, 495, 97, 14);
+		contentPane.add(lblPuntos8);
+		
+		JLabel lblCarlos = new JLabel("CARLOS");
+		lblCarlos.setForeground(Color.WHITE);
+		lblCarlos.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
+		lblCarlos.setBounds(592, 421, 77, 14);
+		contentPane.add(lblCarlos);
+		
+		JLabel lblMaeso = new JLabel("MAESO");
+		lblMaeso.setForeground(Color.WHITE);
+		lblMaeso.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
+		lblMaeso.setBounds(592, 288, 77, 14);
+		contentPane.add(lblMaeso);
+		
+		JLabel lblPaco = new JLabel("PACO");
+		lblPaco.setForeground(Color.WHITE);
+		lblPaco.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
+		lblPaco.setBounds(106, 492, 119, 14);
+		contentPane.add(lblPaco);
 		
 		JLabel lblJesus = new JLabel("JESUS");
 		lblJesus.setForeground(Color.WHITE);
@@ -200,75 +222,59 @@ public class Clasificacion extends JFrame {
 		lblJesus.setBounds(106, 288, 71, 14);
 		contentPane.add(lblJesus);
 		
-		JLabel lblJesus_7 = new JLabel("TONY");
-		lblJesus_7.setForeground(Color.WHITE);
-		lblJesus_7.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
-		lblJesus_7.setBounds(592, 492, 77, 14);
-		contentPane.add(lblJesus_7);
+		JLabel lblTony = new JLabel("TONY");
+		lblTony.setForeground(Color.WHITE);
+		lblTony.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
+		lblTony.setBounds(592, 492, 77, 14);
+		contentPane.add(lblTony);
 		
-		JLabel lblJesus_5 = new JLabel("VICTOR");
-		lblJesus_5.setForeground(Color.WHITE);
-		lblJesus_5.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
-		lblJesus_5.setBounds(592, 351, 77, 14);
-		contentPane.add(lblJesus_5);
+		JLabel lblVictor = new JLabel("VICTOR");
+		lblVictor.setForeground(Color.WHITE);
+		lblVictor.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
+		lblVictor.setBounds(592, 351, 77, 14);
+		contentPane.add(lblVictor);
 		
-		JLabel lblJesus_1 = new JLabel("MANUEL");
-		lblJesus_1.setForeground(Color.WHITE);
-		lblJesus_1.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
-		lblJesus_1.setBounds(106, 351, 97, 14);
-		contentPane.add(lblJesus_1);
+		JLabel lblManuel = new JLabel("MANUEL");
+		lblManuel.setForeground(Color.WHITE);
+		lblManuel.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
+		lblManuel.setBounds(106, 351, 97, 14);
+		contentPane.add(lblManuel);
 		
-		JLabel label_6 = new JLabel("4\u00BA");
-		label_6.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
-		label_6.setForeground(Color.WHITE);
-		label_6.setBounds(529, 492, 60, 14);
-		contentPane.add(label_6);
+		JLabel lblCuartoB = new JLabel("4\u00BA");
+		lblCuartoB.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
+		lblCuartoB.setForeground(Color.WHITE);
+		lblCuartoB.setBounds(529, 492, 60, 14);
+		contentPane.add(lblCuartoB);
 		
-		JLabel label_5 = new JLabel("3\u00BA");
-		label_5.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
-		label_5.setForeground(Color.WHITE);
-		label_5.setBounds(529, 421, 60, 14);
-		contentPane.add(label_5);
+		JLabel lblTerceroB = new JLabel("3\u00BA");
+		lblTerceroB.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
+		lblTerceroB.setForeground(Color.WHITE);
+		lblTerceroB.setBounds(529, 421, 60, 14);
+		contentPane.add(lblTerceroB);
 		
-		JLabel label_4 = new JLabel("2\u00BA");
-		label_4.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
-		label_4.setForeground(Color.WHITE);
-		label_4.setBounds(529, 351, 60, 14);
-		contentPane.add(label_4);
+		JLabel lblSegundoB = new JLabel("2\u00BA");
+		lblSegundoB.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
+		lblSegundoB.setForeground(Color.WHITE);
+		lblSegundoB.setBounds(529, 351, 60, 14);
+		contentPane.add(lblSegundoB);
 		
-		JLabel label_2 = new JLabel("4\u00BA");
-		label_2.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
-		label_2.setForeground(Color.WHITE);
-		label_2.setBounds(51, 492, 60, 14);
-		contentPane.add(label_2);
+		JLabel lblCuartoA = new JLabel("4\u00BA");
+		lblCuartoA.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
+		lblCuartoA.setForeground(Color.WHITE);
+		lblCuartoA.setBounds(51, 492, 60, 14);
+		contentPane.add(lblCuartoA);
 		
-		JLabel label_3 = new JLabel("1\u00BA");
-		label_3.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
-		label_3.setForeground(Color.WHITE);
-		label_3.setBounds(529, 288, 60, 14);
-		contentPane.add(label_3);
+		JLabel lblPrimeroB = new JLabel("1\u00BA");
+		lblPrimeroB.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
+		lblPrimeroB.setForeground(Color.WHITE);
+		lblPrimeroB.setBounds(529, 288, 60, 14);
+		contentPane.add(lblPrimeroB);
 		
-		JLabel label_1 = new JLabel("3\u00BA");
-		label_1.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
-		label_1.setForeground(Color.WHITE);
-		label_1.setBounds(51, 421, 60, 14);
-		contentPane.add(label_1);
-		
-		JLabel lblPrimero = new JLabel("1\u00BA");
-		lblPrimero.setForeground(Color.WHITE);
-		lblPrimero.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
-		lblPrimero.setBounds(51, 288, 60, 14);
-		contentPane.add(lblPrimero);
-		
-		JLabel lblNewLabel_2 = new JLabel("");
-		lblNewLabel_2.setIcon(new ImageIcon(Clasificacion.class.getResource("/img/tierB.png")));
-		lblNewLabel_2.setBounds(617, 76, 130, 157);
-		contentPane.add(lblNewLabel_2);
-		
-		JLabel lblNewLabel_1 = new JLabel("");
-		lblNewLabel_1.setIcon(new ImageIcon(Clasificacion.class.getResource("/img/tierA.png")));
-		lblNewLabel_1.setBounds(128, 76, 130, 149);
-		contentPane.add(lblNewLabel_1);
+		JLabel lblTerceroA = new JLabel("3\u00BA");
+		lblTerceroA.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
+		lblTerceroA.setForeground(Color.WHITE);
+		lblTerceroA.setBounds(51, 421, 60, 14);
+		contentPane.add(lblTerceroA);
 		
 		btnVolver = new JButton("VOLVER");
 		btnVolver.setBorderPainted(false);
@@ -277,12 +283,6 @@ public class Clasificacion extends JFrame {
 		btnVolver.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
 		btnVolver.setBounds(0, 586, 909, 35);
 		contentPane.add(btnVolver);
-		
-		JLabel label = new JLabel("2\u00BA");
-		label.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
-		label.setForeground(Color.WHITE);
-		label.setBounds(51, 351, 60, 14);
-		contentPane.add(label);
 		
 		JLabel lblFondo = new JLabel("");
 		lblFondo.setIcon(new ImageIcon(Jugadores.class.getResource("/img/fondoSoloNegro.jpg")));

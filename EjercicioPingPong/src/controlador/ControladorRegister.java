@@ -13,15 +13,21 @@ public class ControladorRegister implements ActionListener {
 	public ControladorRegister(Registrarse registrarse) {
 		super();
 		this.registrarse = registrarse;
-		this.registrarse.btnCrearUsuario.addActionListener(this);
+		//this.registrarse.btnCrearUsuario.addActionListener(this);
 		this.registrarse.btnVolver.addActionListener(this);
 
 	}
+	
+	public void iniciar() {
+		registrarse.setTitle("Crear Cuenta");
+		registrarse.setLocationRelativeTo(null);
+		registrarse.setVisible(true);
+	}
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		if(e.getSource() == registrarse.btnCrearUsuario) {
+		//if(e.getSource() == registrarse.btnVolver) {
 			JOptionPane.showMessageDialog(null, "asd");
-		}
+		//}
 	}
 }
 

@@ -19,6 +19,8 @@ public class ControladorLogin implements ActionListener {
 	private Login l;
 	private ModeloLogin m;
 
+
+
 	public ControladorLogin(Login l, ModeloLogin m) {
 		super();
 		this.l = l;
@@ -40,14 +42,16 @@ public class ControladorLogin implements ActionListener {
 		MenuUsuario menuUser = new MenuUsuario();
 		ControladorUser cUser = new ControladorUser(menuUser);
 		Menu menu = new Menu();
+		Registrarse r = new Registrarse();
+		ControladorRegister cRegister = new ControladorRegister(r);
 		// Boton Volver
 		if (e.getSource() == l.btnVolver) {
 			menu.setVisible(true);
 			l.setVisible(false);
 		// Botón registrarse
 		} else if (e.getSource() == l.btnRegistrarme) {
-			Registrarse r = new Registrarse();
-			r.setVisible(true);
+			cRegister.iniciar();
+
 		} else if (e.getSource() == l.btnEntrar) {
 			if (l.txtUser.getText().equals(m.getUser()) && l.txtPassword.getText().equals(m.getPass())) {
 				JOptionPane.showMessageDialog(null, "Has accedido como administrador");
