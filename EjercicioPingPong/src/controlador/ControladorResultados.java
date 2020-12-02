@@ -215,7 +215,7 @@ public class ControladorResultados implements ActionListener{
 			resultados.label_3.setIcon(new ImageIcon(Resultados.class.getResource("")));
 			//medalla bronce
 			resultados.lblNewLabel_8.setIcon(new ImageIcon(Resultados.class.getResource("")));
-			
-	}
+
+		}
 	}
 }

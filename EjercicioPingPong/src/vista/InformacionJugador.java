@@ -38,6 +38,7 @@ public class InformacionJugador extends JFrame {
 	private JLabel lblNewLabel;
 	public JLabel lblTier;
 	public JLabel lblMarco;
+	public JLabel lblBandera;
 
 	/**
 	 * Launch the application.
@@ -69,6 +70,11 @@ public class InformacionJugador extends JFrame {
 		contentPane.setLayout(null);
 		setLocationRelativeTo(null);
 		setResizable(false);
+						
+						lblBandera = new JLabel("");
+						lblBandera.setIcon(new ImageIcon(InformacionJugador.class.getResource("/img/ESPA\u00D1A.png")));
+						lblBandera.setBounds(70, 468, 50, 33);
+						contentPane.add(lblBandera);
 				
 						btnGrito = new JButton("GRITO");
 						btnGrito.setBorderPainted(false);

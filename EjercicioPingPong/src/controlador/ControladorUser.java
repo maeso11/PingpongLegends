@@ -14,6 +14,7 @@ import vista.Clasificacion;
 import vista.Jugadores;
 import vista.Login;
 import vista.MenuUsuario;
+import vista.Registrarse;
 import vista.Resultados;
 import vista.Simulacion;
 

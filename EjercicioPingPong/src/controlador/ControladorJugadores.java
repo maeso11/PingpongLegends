@@ -52,48 +52,56 @@ public class ControladorJugadores implements ActionListener {
 
 			// Información Carlos
 		} else if (e.getSource() == jugadores.btnCarlos) {
+			info.lblBandera.setIcon(new ImageIcon(InformacionJugador.class.getResource("/img/LILESPAÑA.png")));
 			info.lblMarco.setIcon(new ImageIcon(InformacionJugador.class.getResource("/img/marcoTierB.png")));
 			info.lblTier.setIcon(new ImageIcon(InformacionJugador.class.getResource("/img/tierBLIL.png")));
 			datosAVista(datos, info, conexion, cInfo, "CARLOS");
 
 			// Información David
 		} else if (e.getSource() == jugadores.btnDavid) {
-			info.lblMarco.setIcon(new ImageIcon(InformacionJugador.class.getResource("/img/marcoTierB.png")));
+			info.lblBandera.setIcon(new ImageIcon(InformacionJugador.class.getResource("/img/Lilcorea.jpg")));
+			info.lblMarco.setIcon(new ImageIcon(InformacionJugador.class.getResource("/img/marcoTierA.png")));
 			info.lblTier.setIcon(new ImageIcon(InformacionJugador.class.getResource("/img/tierALIL.png")));
 			datosAVista(datos, info, conexion, cInfo, "DAVID");
 
 			// Informacion Jesus
 		} else if (e.getSource() == jugadores.btnJesus) {
+			info.lblBandera.setIcon(new ImageIcon(InformacionJugador.class.getResource("/img/LILESPAÑA.png")));
 			info.lblMarco.setIcon(new ImageIcon(InformacionJugador.class.getResource("/img/marcoTierA.png")));
 			info.lblTier.setIcon(new ImageIcon(InformacionJugador.class.getResource("/img/tierALIL.png")));
 			datosAVista(datos, info, conexion, cInfo, "JESUS");
 
 			// Informacion Antonio
 		} else if (e.getSource() == jugadores.btnMaeso) {
+			info.lblBandera.setIcon(new ImageIcon(InformacionJugador.class.getResource("/img/LILjamaica.jpg")));
 			info.lblMarco.setIcon(new ImageIcon(InformacionJugador.class.getResource("/img/marcoTierB.png")));
 			info.lblTier.setIcon(new ImageIcon(InformacionJugador.class.getResource("/img/tierC.png")));
 			datosAVista(datos, info, conexion, cInfo, "ANTONIO");
 
 			// Informacion Manuel
 		} else if (e.getSource() == jugadores.btnManuel) {
+			info.lblBandera.setIcon(new ImageIcon(InformacionJugador.class.getResource("/img/LILwilly2.png")));
 			info.lblMarco.setIcon(new ImageIcon(InformacionJugador.class.getResource("/img/marcoTierA.png")));
 			info.lblTier.setIcon(new ImageIcon(InformacionJugador.class.getResource("/img/tierALIL.png")));
 			datosAVista(datos, info, conexion, cInfo, "MANUEL");
 
 			// Informacion Paco
 		} else if (e.getSource() == jugadores.btnPaco) {
+			info.lblBandera.setIcon(new ImageIcon(InformacionJugador.class.getResource("/img/LILBRASIL.png")));
 			info.lblMarco.setIcon(new ImageIcon(InformacionJugador.class.getResource("/img/marcoTierA.png")));
 			info.lblTier.setIcon(new ImageIcon(InformacionJugador.class.getResource("/img/tierALIL.png")));
 			datosAVista(datos, info, conexion, cInfo, "PACO");
 
 			// Informacion Antonio Eduardo
 		} else if (e.getSource() == jugadores.btnTony) {
+			info.lblBandera.setIcon(new ImageIcon(InformacionJugador.class.getResource("/img/lilINDIA.png")));
 			info.lblMarco.setIcon(new ImageIcon(InformacionJugador.class.getResource("/img/marcoTierB.png")));
 			info.lblTier.setIcon(new ImageIcon(InformacionJugador.class.getResource("/img/tierBLIL.png")));
 			datosAVista(datos, info, conexion, cInfo, "ANTONIO EDUARDO");
 
 			// Informacion Victor
 		} else if (e.getSource() == jugadores.btnVictor) {
+			info.lblBandera.setIcon(new ImageIcon(InformacionJugador.class.getResource("/img/LILPORTUGAL.png")));
 			info.lblMarco.setIcon(new ImageIcon(InformacionJugador.class.getResource("/img/marcoTierB.png")));
 			info.lblTier.setIcon(new ImageIcon(InformacionJugador.class.getResource("/img/tierBLIL.png")));
 			datosAVista(datos, info, conexion, cInfo, "VICTOR");
