@@ -57,7 +57,7 @@ public class Login extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		setLocationRelativeTo(null);
-		
+
 		btnRegistrarme = new JButton("CREAR CUENTA");
 		btnRegistrarme.setForeground(Color.WHITE);
 		btnRegistrarme.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
@@ -65,14 +65,14 @@ public class Login extends JFrame {
 		btnRegistrarme.setBackground(new Color(34, 139, 34));
 		btnRegistrarme.setBounds(351, 464, 173, 23);
 		contentPane.add(btnRegistrarme);
-		
+
 		JLabel lblNewLabel_2 = new JLabel("\u00BFEres nuevo en Ping Pong League?");
 		lblNewLabel_2.setBackground(new Color(255, 255, 255));
 		lblNewLabel_2.setForeground(new Color(255, 255, 255));
 		lblNewLabel_2.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
 		lblNewLabel_2.setBounds(290, 423, 297, 18);
 		contentPane.add(lblNewLabel_2);
-		
+
 		JLabel lblNewLabel_1 = new JLabel("");
 		lblNewLabel_1.setIcon(new ImageIcon(Login.class.getResource("/img/logoPeque\u00F1o2.png")));
 		lblNewLabel_1.setBounds(41, 38, 200, 133);

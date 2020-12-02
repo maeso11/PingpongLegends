@@ -22,7 +22,6 @@ public class ControladorSimulacion implements ActionListener {
 		this.simulacion = simulacion;
 		this.simulacion.btnVolver.addActionListener(this);
 		this.simulacion.btnGenerar.addActionListener(this);
-		this.simulacion.btnSimular.addActionListener(this);
 
 	}
 
@@ -101,9 +100,6 @@ public class ControladorSimulacion implements ActionListener {
 				// Elimina el nombre del jugador que se haya modificado
 				jugadores.remove(index);
 			}
-		}
-		if (e.getSource() == simulacion.btnSimular) {
-			enfrentamiento1(simulacion);
 		}
 
 	}

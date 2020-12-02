@@ -67,6 +67,15 @@ public class EstableceConexion {
 		}
 	}
 
+	/**
+	 * Devuelve todos los datos de los jugadores
+	 * 
+	 * @param nombre
+	 * @return
+	 * @throws ClassNotFoundException
+	 * @throws SQLException
+	 * @throws IOException
+	 */
 	public Informacion devuelveDatos(String nombre) throws ClassNotFoundException, SQLException, IOException {
 		Connection connection = null;
 		PreparedStatement preparedStatement = null;
@@ -164,13 +173,6 @@ public class EstableceConexion {
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
-			try {
-				if (connection != null) {
-					connection.close();
-				}
-			} catch (SQLException e) {
-				e.printStackTrace();
-			}
 		}
 
 		return existe;
@@ -190,32 +192,107 @@ public class EstableceConexion {
 
 		String sentenciaSql = "INSERT INTO REGISTER (USUARIO, CONTRASEÑA) VALUES (?, ?)";
 		PreparedStatement pStatement = null;
-
+		Connection connection = null;
 		try {
-			if (contraseña != contraseña2) {
-				JOptionPane.showMessageDialog(null, "La contraseña no coincide.");
-			} else {
-				Connection connection = connectionByProp();
-				if (compruebaUsuarioExiste(usuario, connection) == false) {
-					pStatement = connection.prepareStatement(sentenciaSql);
-					pStatement.setString(1, "USUARIO"); // USUARIO
-					pStatement.setString(2, "CONTRASEÑA"); // CONTRASEÑA
+			connection = connectionByProp();
+			if (compruebaUsuarioExiste(usuario, connection) == false) {
+				pStatement = connection.prepareStatement(sentenciaSql);
+				pStatement.setString(1, usuario); // USUARIO
+				pStatement.setString(2, contraseña); // CONTRASEÑA
+				try {
 					pStatement.executeUpdate();
-					JOptionPane.showMessageDialog(null, "Usuario creado.");
-				} else {
+				} catch (SQLException sqle) {
 					JOptionPane.showMessageDialog(null, "Este nombre de usuario ya existe");
+					throw sqle;
 				}
+
+				JOptionPane.showMessageDialog(null, "Usuario creado.");
+				connection.commit();
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+			connection.rollback();
 			throw e;
 		} finally {
 			if (pStatement != null)
 				try {
 					pStatement.close();
 				} catch (SQLException sqle) {
-					sqle.printStackTrace();
+					throw sqle;
 				}
+			try {
+				if (connection != null) {
+					connection.close();
+				}
+			} catch (SQLException e) {
+				throw e;
+			}
 		}
+	}
+
+	/**
+	 * Comprueba si la cuenta está registrada
+	 * 
+	 * @param usuario
+	 * @param contraseña
+	 * @param connection
+	 * @return
+	 * @throws IOException
+	 * @throws ClassNotFoundException
+	 * @throws SQLException
+	 */
+	public boolean compruebaRegistro(String usuario, String contraseña)
+			throws IOException, ClassNotFoundException, SQLException {
+		boolean existe = false;
+		Connection connection = null;
+		PreparedStatement preparedStatement = null;
+		ResultSet resultSet = null;
+		RegisterDatos registerD = null;
+		String sentenciaSqle = "SELECT USUARIO, CONTRASEÑA FROM REGISTER WHERE USUARIO = ? && CONTRASEÑA = ?";
+		try {
+			connection = connectionByProp();
+			preparedStatement = connection.prepareStatement(sentenciaSqle);
+			preparedStatement.setString(1, usuario);
+			preparedStatement.setString(2, contraseña);
+			resultSet = preparedStatement.executeQuery();
+			if (resultSet.next()) {
+				registerD = new RegisterDatos();
+				registerD.setUsuario(resultSet.getString("USUARIO"));
+				registerD.setContraseña(resultSet.getString("CONTRASEÑA"));
+				if (registerD.getUsuario() == null) {
+					existe = false;
+				} else {
+					existe = true;
+				}
+			}
+		} catch (SQLException e) {
+			throw e;
+		} finally {
+			try {
+				if (resultSet != null) {
+					resultSet.close();
+					resultSet = null;
+				}
+			} catch (SQLException e) {
+				throw e;
+			}
+			try {
+				if (preparedStatement != null) {
+					preparedStatement.close();
+					preparedStatement = null;
+				}
+			} catch (SQLException e) {
+				throw e;
+			}
+			try {
+				if (connection != null) {
+					connection.close();
+					connection = null;
+				}
+			} catch (SQLException e) {
+				throw e;
+			}
+		}
+
+		return existe;
 	}
 }
