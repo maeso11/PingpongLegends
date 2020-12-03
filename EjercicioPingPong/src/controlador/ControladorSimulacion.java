@@ -22,6 +22,13 @@ public class ControladorSimulacion implements ActionListener {
 		this.simulacion = simulacion;
 		this.simulacion.btnVolver.addActionListener(this);
 		this.simulacion.btnGenerar.addActionListener(this);
+		this.simulacion.btnSimulacion1.addActionListener(this);
+		this.simulacion.btnSimulacion2.addActionListener(this);
+		this.simulacion.btnSimulacion3.addActionListener(this);
+		this.simulacion.btnSimulacion4.addActionListener(this);
+		this.simulacion.btnSimulacionSemi1.addActionListener(this);
+		this.simulacion.btnSimulacionSemi2.addActionListener(this);
+		this.simulacion.btnSimulacionFinal.addActionListener(this);
 
 	}
 
@@ -100,6 +107,20 @@ public class ControladorSimulacion implements ActionListener {
 				// Elimina el nombre del jugador que se haya modificado
 				jugadores.remove(index);
 			}
+		}else if (e.getSource() == simulacion.btnSimulacion1) {
+			simulacion.lblSemifinalista1.setText(enfrentamiento1(simulacion));
+		}else if (e.getSource() == simulacion.btnSimulacion2) {
+			simulacion.lblSemifinalista2.setText(enfrentamiento2(simulacion));
+		}else if (e.getSource() == simulacion.btnSimulacion3) {
+			simulacion.lblSemifinalista3.setText(enfrentamiento3(simulacion));
+		}else if (e.getSource() == simulacion.btnSimulacion4) {
+			simulacion.lblSemifinalista4.setText(enfrentamiento4(simulacion));
+		}else if (e.getSource() == simulacion.btnSimulacionSemi1) {
+			simulacion.lblFinalista1.setText(semi1(simulacion));
+		}else if (e.getSource() == simulacion.btnSimulacionSemi2) {
+			simulacion.lblFinalista2.setText(semifinal2(simulacion));
+		}else if (e.getSource() == simulacion.btnSimulacionFinal) {
+			simulacion.lblGanador.setText(granFinal(simulacion));
 		}
 
 	}
@@ -133,6 +154,222 @@ public class ControladorSimulacion implements ActionListener {
 					ganador = simulacion.lblJugador1.getText();
 				} else {
 					ganador = simulacion.lblJugador2.getText();
+				}
+			}
+		}
+
+		return ganador;
+	}
+	
+	/**
+	 * Devuelve ganador 2º enfrentamiento
+	 * 
+	 * @param simulacion
+	 * @return
+	 */
+	public String enfrentamiento2(Simulacion simulacion) {
+		String ganador = "";
+		int puntos1 = 0;
+		int puntos2 = 0;
+		int puntua;
+		boolean fin = false;
+
+		while (fin != true) {
+			puntua = (1 + (int) (Math.random() * 2));
+			if (puntua == 1) {
+				puntos1 = puntos1 + 1;
+				simulacion.txtPuntuacion3.setText(String.valueOf(puntos1));
+			} else {
+				puntos2 = puntos2 + 1;
+				simulacion.txtPuntuacion4.setText(String.valueOf(puntos2));
+			}
+
+			if (puntos1 == 7 | puntos2 == 7) {
+				fin = true;
+				if (puntos1 == 7) {
+					ganador = simulacion.lblJugador3.getText();
+				} else {
+					ganador = simulacion.lblJugador4.getText();
+				}
+			}
+		}
+
+		return ganador;
+	}
+	
+	/**
+	 * Devuelve ganador 3º enfrentamiento
+	 * 
+	 * @param simulacion
+	 * @return
+	 */
+	public String enfrentamiento3(Simulacion simulacion) {
+		String ganador = "";
+		int puntos1 = 0;
+		int puntos2 = 0;
+		int puntua;
+		boolean fin = false;
+
+		while (fin != true) {
+			puntua = (1 + (int) (Math.random() * 2));
+			if (puntua == 1) {
+				puntos1 = puntos1 + 1;
+				simulacion.txtPuntuacion5.setText(String.valueOf(puntos1));
+			} else {
+				puntos2 = puntos2 + 1;
+				simulacion.txtPuntuacion6.setText(String.valueOf(puntos2));
+			}
+
+			if (puntos1 == 7 | puntos2 == 7) {
+				fin = true;
+				if (puntos1 == 7) {
+					ganador = simulacion.lblJugador5.getText();
+				} else {
+					ganador = simulacion.lblJugador6.getText();
+				}
+			}
+		}
+
+		return ganador;
+	}
+	
+	/**
+	 * Devuelve ganador 4º enfrentamiento
+	 * 
+	 * @param simulacion
+	 * @return
+	 */
+	public String enfrentamiento4(Simulacion simulacion) {
+		String ganador = "";
+		int puntos1 = 0;
+		int puntos2 = 0;
+		int puntua;
+		boolean fin = false;
+
+		while (fin != true) {
+			puntua = (1 + (int) (Math.random() * 2));
+			if (puntua == 1) {
+				puntos1 = puntos1 + 1;
+				simulacion.txtPuntuacion7.setText(String.valueOf(puntos1));
+			} else {
+				puntos2 = puntos2 + 1;
+				simulacion.txtPuntuacion8.setText(String.valueOf(puntos2));
+			}
+
+			if (puntos1 == 7 | puntos2 == 7) {
+				fin = true;
+				if (puntos1 == 7) {
+					ganador = simulacion.lblJugador7.getText();
+				} else {
+					ganador = simulacion.lblJugador8.getText();
+				}
+			}
+		}
+
+		return ganador;
+	}
+	
+	/**
+	 * Devuelve ganador 1º semifinal
+	 * 
+	 * @param simulacion
+	 * @return
+	 */
+	public String semi1(Simulacion simulacion) {
+		String ganador = "";
+		int puntos1 = 0;
+		int puntos2 = 0;
+		int puntua;
+		boolean fin = false;
+
+		while (fin != true) {
+			puntua = (1 + (int) (Math.random() * 2));
+			if (puntua == 1) {
+				puntos1 = puntos1 + 1;
+				simulacion.txtPuntuacionSemi1.setText(String.valueOf(puntos1));
+			} else {
+				puntos2 = puntos2 + 1;
+				simulacion.txtPuntuacionSemi2.setText(String.valueOf(puntos2));
+			}
+
+			if (puntos1 == 7 | puntos2 == 7) {
+				fin = true;
+				if (puntos1 == 7) {
+					ganador = simulacion.lblSemifinalista1.getText();
+				} else {
+					ganador = simulacion.lblSemifinalista2.getText();
+				}
+			}
+		}
+
+		return ganador;
+	}
+	
+	/**
+	 * Devuelve ganador 2ª semifinal
+	 * 
+	 * @param simulacion
+	 * @return
+	 */
+	public String semifinal2(Simulacion simulacion) {
+		String ganador = "";
+		int puntos1 = 0;
+		int puntos2 = 0;
+		int puntua;
+		boolean fin = false;
+
+		while (fin != true) {
+			puntua = (1 + (int) (Math.random() * 2));
+			if (puntua == 1) {
+				puntos1 = puntos1 + 1;
+				simulacion.txtPuntuacionSemi3.setText(String.valueOf(puntos1));
+			} else {
+				puntos2 = puntos2 + 1;
+				simulacion.txtPuntuacionSemi4.setText(String.valueOf(puntos2));
+			}
+
+			if (puntos1 == 7 | puntos2 == 7) {
+				fin = true;
+				if (puntos1 == 7) {
+					ganador = simulacion.lblSemifinalista3.getText();
+				} else {
+					ganador = simulacion.lblSemifinalista4.getText();
+				}
+			}
+		}
+
+		return ganador;
+	}
+	
+	/**
+	 * Devuelve ganador de la final
+	 * 
+	 * @param simulacion
+	 * @return
+	 */
+	public String granFinal(Simulacion simulacion) {
+		String ganador = "";
+		int puntos1 = 0;
+		int puntos2 = 0;
+		int puntua;
+		boolean fin = false;
+
+		while (fin != true) {
+			puntua = (1 + (int) (Math.random() * 2));
+			if (puntua == 1) {
+				puntos1 = puntos1 + 1;
+				simulacion.txtPuntuacionFinal1.setText(String.valueOf(puntos1));
+			} else {
+				puntos2 = puntos2 + 1;
+				simulacion.txtPuntuacionFinal2.setText(String.valueOf(puntos2));
+			}
+
+			if (puntos1 == 7 | puntos2 == 7) {
+				fin = true;
+				if (puntos1 == 7) {
+					ganador = simulacion.lblFinalista1.getText();
+				} else {
+					ganador = simulacion.lblFinalista2.getText();
 				}
 			}
 		}
