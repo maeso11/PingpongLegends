@@ -1,4 +1,4 @@
-package vista;
+package vistaAdmin;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -13,6 +13,9 @@ import javax.swing.JPanel;
 import javax.swing.JTable;
 import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableModel;
+
+import vista.Clasificacion;
+import vista.Jugadores;
 
 import java.awt.Window.Type;
 import java.awt.Toolkit;

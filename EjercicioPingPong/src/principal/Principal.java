@@ -4,7 +4,7 @@ import controlador.ControladorLogin;
 import modelo.ModeloLogin;
 import vista.Login;
 import vista.Menu;
-import vista.MenuAdmin;
+import vistaAdmin.MenuAdmin;
 import vista.MenuUsuario;
 
 public class Principal {

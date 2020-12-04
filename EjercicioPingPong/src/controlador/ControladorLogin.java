@@ -12,8 +12,10 @@ import modelo.ModeloLogin;
 import vista.Jugadores;
 import vista.Login;
 import vista.Menu;
+import vistaAdmin.MenuAdmin;
 import vista.MenuUsuario;
 import vista.Registrarse;
+import controladorAdmin.ControladorAdmin;
 
 public class ControladorLogin implements ActionListener {
 	private Login l;
@@ -36,9 +38,11 @@ public class ControladorLogin implements ActionListener {
 
 	public void actionPerformed(ActionEvent e) {
 
-		ControladorAdmin cAdmin = new ControladorAdmin();
+		
 		MenuUsuario menuUser = new MenuUsuario();
+		MenuAdmin menuAdmin = new MenuAdmin();
 		ControladorUser cUser = new ControladorUser(menuUser);
+		ControladorAdmin cAdmin = new ControladorAdmin(menuAdmin);
 		Menu menu = new Menu();
 		Registrarse r = new Registrarse();
 		ControladorRegister cRegister = new ControladorRegister(r);
