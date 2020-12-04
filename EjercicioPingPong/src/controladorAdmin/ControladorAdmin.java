@@ -19,6 +19,7 @@ import vista.Clasificacion;
 import vista.Jugadores;
 import vista.Login;
 import vistaAdmin.MenuAdmin;
+import vistaAdmin.ResultadosAdmin;
 import vista.MenuUsuario;
 import vista.Registrarse;
 import vista.Resultados;
@@ -66,8 +67,8 @@ public class ControladorAdmin implements ActionListener {
 			menuAdmin.setVisible(false);
 
 		} else if (e.getSource() == menuAdmin.btnResultados) {
-			Resultados resultados = new Resultados();
-			ControladorResultados cResultados = new ControladorResultados(resultados);
+			ResultadosAdmin resultados = new ResultadosAdmin();
+			ControladorResultadosAdmin cResultados = new ControladorResultadosAdmin(resultados);
 			cResultados.iniciar();
 			menuAdmin.setVisible(false);
 
