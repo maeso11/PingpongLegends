@@ -1,22 +1,30 @@
-package controlador;
+package controladorAdmin;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
+import java.io.IOException;
+import java.sql.SQLException;
+
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 import javax.sound.sampled.LineUnavailableException;
-import vista.InformacionJugador;
-import vista.Jugadores;
+import javax.swing.JOptionPane;
 
-public class ControladorInformacion implements ActionListener {
-	InformacionJugador infoJug = new InformacionJugador();
+import connection.EstableceConexion;
+import vistaAdmin.InformacionJugadorAdmin;
+import vistaAdmin.JugadoresAdmin;
 
-	public ControladorInformacion(InformacionJugador infoJug) {
+public class ControladorInformacionAdmin implements ActionListener {
+	InformacionJugadorAdmin infoJug = new InformacionJugadorAdmin();
+	EstableceConexion conn = new EstableceConexion();
+
+	public ControladorInformacionAdmin(InformacionJugadorAdmin infoJug) {
 		super();
 		this.infoJug = infoJug;
 		this.infoJug.btnVolver.addActionListener(this);
 		this.infoJug.btnGrito.addActionListener(this);
+		this.infoJug.btnActualizar.addActionListener(this);
 	}
 
 	public void iniciar() {
@@ -38,8 +46,8 @@ public class ControladorInformacion implements ActionListener {
 
 		// Boton Volver
 		if (e.getSource() == infoJug.btnVolver) {
-			Jugadores jugadores = new Jugadores();
-			ControladorJugadores cJugadores = new ControladorJugadores(jugadores);
+			JugadoresAdmin jugadores = new JugadoresAdmin();
+			ControladorJugadoresAdmin cJugadores = new ControladorJugadoresAdmin(jugadores);
 
 			cJugadores.iniciar();
 			infoJug.setVisible(false);
@@ -132,6 +140,16 @@ public class ControladorInformacion implements ActionListener {
 
 			}
 		}
+		// Actualiza los datos a la base de datos
+		if(e.getSource() == infoJug.btnActualizar) {
+			try {
+				conn.actualizaJugador(infoJug.txtAlias.getText(), Integer.valueOf(infoJug.txtEdad.getText()), infoJug.txtCiudad.getText(), infoJug.txtLateralidad.getText(), infoJug.txtGolpeEstrella.getText(), infoJug.txtAtaque.getText(), infoJug.txtDefensa.getText(), infoJug.lblNombre.getText());
+				JOptionPane.showMessageDialog(null, "Los datos se han actualizado.");
+			} catch (NumberFormatException | ClassNotFoundException | IOException | SQLException ex) {
+				ex.printStackTrace();
+			}
+		}
 
 	}
 }
+

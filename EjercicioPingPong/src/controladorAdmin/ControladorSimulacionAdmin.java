@@ -1,19 +1,18 @@
-package controlador;
+package controladorAdmin;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import vistaAdmin.MenuAdmin;
+import vistaAdmin.SimulacionAdmin;
 
-import vista.MenuUsuario;
-import vista.Simulacion;
+public class ControladorSimulacionAdmin implements ActionListener {
 
-public class ControladorSimulacion implements ActionListener {
+	SimulacionAdmin simulacion = new SimulacionAdmin();
 
-	Simulacion simulacion = new Simulacion();
-
-	public ControladorSimulacion(Simulacion simulacion) {
+	public ControladorSimulacionAdmin(SimulacionAdmin simulacion) {
 		super();
 		this.simulacion = simulacion;
 		this.simulacion.btnVolver.addActionListener(this);
@@ -38,8 +37,8 @@ public class ControladorSimulacion implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == simulacion.btnVolver) {
-			MenuUsuario mUsuario = new MenuUsuario();
-			ControladorUser cUser = new ControladorUser(mUsuario);
+			MenuAdmin mUsuario = new MenuAdmin();
+			ControladorAdmin cUser = new ControladorAdmin(mUsuario);
 			cUser.iniciar();
 			simulacion.setVisible(false);
 
@@ -103,19 +102,19 @@ public class ControladorSimulacion implements ActionListener {
 				// Elimina el nombre del jugador que se haya modificado
 				jugadores.remove(index);
 			}
-		}else if (e.getSource() == simulacion.btnSimulacion1) {
+		} else if (e.getSource() == simulacion.btnSimulacion1) {
 			simulacion.lblSemifinalista1.setText(enfrentamiento1(simulacion));
-		}else if (e.getSource() == simulacion.btnSimulacion2) {
+		} else if (e.getSource() == simulacion.btnSimulacion2) {
 			simulacion.lblSemifinalista2.setText(enfrentamiento2(simulacion));
-		}else if (e.getSource() == simulacion.btnSimulacion3) {
+		} else if (e.getSource() == simulacion.btnSimulacion3) {
 			simulacion.lblSemifinalista3.setText(enfrentamiento3(simulacion));
-		}else if (e.getSource() == simulacion.btnSimulacion4) {
+		} else if (e.getSource() == simulacion.btnSimulacion4) {
 			simulacion.lblSemifinalista4.setText(enfrentamiento4(simulacion));
-		}else if (e.getSource() == simulacion.btnSimulacionSemi1) {
+		} else if (e.getSource() == simulacion.btnSimulacionSemi1) {
 			simulacion.lblFinalista1.setText(semi1(simulacion));
-		}else if (e.getSource() == simulacion.btnSimulacionSemi2) {
+		} else if (e.getSource() == simulacion.btnSimulacionSemi2) {
 			simulacion.lblFinalista2.setText(semifinal2(simulacion));
-		}else if (e.getSource() == simulacion.btnSimulacionFinal) {
+		} else if (e.getSource() == simulacion.btnSimulacionFinal) {
 			simulacion.lblGanador.setText(granFinal(simulacion));
 		}
 
@@ -127,7 +126,7 @@ public class ControladorSimulacion implements ActionListener {
 	 * @param simulacion
 	 * @return
 	 */
-	public String enfrentamiento1(Simulacion simulacion) {
+	public String enfrentamiento1(SimulacionAdmin simulacion) {
 		String ganador = "";
 		int puntos1 = 0;
 		int puntos2 = 0;
@@ -156,14 +155,14 @@ public class ControladorSimulacion implements ActionListener {
 
 		return ganador;
 	}
-	
+
 	/**
 	 * Devuelve ganador 2º enfrentamiento
 	 * 
 	 * @param simulacion
 	 * @return
 	 */
-	public String enfrentamiento2(Simulacion simulacion) {
+	public String enfrentamiento2(SimulacionAdmin simulacion) {
 		String ganador = "";
 		int puntos1 = 0;
 		int puntos2 = 0;
@@ -192,14 +191,14 @@ public class ControladorSimulacion implements ActionListener {
 
 		return ganador;
 	}
-	
+
 	/**
 	 * Devuelve ganador 3º enfrentamiento
 	 * 
 	 * @param simulacion
 	 * @return
 	 */
-	public String enfrentamiento3(Simulacion simulacion) {
+	public String enfrentamiento3(SimulacionAdmin simulacion) {
 		String ganador = "";
 		int puntos1 = 0;
 		int puntos2 = 0;
@@ -228,14 +227,14 @@ public class ControladorSimulacion implements ActionListener {
 
 		return ganador;
 	}
-	
+
 	/**
 	 * Devuelve ganador 4º enfrentamiento
 	 * 
 	 * @param simulacion
 	 * @return
 	 */
-	public String enfrentamiento4(Simulacion simulacion) {
+	public String enfrentamiento4(SimulacionAdmin simulacion) {
 		String ganador = "";
 		int puntos1 = 0;
 		int puntos2 = 0;
@@ -264,14 +263,14 @@ public class ControladorSimulacion implements ActionListener {
 
 		return ganador;
 	}
-	
+
 	/**
 	 * Devuelve ganador 1º semifinal
 	 * 
 	 * @param simulacion
 	 * @return
 	 */
-	public String semi1(Simulacion simulacion) {
+	public String semi1(SimulacionAdmin simulacion) {
 		String ganador = "";
 		int puntos1 = 0;
 		int puntos2 = 0;
@@ -300,14 +299,14 @@ public class ControladorSimulacion implements ActionListener {
 
 		return ganador;
 	}
-	
+
 	/**
 	 * Devuelve ganador 2ª semifinal
 	 * 
 	 * @param simulacion
 	 * @return
 	 */
-	public String semifinal2(Simulacion simulacion) {
+	public String semifinal2(SimulacionAdmin simulacion) {
 		String ganador = "";
 		int puntos1 = 0;
 		int puntos2 = 0;
@@ -336,14 +335,14 @@ public class ControladorSimulacion implements ActionListener {
 
 		return ganador;
 	}
-	
+
 	/**
 	 * Devuelve ganador de la final
 	 * 
 	 * @param simulacion
 	 * @return
 	 */
-	public String granFinal(Simulacion simulacion) {
+	public String granFinal(SimulacionAdmin simulacion) {
 		String ganador = "";
 		int puntos1 = 0;
 		int puntos2 = 0;

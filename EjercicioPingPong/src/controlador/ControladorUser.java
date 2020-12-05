@@ -55,7 +55,12 @@ public class ControladorUser implements ActionListener {
 		} else if (e.getSource() == menuUser.btnClasificacin) {
 			Clasificacion clasificacion = new Clasificacion();
 			ControladorClasificacion cClasificacion = new ControladorClasificacion(clasificacion);
-			cClasificacion.iniciar();
+			try {
+				cClasificacion.iniciar();
+			} catch (Exception e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
 			menuUser.setVisible(false);
 
 		} else if (e.getSource() == menuUser.btnResultados) {

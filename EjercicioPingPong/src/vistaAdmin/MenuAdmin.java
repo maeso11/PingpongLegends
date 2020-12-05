@@ -1,47 +1,22 @@
 package vistaAdmin;
 
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-import java.awt.Window.Type;
 import javax.swing.JButton;
-import javax.swing.JMenuBar;
 import java.awt.Color;
 import javax.swing.JLabel;
 import javax.swing.ImageIcon;
 import java.awt.Toolkit;
-import java.awt.Label;
-import javax.swing.JTextPane;
 import java.awt.Font;
-import java.awt.ScrollPane;
-import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;
-
-import java.awt.Scrollbar;
-import java.awt.Button;
-import java.awt.event.AdjustmentListener;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.AdjustmentEvent;
-import java.awt.event.ContainerAdapter;
-import java.awt.event.ContainerEvent;
-import java.net.MalformedURLException;
-import java.net.URL;
-
 import javax.swing.JTextArea;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.border.LineBorder;
-import java.awt.Component;
 import java.awt.ComponentOrientation;
 import java.awt.Cursor;
-import javax.swing.border.SoftBevelBorder;
-
 import vista.MenuUsuario;
-
-import javax.swing.border.BevelBorder;
 
 public class MenuAdmin extends JFrame {
 

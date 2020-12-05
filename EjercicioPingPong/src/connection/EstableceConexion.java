@@ -2,6 +2,7 @@ package connection;
 
 import java.io.FileReader;
 import modelo.Informacion;
+import modelo.ModeloClasificacion;
 import modelo.RegisterDatos;
 import vista.Registrarse;
 
@@ -294,5 +295,170 @@ public class EstableceConexion {
 		}
 
 		return existe;
+	}
+
+	/**
+	 * Devuelve datos clasificacion según el nombre pasado
+	 * 
+	 * @param nombre
+	 * @return
+	 * @throws ClassNotFoundException
+	 * @throws SQLException
+	 * @throws IOException
+	 */
+	public int devuelvePuntos(String nombre) throws ClassNotFoundException, SQLException, IOException {
+		Connection connection = null;
+		PreparedStatement preparedStatement = null;
+		ResultSet resultSet = null;
+		ModeloClasificacion clasif = null;
+		int puntos = 0;
+		String sentenciaSqle = "SELECT * FROM CLASIFICACION WHERE NOMBRE = ?";
+		try {
+			connection = connectionByProp();
+			preparedStatement = connection.prepareStatement(sentenciaSqle);
+			preparedStatement.setString(1, nombre);
+			resultSet = preparedStatement.executeQuery();
+			if (resultSet.next()) {
+				clasif = new ModeloClasificacion();
+				clasif.setNombre(resultSet.getString("NOMBRE"));
+				clasif.setPuntos(resultSet.getInt("PUNTOS"));
+				puntos = clasif.getPuntos();
+			}
+		} catch (ClassNotFoundException | SQLException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if (resultSet != null) {
+					resultSet.close();
+					resultSet = null;
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+				throw e;
+			}
+			try {
+				if (preparedStatement != null) {
+					preparedStatement.close();
+					preparedStatement = null;
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+				throw e;
+			}
+			try {
+				disconect(connection);
+			} catch (SQLException e) {
+				e.printStackTrace();
+				throw e;
+			}
+		}
+		return puntos;
+	}
+
+	/**
+	 * Actualiza los puntos en la bbdd
+	 * 
+	 * @param puntos
+	 * @param nombre
+	 * @throws ClassNotFoundException
+	 * @throws IOException
+	 * @throws SQLException
+	 */
+	public void actualizaPuntos(int puntos, String nombre) throws ClassNotFoundException, IOException, SQLException {
+		String sentenciaSql = "UPDATE CLASIFICACION SET PUNTOS = ? WHERE NOMBRE = ?";
+		PreparedStatement pStatement = null;
+		Connection connection = null;
+		try {
+			connection = connectionByProp();
+			pStatement = connection.prepareStatement(sentenciaSql);
+			pStatement.setInt(1, puntos); // PUNTOS
+			pStatement.setString(2, nombre); // NOMBRE
+			try {
+				pStatement.executeUpdate();
+			} catch (SQLException sqle) {
+				throw sqle;
+			} finally {
+				connection.commit();
+			}
+		} catch (SQLException e) {
+			connection.rollback();
+			throw e;
+		} finally {
+			if (pStatement != null)
+				try {
+					pStatement.close();
+				} catch (SQLException sqle) {
+					throw sqle;
+				}
+			try {
+				if (connection != null) {
+					connection.close();
+					connection = null;
+				}
+			} catch (SQLException e) {
+				throw e;
+			}
+		}
+	}
+
+	/**
+	 * Actualiza el jugador en la bbdd
+	 * 
+	 * @param puntos
+	 * @param nombre
+	 * @param alias
+	 * @param edad
+	 * @param ciudad
+	 * @param lateralidad
+	 * @param golpeEstrella
+	 * @param ataque
+	 * @param defensa
+	 * @throws ClassNotFoundException
+	 * @throws IOException
+	 * @throws SQLException
+	 */
+	public void actualizaJugador(String alias, int edad, String ciudad, String lateralidad,
+			String golpeEstrella, String ataque, String defensa, String nombre)
+			throws ClassNotFoundException, IOException, SQLException {
+		String sentenciaSql = "UPDATE INFORMACION SET ALIAS = ?, EDAD = ?, CIUDAD = ?, LATERALIDAD = ?, GOLPE_ESTRELLA = ?, ATAQUE = ?, DEFENSA = ? WHERE NOMBRE = ?";
+		PreparedStatement pStatement = null;
+		Connection connection = null;
+		try {
+			connection = connectionByProp();
+			pStatement = connection.prepareStatement(sentenciaSql);
+			pStatement.setString(1, alias);
+			pStatement.setInt(2, edad);
+			pStatement.setString(3, ciudad);
+			pStatement.setString(4, lateralidad);
+			pStatement.setString(5, golpeEstrella);
+			pStatement.setString(6, ataque);
+			pStatement.setString(7, defensa);
+			pStatement.setString(8, nombre);
+			try {
+				pStatement.executeUpdate();
+			} catch (SQLException sqle) {
+				throw sqle;
+			} finally {
+				connection.commit();
+			}
+		} catch (SQLException e) {
+			connection.rollback();
+			throw e;
+		} finally {
+			if (pStatement != null)
+				try {
+					pStatement.close();
+				} catch (SQLException sqle) {
+					throw sqle;
+				}
+			try {
+				if (connection != null) {
+					connection.close();
+					connection = null;
+				}
+			} catch (SQLException e) {
+				throw e;
+			}
+		}
 	}
 }

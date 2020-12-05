@@ -228,49 +228,49 @@ public class Clasificacion extends JFrame {
 		lblBandera8.setBounds(689, 480, 46, 29);
 		contentPane.add(lblBandera8);
 
-		lblPuntos1 = new JLabel("16 PUNTOS");
+		lblPuntos1 = new JLabel(" PUNTOS");
 		lblPuntos1.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
 		lblPuntos1.setForeground(Color.WHITE);
 		lblPuntos1.setBounds(254, 288, 107, 14);
 		contentPane.add(lblPuntos1);
 
-		lblPuntos2 = new JLabel("11 PUNTOS");
+		lblPuntos2 = new JLabel(" PUNTOS");
 		lblPuntos2.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
 		lblPuntos2.setForeground(Color.WHITE);
 		lblPuntos2.setBounds(254, 351, 107, 14);
 		contentPane.add(lblPuntos2);
 
-		lblPuntos3 = new JLabel("10 PUNTOS");
+		lblPuntos3 = new JLabel(" PUNTOS");
 		lblPuntos3.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
 		lblPuntos3.setForeground(Color.WHITE);
 		lblPuntos3.setBounds(254, 424, 107, 14);
 		contentPane.add(lblPuntos3);
 
-		lblPuntos4 = new JLabel("7 PUNTOS");
+		lblPuntos4 = new JLabel(" PUNTOS");
 		lblPuntos4.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
 		lblPuntos4.setForeground(Color.WHITE);
 		lblPuntos4.setBounds(254, 492, 107, 14);
 		contentPane.add(lblPuntos4);
 
-		lblPuntos5 = new JLabel("12 PUNTOS");
+		lblPuntos5 = new JLabel(" PUNTOS");
 		lblPuntos5.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
 		lblPuntos5.setForeground(Color.WHITE);
 		lblPuntos5.setBounds(748, 288, 107, 14);
 		contentPane.add(lblPuntos5);
 
-		lblPuntos6 = new JLabel("11 PUNTOS");
+		lblPuntos6 = new JLabel(" PUNTOS");
 		lblPuntos6.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
 		lblPuntos6.setForeground(Color.WHITE);
 		lblPuntos6.setBounds(748, 351, 107, 14);
 		contentPane.add(lblPuntos6);
 
-		lblPuntos7 = new JLabel("7 PUNTOS");
+		lblPuntos7 = new JLabel(" PUNTOS");
 		lblPuntos7.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
 		lblPuntos7.setForeground(Color.WHITE);
 		lblPuntos7.setBounds(748, 423, 107, 14);
 		contentPane.add(lblPuntos7);
 
-		lblPuntos8 = new JLabel("5 PUNTOS");
+		lblPuntos8 = new JLabel(" PUNTOS");
 		lblPuntos8.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
 		lblPuntos8.setForeground(Color.WHITE);
 		lblPuntos8.setBounds(745, 495, 97, 14);

@@ -69,8 +69,8 @@ public class Login extends JFrame {
 		JLabel lblNewLabel_2 = new JLabel("\u00BFEres nuevo en Ping Pong League?");
 		lblNewLabel_2.setBackground(new Color(255, 255, 255));
 		lblNewLabel_2.setForeground(new Color(255, 255, 255));
-		lblNewLabel_2.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
-		lblNewLabel_2.setBounds(290, 423, 297, 18);
+		lblNewLabel_2.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
+		lblNewLabel_2.setBounds(284, 424, 309, 19);
 		contentPane.add(lblNewLabel_2);
 
 		JLabel lblNewLabel_1 = new JLabel("");
@@ -79,11 +79,13 @@ public class Login extends JFrame {
 		contentPane.add(lblNewLabel_1);
 
 		txtUser = new JTextField();
+		txtUser.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
 		txtUser.setBounds(442, 238, 173, 20);
 		contentPane.add(txtUser);
 		txtUser.setColumns(10);
 
 		txtPassword = new JPasswordField();
+		txtPassword.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
 		txtPassword.setBounds(442, 298, 173, 20);
 		contentPane.add(txtPassword);
 

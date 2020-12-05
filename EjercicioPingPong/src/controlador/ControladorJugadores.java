@@ -10,8 +10,6 @@ import modelo.Informacion;
 import vista.InformacionJugador;
 import vista.Jugadores;
 import vista.MenuUsuario;
-import vista.Resultados;
-import vista.Simulacion;
 
 public class ControladorJugadores implements ActionListener {
 

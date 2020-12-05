@@ -2,14 +2,9 @@ package controlador;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import javax.swing.ImageIcon;
-
-import vista.Clasificacion;
-import vista.Jugadores;
 import vista.MenuUsuario;
 import vista.Resultados;
-import vista.Simulacion;
 
 public class ControladorResultados implements ActionListener{
 	
@@ -43,6 +38,11 @@ public class ControladorResultados implements ActionListener{
 			resultados.fotoMaeso.setVisible(false);
 			resultados.banderaMaeso.setVisible(false);
 			resultados.porro.setVisible(false);
+			
+			//Mostrar
+			resultados.lblUpgrade1.setVisible(true);
+			resultados.lblUpgrade2.setVisible(true);
+			resultados.lblUpgrade3.setVisible(true);
 			
 			//TOP1
 			resultados.lblJugador4.setText("JESÚS");
@@ -88,6 +88,11 @@ public class ControladorResultados implements ActionListener{
 			resultados.banderaMaeso.setVisible(false);
 			resultados.porro.setVisible(false);
 			
+			//Mostrar
+			resultados.lblUpgrade1.setVisible(true);
+			resultados.lblUpgrade2.setVisible(true);
+			resultados.lblUpgrade3.setVisible(true);
+			
 			//TOP1
 			resultados.lblJugador4.setText("TONY");
 			//TOP2
@@ -131,6 +136,12 @@ public class ControladorResultados implements ActionListener{
 			resultados.fotoMaeso.setVisible(false);
 			resultados.banderaMaeso.setVisible(false);
 			resultados.porro.setVisible(false);
+			
+			//Mostrar
+			resultados.lblUpgrade1.setVisible(true);
+			resultados.lblUpgrade2.setVisible(true);
+			resultados.lblUpgrade3.setVisible(true);
+			
 			//TOP1
 			resultados.lblJugador4.setText("MANUEL");
 			//TOP2
@@ -174,6 +185,9 @@ public class ControladorResultados implements ActionListener{
 			resultados.fotoMaeso.setVisible(true);
 			resultados.banderaMaeso.setVisible(true);
 			resultados.porro.setVisible(true);
+			resultados.lblUpgrade1.setVisible(false);
+			resultados.lblUpgrade2.setVisible(false);
+			resultados.lblUpgrade3.setVisible(false);
 			
 			//TOP1
 			resultados.lblJugador4.setText("MAESO");

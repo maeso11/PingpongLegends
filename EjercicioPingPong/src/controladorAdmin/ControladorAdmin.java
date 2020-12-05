@@ -6,24 +6,16 @@ import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
-
 import javax.swing.JOptionPane;
-
-import controlador.ControladorJugadores;
 import controlador.ControladorLogin;
-import controlador.ControladorResultados;
-import controlador.ControladorSimulacion;
 import modelo.ModeloLogin;
 import vistaAdmin.AdminClasificacion;
-import vista.Clasificacion;
-import vista.Jugadores;
+import vistaAdmin.JugadoresAdmin;
 import vista.Login;
 import vistaAdmin.MenuAdmin;
 import vistaAdmin.ResultadosAdmin;
-import vista.MenuUsuario;
-import vista.Registrarse;
-import vista.Resultados;
-import vista.Simulacion;
+import vistaAdmin.SimulacionAdmin;
+
 public class ControladorAdmin implements ActionListener {
 	MenuAdmin menuAdmin = new MenuAdmin();
 
@@ -38,8 +30,6 @@ public class ControladorAdmin implements ActionListener {
 		this.menuAdmin.btnLeer1.addActionListener(this);
 		this.menuAdmin.btnLeer2.addActionListener(this);
 	}
-
-	
 
 	public void iniciar() {
 		menuAdmin.setTitle("Menú Admin");
@@ -63,7 +53,12 @@ public class ControladorAdmin implements ActionListener {
 		} else if (e.getSource() == menuAdmin.btnClasificacin) {
 			AdminClasificacion clasificacion = new AdminClasificacion();
 			ControladorClasificacionAdmin cClasificacion = new ControladorClasificacionAdmin(clasificacion);
-			cClasificacion.iniciar();
+			try {
+				cClasificacion.iniciar();
+			} catch (Exception e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
 			menuAdmin.setVisible(false);
 
 		} else if (e.getSource() == menuAdmin.btnResultados) {
@@ -73,14 +68,14 @@ public class ControladorAdmin implements ActionListener {
 			menuAdmin.setVisible(false);
 
 		} else if (e.getSource() == menuAdmin.btnSimulacin) {
-			Simulacion simulacion = new Simulacion();
-			ControladorSimulacion cSimulacion = new ControladorSimulacion(simulacion);
+			SimulacionAdmin simulacion = new SimulacionAdmin();
+			ControladorSimulacionAdmin cSimulacion = new ControladorSimulacionAdmin(simulacion);
 			cSimulacion.iniciar();
 			menuAdmin.setVisible(false);
 
 		} else if (e.getSource() == menuAdmin.btnInformacin) {
-			Jugadores jugadores = new Jugadores();
-			ControladorJugadores cJugadores = new ControladorJugadores(jugadores);
+			JugadoresAdmin jugadores = new JugadoresAdmin();
+			ControladorJugadoresAdmin cJugadores = new ControladorJugadoresAdmin(jugadores);
 			cJugadores.iniciar();
 			menuAdmin.setVisible(false);
 		} else if (e.getSource() == menuAdmin.btnLeer1) {

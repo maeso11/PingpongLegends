@@ -4,12 +4,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.sql.SQLException;
-
 import javax.swing.JOptionPane;
-
 import connection.EstableceConexion;
 import modelo.ModeloLogin;
-import vista.Jugadores;
 import vista.Login;
 import vista.Menu;
 import vistaAdmin.MenuAdmin;

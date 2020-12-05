@@ -2,14 +2,8 @@ package controladorAdmin;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import javax.swing.ImageIcon;
-
-import vista.Clasificacion;
-import vista.Jugadores;
-import vista.MenuUsuario;
 import vista.Resultados;
-import vista.Simulacion;
 import vistaAdmin.MenuAdmin;
 import vistaAdmin.ResultadosAdmin;
 
@@ -33,8 +27,8 @@ public class ControladorResultadosAdmin implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		
 		if(e.getSource() == resultados.btnVolver) {
-			MenuAdmin menuAdmin = new MenuAdmin();
-			ControladorAdmin cUser = new ControladorAdmin(menuAdmin);
+			MenuAdmin mUsuario = new MenuAdmin();
+			ControladorAdmin cUser = new ControladorAdmin(mUsuario);
 			cUser.iniciar();
 			resultados.setVisible(false);
 		
@@ -46,6 +40,11 @@ public class ControladorResultadosAdmin implements ActionListener{
 			resultados.banderaMaeso.setVisible(false);
 			resultados.porro.setVisible(false);
 			
+			//Mostrar
+			resultados.lblUpgrade1.setVisible(true);
+			resultados.lblUpgrade2.setVisible(true);
+			resultados.lblUpgrade3.setVisible(true);
+			
 			//TOP1
 			resultados.lblJugador4.setText("JESÚS");
 			//TOP2
@@ -56,11 +55,11 @@ public class ControladorResultadosAdmin implements ActionListener{
 			//NOMBRE %
 			resultados.lblPorcentaje.setText("Porcentaje restos");
 			//IMG1
-			resultados.lblNewLabel_2.setIcon(new ImageIcon(Resultados.class.getResource("/img/jesusMINI.jpeg")));
+			resultados.lblNewLabel_2.setIcon(new ImageIcon(ResultadosAdmin.class.getResource("/img/jesusMINI.jpeg")));
 			//IMG2
-			resultados.lblNewLabel_3.setIcon(new ImageIcon(Resultados.class.getResource("/img/victorMINI.jpeg")));
+			resultados.lblNewLabel_3.setIcon(new ImageIcon(ResultadosAdmin.class.getResource("/img/victorMINI.jpeg")));
 			//IMG3
-			resultados.lblNewLabel_4.setIcon(new ImageIcon(Resultados.class.getResource("/img/carlosMINI.jpeg")));
+			resultados.lblNewLabel_4.setIcon(new ImageIcon(ResultadosAdmin.class.getResource("/img/carlosMINI.jpeg")));
 			
 			// % 1
 			resultados.label.setText("100%");
@@ -70,18 +69,18 @@ public class ControladorResultadosAdmin implements ActionListener{
 			resultados.label_2.setText("89%");
 			
 			//BANDERA1
-			resultados.lblBandera1.setIcon(new ImageIcon(Resultados.class.getResource("/img/LILESPAÑA.png")));
+			resultados.lblBandera1.setIcon(new ImageIcon(ResultadosAdmin.class.getResource("/img/LILESPAÑA.png")));
 			//BANDERA2
-			resultados.lblBandera4.setIcon(new ImageIcon(Resultados.class.getResource("/img/LILESPAÑA.png")));
+			resultados.lblBandera4.setIcon(new ImageIcon(ResultadosAdmin.class.getResource("/img/LILESPAÑA.png")));
 			//BANDERA3
 			resultados.lblBandera6.setIcon(new ImageIcon(Resultados.class.getResource("/img/LILPORTUGAL.png")));
 			
 			//medalla oro
-			resultados.label_4.setIcon(new ImageIcon(Resultados.class.getResource("/img/oro.png")));
+			resultados.label_4.setIcon(new ImageIcon(ResultadosAdmin.class.getResource("/img/oro.png")));
 			//medalla plata
-			resultados.label_3.setIcon(new ImageIcon(Resultados.class.getResource("/img/plata.png")));
+			resultados.label_3.setIcon(new ImageIcon(ResultadosAdmin.class.getResource("/img/plata.png")));
 			//medalla bronce
-			resultados.lblNewLabel_8.setIcon(new ImageIcon(Resultados.class.getResource("/img/bronce.png")));
+			resultados.lblNewLabel_8.setIcon(new ImageIcon(ResultadosAdmin.class.getResource("/img/bronce.png")));
 			
 		}else if(resultados.comboBox.getSelectedItem()== "MEJORES REMATADORES") {
 			
@@ -89,6 +88,11 @@ public class ControladorResultadosAdmin implements ActionListener{
 			resultados.fotoMaeso.setVisible(false);
 			resultados.banderaMaeso.setVisible(false);
 			resultados.porro.setVisible(false);
+			
+			//Mostrar
+			resultados.lblUpgrade1.setVisible(true);
+			resultados.lblUpgrade2.setVisible(true);
+			resultados.lblUpgrade3.setVisible(true);
 			
 			//TOP1
 			resultados.lblJugador4.setText("TONY");
@@ -100,11 +104,11 @@ public class ControladorResultadosAdmin implements ActionListener{
 			//NOMBRE %
 			resultados.lblPorcentaje.setText("Porcentaje remates ganadores");
 			//IMG1
-			resultados.lblNewLabel_2.setIcon(new ImageIcon(Resultados.class.getResource("/img/tonyMINI.jpeg")));
+			resultados.lblNewLabel_2.setIcon(new ImageIcon(ResultadosAdmin.class.getResource("/img/tonyMINI.jpeg")));
 			//IMG2
-			resultados.lblNewLabel_3.setIcon(new ImageIcon(Resultados.class.getResource("/img/DAVIDMINI.jpg")));
+			resultados.lblNewLabel_3.setIcon(new ImageIcon(ResultadosAdmin.class.getResource("/img/DAVIDMINI.jpg")));
 			//IMG3
-			resultados.lblNewLabel_4.setIcon(new ImageIcon(Resultados.class.getResource("/img/manuelMINI.jpeg")));
+			resultados.lblNewLabel_4.setIcon(new ImageIcon(ResultadosAdmin.class.getResource("/img/manuelMINI.jpeg")));
 			
 			// % 1
 			resultados.label.setText("33%");
@@ -114,18 +118,18 @@ public class ControladorResultadosAdmin implements ActionListener{
 			resultados.label_2.setText("22%");
 			
 			//BANDERA1
-			resultados.lblBandera1.setIcon(new ImageIcon(Resultados.class.getResource("/img/LILwilly2.png")));
+			resultados.lblBandera1.setIcon(new ImageIcon(ResultadosAdmin.class.getResource("/img/LILwilly2.png")));
 			//BANDERA2
-			resultados.lblBandera4.setIcon(new ImageIcon(Resultados.class.getResource("/img/lilINDIA.png")));
+			resultados.lblBandera4.setIcon(new ImageIcon(ResultadosAdmin.class.getResource("/img/lilINDIA.png")));
 			//BANDERA3
-			resultados.lblBandera6.setIcon(new ImageIcon(Resultados.class.getResource("/img/Lilcorea.jpg")));
+			resultados.lblBandera6.setIcon(new ImageIcon(ResultadosAdmin.class.getResource("/img/Lilcorea.jpg")));
 			
 			//medalla oro
-			resultados.label_4.setIcon(new ImageIcon(Resultados.class.getResource("/img/oro.png")));
+			resultados.label_4.setIcon(new ImageIcon(ResultadosAdmin.class.getResource("/img/oro.png")));
 			//medalla plata
-			resultados.label_3.setIcon(new ImageIcon(Resultados.class.getResource("/img/plata.png")));
+			resultados.label_3.setIcon(new ImageIcon(ResultadosAdmin.class.getResource("/img/plata.png")));
 			//medalla bronce
-			resultados.lblNewLabel_8.setIcon(new ImageIcon(Resultados.class.getResource("/img/bronce.png")));
+			resultados.lblNewLabel_8.setIcon(new ImageIcon(ResultadosAdmin.class.getResource("/img/bronce.png")));
 			
 		}else if(resultados.comboBox.getSelectedItem()== "MEJORES SACADORES") {
 			
@@ -133,6 +137,12 @@ public class ControladorResultadosAdmin implements ActionListener{
 			resultados.fotoMaeso.setVisible(false);
 			resultados.banderaMaeso.setVisible(false);
 			resultados.porro.setVisible(false);
+			
+			//Mostrar
+			resultados.lblUpgrade1.setVisible(true);
+			resultados.lblUpgrade2.setVisible(true);
+			resultados.lblUpgrade3.setVisible(true);
+			
 			//TOP1
 			resultados.lblJugador4.setText("MANUEL");
 			//TOP2
@@ -143,11 +153,11 @@ public class ControladorResultadosAdmin implements ActionListener{
 			//NOMBRE %
 			resultados.lblPorcentaje.setText("Porcentaje saques ganadores");
 			//IMG1
-			resultados.lblNewLabel_2.setIcon(new ImageIcon(Resultados.class.getResource("/img/manuelMINI.jpeg")));
+			resultados.lblNewLabel_2.setIcon(new ImageIcon(ResultadosAdmin.class.getResource("/img/manuelMINI.jpeg")));
 			//IMG2
-			resultados.lblNewLabel_3.setIcon(new ImageIcon(Resultados.class.getResource("/img/pacoMINI.jpeg")));
+			resultados.lblNewLabel_3.setIcon(new ImageIcon(ResultadosAdmin.class.getResource("/img/pacoMINI.jpeg")));
 			//IMG3
-			resultados.lblNewLabel_4.setIcon(new ImageIcon(Resultados.class.getResource("/img/DAVIDMINI.jpg")));
+			resultados.lblNewLabel_4.setIcon(new ImageIcon(ResultadosAdmin.class.getResource("/img/DAVIDMINI.jpg")));
 			
 			// % 1
 			resultados.label.setText("83%");
@@ -157,18 +167,18 @@ public class ControladorResultadosAdmin implements ActionListener{
 			resultados.label_2.setText("71%");
 			
 			//BANDERA1
-			resultados.lblBandera1.setIcon(new ImageIcon(Resultados.class.getResource("/img/Lilcorea.jpg")));
+			resultados.lblBandera1.setIcon(new ImageIcon(ResultadosAdmin.class.getResource("/img/Lilcorea.jpg")));
 			//BANDERA2
-			resultados.lblBandera4.setIcon(new ImageIcon(Resultados.class.getResource("/img/LILwilly2.png")));
+			resultados.lblBandera4.setIcon(new ImageIcon(ResultadosAdmin.class.getResource("/img/LILwilly2.png")));
 			//BANDERA3
-			resultados.lblBandera6.setIcon(new ImageIcon(Resultados.class.getResource("/img/LILBRASIL.png")));
+			resultados.lblBandera6.setIcon(new ImageIcon(ResultadosAdmin.class.getResource("/img/LILBRASIL.png")));
 			
 			//medalla oro
-			resultados.label_4.setIcon(new ImageIcon(Resultados.class.getResource("/img/oro.png")));
+			resultados.label_4.setIcon(new ImageIcon(ResultadosAdmin.class.getResource("/img/oro.png")));
 			//medalla plata
-			resultados.label_3.setIcon(new ImageIcon(Resultados.class.getResource("/img/plata.png")));
+			resultados.label_3.setIcon(new ImageIcon(ResultadosAdmin.class.getResource("/img/plata.png")));
 			//medalla bronce
-			resultados.lblNewLabel_8.setIcon(new ImageIcon(Resultados.class.getResource("/img/bronce.png")));
+			resultados.lblNewLabel_8.setIcon(new ImageIcon(ResultadosAdmin.class.getResource("/img/bronce.png")));
 			
 		}else if(resultados.comboBox.getSelectedItem()== "MEJORES FUMADORES") {
 			
@@ -176,6 +186,9 @@ public class ControladorResultadosAdmin implements ActionListener{
 			resultados.fotoMaeso.setVisible(true);
 			resultados.banderaMaeso.setVisible(true);
 			resultados.porro.setVisible(true);
+			resultados.lblUpgrade1.setVisible(false);
+			resultados.lblUpgrade2.setVisible(false);
+			resultados.lblUpgrade3.setVisible(false);
 			
 			//TOP1
 			resultados.lblJugador4.setText("MAESO");
@@ -187,11 +200,11 @@ public class ControladorResultadosAdmin implements ActionListener{
 			//NOMBRE %
 			resultados.lblPorcentaje.setText("Porcentaje de fumadores");
 			//IMG1
-			resultados.lblNewLabel_2.setIcon(new ImageIcon(Resultados.class.getResource("")));
+			resultados.lblNewLabel_2.setIcon(new ImageIcon(ResultadosAdmin.class.getResource("")));
 			//IMG2
-			resultados.lblNewLabel_3.setIcon(new ImageIcon(Resultados.class.getResource("")));
+			resultados.lblNewLabel_3.setIcon(new ImageIcon(ResultadosAdmin.class.getResource("")));
 			//IMG3
-			resultados.lblNewLabel_4.setIcon(new ImageIcon(Resultados.class.getResource("")));
+			resultados.lblNewLabel_4.setIcon(new ImageIcon(ResultadosAdmin.class.getResource("")));
 			
 			// % 1
 			resultados.label.setText("100%");
@@ -201,22 +214,22 @@ public class ControladorResultadosAdmin implements ActionListener{
 			resultados.label_2.setText("");
 			
 			//BANDERA1
-			resultados.lblBandera1.setIcon(new ImageIcon(Resultados.class.getResource("")));
+			resultados.lblBandera1.setIcon(new ImageIcon(ResultadosAdmin.class.getResource("")));
 			//BANDERA2
-			resultados.lblBandera4.setIcon(new ImageIcon(Resultados.class.getResource("")));
+			resultados.lblBandera4.setIcon(new ImageIcon(ResultadosAdmin.class.getResource("")));
 			//BANDERA3
-			resultados.lblBandera6.setIcon(new ImageIcon(Resultados.class.getResource("")));
+			resultados.lblBandera6.setIcon(new ImageIcon(ResultadosAdmin.class.getResource("")));
 			
-			resultados.banderaMaeso.setIcon(new ImageIcon(Resultados.class.getResource("/img/LILjamaica.jpg")));
-			resultados.fotoMaeso.setIcon(new ImageIcon(Resultados.class.getResource("/img/maesoTOP.jpeg")));
-			resultados.porro.setIcon(new ImageIcon(Resultados.class.getResource("/img/LILporritoniño.png")));
+			resultados.banderaMaeso.setIcon(new ImageIcon(ResultadosAdmin.class.getResource("/img/LILjamaica.jpg")));
+			resultados.fotoMaeso.setIcon(new ImageIcon(ResultadosAdmin.class.getResource("/img/maesoTOP.jpeg")));
+			resultados.porro.setIcon(new ImageIcon(ResultadosAdmin.class.getResource("/img/LILporritoniño.png")));
 			
 			//medalla oro
-			resultados.label_4.setIcon(new ImageIcon(Resultados.class.getResource("/img/oro.png")));
+			resultados.label_4.setIcon(new ImageIcon(ResultadosAdmin.class.getResource("/img/oro.png")));
 			//medalla plata
-			resultados.label_3.setIcon(new ImageIcon(Resultados.class.getResource("")));
+			resultados.label_3.setIcon(new ImageIcon(ResultadosAdmin.class.getResource("")));
 			//medalla bronce
-			resultados.lblNewLabel_8.setIcon(new ImageIcon(Resultados.class.getResource("")));
+			resultados.lblNewLabel_8.setIcon(new ImageIcon(ResultadosAdmin.class.getResource("")));
 
 		}
 	}

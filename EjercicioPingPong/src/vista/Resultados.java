@@ -43,6 +43,9 @@ public class Resultados extends JFrame {
 	public JLabel lblNewLabel_8;
 	public JLabel label_3;
 	public JLabel label_4;
+	public JLabel lblUpgrade1;
+	public JLabel lblUpgrade2;
+	public JLabel lblUpgrade3;
 
 	/**
 	 * Launch the application.
@@ -74,6 +77,21 @@ public class Resultados extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
+		lblUpgrade3 = new JLabel("");
+		lblUpgrade3.setIcon(new ImageIcon(Resultados.class.getResource("/img/upgrade3.png")));
+		lblUpgrade3.setBounds(740, 444, 70, 70);
+		contentPane.add(lblUpgrade3);
+		
+		lblUpgrade2 = new JLabel("");
+		lblUpgrade2.setIcon(new ImageIcon(Resultados.class.getResource("/img/upgrade2.png")));
+		lblUpgrade2.setBounds(740, 290, 70, 70);
+		contentPane.add(lblUpgrade2);
+		
+		lblUpgrade1 = new JLabel("");
+		lblUpgrade1.setIcon(new ImageIcon(Resultados.class.getResource("/img/upgrade1.png")));
+		lblUpgrade1.setBounds(740, 152, 70, 70);
+		contentPane.add(lblUpgrade1);
+		
 		label_4 = new JLabel("");
 		label_4.setIcon(new ImageIcon(Resultados.class.getResource("/img/oro.png")));
 		label_4.setBounds(53, 146, 77, 76);
@@ -102,7 +120,7 @@ public class Resultados extends JFrame {
 		
 		lblBandera1 = new JLabel("");
 		lblBandera1.setIcon(new ImageIcon(Resultados.class.getResource("/img/Lilcorea.jpg")));
-		lblBandera1.setBounds(446, 425, 58, 33);
+		lblBandera1.setBounds(454, 427, 58, 33);
 		contentPane.add(lblBandera1);
 		
 		lblNewLabel_1 = new JLabel("DAVID");
@@ -119,7 +137,7 @@ public class Resultados extends JFrame {
 		
 		lblBandera4 = new JLabel("");
 		lblBandera4.setIcon(new ImageIcon(Resultados.class.getResource("/img/LILwilly2.png")));
-		lblBandera4.setBounds(450, 129, 50, 33);
+		lblBandera4.setBounds(454, 135, 50, 33);
 		contentPane.add(lblBandera4);
 		
 		lblJugador6 = new JLabel("PACO");
@@ -130,15 +148,20 @@ public class Resultados extends JFrame {
 		
 		lblBandera6 = new JLabel("");
 		lblBandera6.setIcon(new ImageIcon(Resultados.class.getResource("/img/LILBRASIL.png")));
-		lblBandera6.setBounds(454, 263, 50, 35);
+		lblBandera6.setBounds(454, 273, 50, 35);
 		contentPane.add(lblBandera6);
 		
-		btnVolver = new JButton("Volver");
+		btnVolver = new JButton("VOLVER");
+		btnVolver.setBorderPainted(false);
+		btnVolver.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
+		btnVolver.setBackground(new Color(255, 165, 0));
+		btnVolver.setForeground(new Color(0, 0, 0));
 		btnVolver.setBounds(0, 580, 909, 41);
 		contentPane.add(btnVolver);
 		
 		comboBox = new JComboBox();
-		comboBox.setBounds(349, 68, 173, 20);
+		comboBox.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 12));
+		comboBox.setBounds(349, 68, 207, 20);
 		contentPane.add(comboBox);
 		comboBox.addItem("MEJORES SACADORES");
 		comboBox.addItem("MEJORES RESTADORES");
@@ -147,30 +170,30 @@ public class Resultados extends JFrame {
 		
 		lblNewLabel_2 = new JLabel("");
 		lblNewLabel_2.setIcon(new ImageIcon(Resultados.class.getResource("/img/manuelMINI.jpeg")));
-		lblNewLabel_2.setBounds(375, 129, 65, 87);
+		lblNewLabel_2.setBounds(375, 135, 65, 87);
 		contentPane.add(lblNewLabel_2);
 		
 		lblPorcentaje = new JLabel("PORCENTAJE SAQUES GANADORES");
 		lblPorcentaje.setForeground(Color.WHITE);
-		lblPorcentaje.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
-		lblPorcentaje.setBounds(596, 104, 281, 18);
+		lblPorcentaje.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
+		lblPorcentaje.setBounds(596, 104, 303, 18);
 		contentPane.add(lblPorcentaje);
 		
 		label = new JLabel("83%");
 		label.setForeground(Color.WHITE);
 		label.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
-		label.setBounds(596, 171, 50, 18);
+		label.setBounds(647, 179, 50, 18);
 		contentPane.add(label);
 		
 		lblNewLabel_3 = new JLabel("");
 		lblNewLabel_3.setIcon(new ImageIcon(Resultados.class.getResource("/img/pacoMINI.jpeg")));
-		lblNewLabel_3.setBounds(379, 263, 65, 87);
+		lblNewLabel_3.setBounds(375, 273, 65, 87);
 		contentPane.add(lblNewLabel_3);
 		
 		label_1 = new JLabel("77%");
 		label_1.setForeground(Color.WHITE);
 		label_1.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
-		label_1.setBounds(596, 303, 34, 18);
+		label_1.setBounds(647, 317, 34, 18);
 		contentPane.add(label_1);
 		
 		lblNewLabel_4 = new JLabel("");
@@ -181,7 +204,7 @@ public class Resultados extends JFrame {
 		label_2 = new JLabel("71%");
 		label_2.setForeground(Color.WHITE);
 		label_2.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
-		label_2.setBounds(596, 463, 34, 18);
+		label_2.setBounds(647, 463, 34, 18);
 		contentPane.add(label_2);
 		
 		fotoMaeso = new JLabel("");

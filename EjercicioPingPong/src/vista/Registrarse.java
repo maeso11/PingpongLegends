@@ -57,11 +57,13 @@ public class Registrarse extends JFrame {
 		setLocationRelativeTo(null);
 
 		txtContraseña2 = new JPasswordField();
-		txtContraseña2.setBounds(275, 157, 137, 20);
+		txtContraseña2.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
+		txtContraseña2.setBounds(285, 152, 137, 20);
 		contentPane.add(txtContraseña2);
 
 		txtContraseña = new JPasswordField();
-		txtContraseña.setBounds(275, 130, 137, 20);
+		txtContraseña.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
+		txtContraseña.setBounds(285, 125, 137, 20);
 		contentPane.add(txtContraseña);
 
 		btnCrearUsuario = new JButton("CREAR USUARIO");
@@ -69,43 +71,44 @@ public class Registrarse extends JFrame {
 		btnCrearUsuario.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
 		btnCrearUsuario.setBorderPainted(false);
 		btnCrearUsuario.setBackground(new Color(34, 139, 34));
-		btnCrearUsuario.setBounds(62, 188, 350, 20);
+		btnCrearUsuario.setBounds(52, 188, 370, 20);
 		contentPane.add(btnCrearUsuario);
 
 		btnVolver = new JButton("VOLVER");
 		btnVolver.setBorderPainted(false);
 		btnVolver.setBackground(new Color(255, 165, 0));
-		btnVolver.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
+		btnVolver.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 15));
 		btnVolver.setBounds(0, 268, 477, 31);
 		contentPane.add(btnVolver);
 
 		txtUsuario = new JTextField();
-		txtUsuario.setBounds(275, 103, 137, 20);
+		txtUsuario.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
+		txtUsuario.setBounds(285, 98, 137, 20);
 		contentPane.add(txtUsuario);
 		txtUsuario.setColumns(10);
 
-		JLabel lblNewLabel_1_2 = new JLabel("CREA UNA CUENTA");
+		JLabel lblNewLabel_1_2 = new JLabel("CREAR CUENTA NUEVA");
 		lblNewLabel_1_2.setForeground(Color.WHITE);
-		lblNewLabel_1_2.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 13));
-		lblNewLabel_1_2.setBounds(171, 40, 137, 16);
+		lblNewLabel_1_2.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
+		lblNewLabel_1_2.setBounds(147, 35, 186, 18);
 		contentPane.add(lblNewLabel_1_2);
 
 		JLabel lblNewLabel_1_1_1 = new JLabel("CONFIRMAR CONTRASE\u00D1A:");
 		lblNewLabel_1_1_1.setForeground(Color.WHITE);
-		lblNewLabel_1_1_1.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 13));
-		lblNewLabel_1_1_1.setBounds(62, 158, 203, 16);
+		lblNewLabel_1_1_1.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
+		lblNewLabel_1_1_1.setBounds(52, 153, 223, 18);
 		contentPane.add(lblNewLabel_1_1_1);
 
 		JLabel lblNewLabel_1_1 = new JLabel("CONTRASE\u00D1A:");
 		lblNewLabel_1_1.setForeground(Color.WHITE);
-		lblNewLabel_1_1.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 13));
-		lblNewLabel_1_1.setBounds(158, 131, 107, 16);
+		lblNewLabel_1_1.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
+		lblNewLabel_1_1.setBounds(157, 126, 118, 18);
 		contentPane.add(lblNewLabel_1_1);
 
 		JLabel lblNewLabel_1 = new JLabel("USUARIO:");
-		lblNewLabel_1.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 13));
+		lblNewLabel_1.setFont(new Font("Rockwell Extra Bold", Font.PLAIN, 14));
 		lblNewLabel_1.setForeground(Color.WHITE);
-		lblNewLabel_1.setBounds(196, 104, 69, 16);
+		lblNewLabel_1.setBounds(199, 99, 76, 18);
 		contentPane.add(lblNewLabel_1);
 
 		JLabel lblNewLabel = new JLabel("");
